@@ -1,17 +1,20 @@
 # Bloco 1 — Exercícios Resolvidos (Versionamento)
 
-Estes exercícios fixam os conceitos de versionamento, branching e Pull Requests. Resolva mentalmente ou no repositório antes de conferir a solução.
+Estes exercícios fixam os conceitos de versionamento, branching e Pull Requests. **Devem ser realizados em dupla**, simulando um time de desenvolvimento.
+
+**Importante — não alterar o repositório original:** Todo o trabalho será feito em um **fork** do repositório base. O repositório [devpay-api](https://github.com/josinoif/devpay-api) serve apenas como ponto de partida do código; **não faça push nem alterações diretamente nele**. Um integrante da dupla deve criar um fork desse repositório na **própria conta no GitHub**; a dupla clona e opera apenas nesse fork (commits, branches e PRs acontecem no fork). Resolva os exercícios praticando no fork antes de conferir a solução.
 
 ---
 
 ## Exercício 1 — Comandos Git básicos
 
-**Enunciado:** Você clonou o repositório `devpay-api` ([https://github.com/josinoif/devpay-api](https://github.com/josinoif/devpay-api)). Descreva os comandos para: (a) criar uma branch `feature/login`, (b) fazer um commit com a mensagem "feat: adiciona validação de email", (c) enviar a branch para o remoto.
+**Enunciado:** A dupla configurou o trabalho assim: um integrante fez um **fork** do repositório [devpay-api](https://github.com/josinoif/devpay-api) na conta dele no GitHub; o outro (ou ambos) clonou o **repositório do fork** — não o original. A partir desse clone do fork, descreva os comandos para: (a) criar uma branch `feature/login`, (b) fazer um commit com a mensagem "feat: adiciona validação de email", (c) enviar a branch para o remoto do fork.
 
 **Solução:**
 
 ```bash
-cd devpay/api
+# No diretório do clone do fork (ex.: cd devpay-api)
+cd devpay-api
 
 # (a) Criar e mudar para a branch feature/login
 git checkout -b feature/login
@@ -20,17 +23,17 @@ git checkout -b feature/login
 git add .
 git commit -m "feat: adiciona validação de email"
 
-# (c) Enviar a branch para o remoto (primeira vez com -u)
+# (c) Enviar a branch para o remoto do fork (primeira vez com -u)
 git push -u origin feature/login
 ```
 
-**Observação:** O `-u` (ou `--set-upstream`) associa a branch local à remota; nos próximos `git push` não é necessário informar `origin feature/login`.
+**Observação:** O `origin` do clone aponta para o fork (não para o repositório original). O `-u` (ou `--set-upstream`) associa a branch local à remota do fork; nos próximos `git push` não é necessário informar `origin feature/login`.
 
 ---
 
 ## Exercício 2 — Interpretar estratégia
 
-**Enunciado:** Um time usa apenas `main` e branches `feature/XXX` com vida de 1–3 dias, sempre mergeando em `main`. Qual estratégia está mais próxima? Que vantagem isso traz em relação a “branch por semanas”?
+**Enunciado:** No fork da DevPay, a dupla combina usar apenas a branch `main` e branches `feature/XXX` com vida de 1–3 dias, sempre mergeando em `main`. Qual estratégia de fluxo está mais próxima dessa escolha? Que vantagem isso traz em relação a “branch por semanas”?
 
 **Solução:**
 
@@ -44,7 +47,7 @@ git push -u origin feature/login
 
 ## Exercício 3 — Semantic Versioning
 
-**Enunciado:** A API da DevPay está na versão `2.3.1`. Indique o número de versão após: (a) correção de bug no cálculo de taxa; (b) nova operação “consultar saldo” mantendo compatibilidade; (c) remoção do endpoint antigo `/v1/payments`.
+**Enunciado:** No projeto que a dupla está versionando no fork (código da API DevPay), a API está na versão `2.3.1`. Indique o número de versão após: (a) correção de bug no cálculo de taxa; (b) nova operação “consultar saldo” mantendo compatibilidade; (c) remoção do endpoint antigo `/v1/payments`.
 
 **Solução:**
 
@@ -60,14 +63,14 @@ git push -u origin feature/login
 
 ## Exercício 4 — Conflito de merge (conceitual)
 
-**Enunciado:** Duas branches alteraram o mesmo trecho do arquivo `PaymentService.java`. O que você deve fazer ao rodar `git merge` e o Git reportar conflito?
+**Enunciado:** Durante o trabalho da dupla no fork, duas branches alteraram o mesmo trecho do arquivo `PaymentService.java`. Ao rodar `git merge`, o Git reporta conflito. O que a dupla deve fazer para resolver?
 
 **Solução:**
 
 1. **Abrir os arquivos marcados como em conflito** — o Git insere marcadores `<<<<<<<`, `=======`, `>>>>>>>`.
-2. **Decidir o conteúdo final** — manter uma versão, combinar as duas ou reescrever, removendo os marcadores.
+2. **Decidir o conteúdo final** — manter uma versão, combinar as duas ou reescrever, removendo os marcadores (a dupla pode discutir qual versão faz mais sentido).
 3. **Marcar como resolvido** — `git add <arquivo>`.
-4. **Concluir o merge** — `git commit` (a mensagem de merge pode ser editada).
+4. **Concluir o merge** — `git commit` (a mensagem de merge pode ser editada). O merge fica no histórico do fork.
 
 Exemplo de trecho em conflito:
 
@@ -85,7 +88,7 @@ Após resolver (ex.: decidir usar a taxa 1.02 e remover os marcadores), faça `g
 
 ## Exercício 5 — Política de PR (PBL DevPay)
 
-**Enunciado:** Pensando no cenário DevPay (conflitos enormes, bugs em homologação), que políticas de Pull Request você recomendaria? Justifique com base no texto do bloco.
+**Enunciado:** Pensando no cenário DevPay (conflitos enormes, bugs em homologação) e no fluxo que a dupla adota no fork — com Pull Requests entre branches do próprio fork —, que políticas de Pull Request a dupla deveria adotar? Justifique com base no texto do bloco.
 
 **Solução (sugestão):**
 
@@ -94,7 +97,7 @@ Após resolver (ex.: decidir usar a taxa 1.02 e remover os marcadores), faça `g
 3. **CI obrigatório no PR** — build e testes devem passar antes de permitir merge; evita que código quebrado entre na `main` e chegue à homologação.
 4. **Manter `main` sempre “verde”** — quem faz merge garante que a branch está atualizada com `main` (reduz conflitos) e que o pipeline passou.
 
-Justificativa: os problemas da DevPay (conflitos enormes, bugs em homologação) estão ligados a integração tardia e falta de feedback automático. PRs pequenos + CI + revisão atacam exatamente isso, alinhados à ideia de Humble & Farley de “integrar frequentemente” e “feedback rápido”.
+Justificativa: os problemas da DevPay (conflitos enormes, bugs em homologação) estão ligados a integração tardia e falta de feedback automático. No fork, a dupla pode praticar PRs pequenos + CI + revisão (um integra, o outro revisa), atacando exatamente isso, alinhados à ideia de Humble & Farley de “integrar frequentemente” e “feedback rápido”.
 
 ---
 
