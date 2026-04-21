@@ -49,7 +49,7 @@ gantt
 
 Puxe as métricas que o Módulo 4 usou. Projete **antes × depois**:
 
-| Métrica | Agora (M4) | Após Mod 5 | Justificativa |
+| Métrica | Agora (Módulo 4) | Após Módulo 5 | Justificativa |
 |---------|------------|-------------|---------------|
 | Deployment Frequency | 1/dia | 3/dia | Imagens independentes por serviço; adicionar lang sem release train |
 | Lead Time for Changes | 45 min | 30 min | Build reaproveita cache; pipeline paralelo em matriz |

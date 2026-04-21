@@ -211,13 +211,13 @@ Agora, integrando containers, reescreva em alto nível (sem YAML) a nova sequên
 
 ### Solução
 
-| Etapa | Antes (M4) | Depois (M4 + M5) | Muda? |
+| Etapa | Antes (Módulo 4) | Depois (Módulo 4 + Módulo 5) | Muda? |
 |-------|------------|-------------------|--------|
 | 1 | CI Commit Stage | CI Commit Stage | — |
 | 2 | `python -m build` (wheel) | `docker buildx build` (imagem OCI) | **muda** |
 | 3 | `actions/upload-artifact` do wheel | `docker push` ao registry com tags `sha-X` + digest | **muda** |
 | 4 | Testes de aceitação contra a build | Testes de aceitação **dentro do container** | **muda o como** |
-| 5 | **Scan de segredos no código** (já no M4) | **+ scan de CVE da imagem** (Trivy) e **SBOM** | **adiciona** |
+| 5 | **Scan de segredos no código** (já no Módulo 4) | **+ scan de CVE da imagem** (Trivy) e **SBOM** | **adiciona** |
 | 6 | **Assinatura** do artefato (opcional) | Assinatura da **imagem** com cosign | **reforça** |
 | 7 | Promote to Staging: deploy do wheel | Promote to Staging: **deploy da imagem pelo digest** | **muda** |
 | 8 | Promote to Prod com approval gate | idem, igual ao digest de staging | **idem** |

@@ -98,14 +98,14 @@ Ao final do módulo, você será capaz de:
 
 ```mermaid
 flowchart LR
-    M4[M4 CD] -->|templates de pipeline| M11
-    M5[M5 Containers] -->|base image dourada| M11
-    M6[M6 IaC] -->|modulos IaC| M11
-    M7[M7 K8s] -->|namespaces, helm| M11
-    M8[M8 Observability] -->|SLO padrao| M11
-    M9[M9 DevSecOps] -->|gates embutidos| M11
-    M10[M10 SRE] -->|contratos SLO| M11
-    M11[M11 Plataforma] -->|integracao final| M12[M12 Capstone]
+    M4[Módulo 4<br/>CD] -->|templates de pipeline| M11
+    M5[Módulo 5<br/>Containers] -->|base image dourada| M11
+    M6[Módulo 6<br/>IaC] -->|módulos IaC| M11
+    M7[Módulo 7<br/>Kubernetes] -->|namespaces, helm| M11
+    M8[Módulo 8<br/>Observabilidade] -->|SLO padrão| M11
+    M9[Módulo 9<br/>DevSecOps] -->|gates embutidos| M11
+    M10[Módulo 10<br/>SRE] -->|contratos SLO| M11
+    M11[Módulo 11<br/>Plataforma] -->|integração final| M12[Módulo 12<br/>Capstone]
 
     style M11 fill:#e3f2fd
 ```

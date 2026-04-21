@@ -102,7 +102,7 @@ flowchart LR
 
 ## O que este módulo NÃO faz
 
-- Não ensina ferramentas novas. Se você precisa de uma não vista em M1-M11, justifique em ADR e assuma o custo de aprendizado.
+- Não ensina ferramentas novas. Se você precisa de uma não vista nos Módulos 1 ao 11, justifique em ADR e assuma o custo de aprendizado.
 - Não exige escala real (milhões de usuários). O foco é **maturidade de processo e arquitetura**, não performance a qualquer custo.
 - Não cobre UX/frontend profundo. A UI pode ser mínima — mas funcional.
 - Não substitui disciplinas de arquitetura de software, UX ou negócio.
@@ -113,17 +113,17 @@ flowchart LR
 
 ```mermaid
 flowchart TB
-    M1[M1 Cultura] --> C
-    M2[M2 Git/CI] --> C
-    M3[M3 Testes/Qualidade] --> C
-    M4[M4 CD] --> C
-    M5[M5 Containers] --> C
-    M6[M6 IaC] --> C
-    M7[M7 Kubernetes] --> C
-    M8[M8 Observability] --> C
-    M9[M9 DevSecOps] --> C
-    M10[M10 SRE] --> C
-    M11[M11 Plataforma] --> C[M12 Capstone]
+    M1[Módulo 1<br/>Cultura] --> C
+    M2[Módulo 2<br/>Git/CI] --> C
+    M3[Módulo 3<br/>Testes/Qualidade] --> C
+    M4[Módulo 4<br/>CD] --> C
+    M5[Módulo 5<br/>Containers] --> C
+    M6[Módulo 6<br/>IaC] --> C
+    M7[Módulo 7<br/>Kubernetes] --> C
+    M8[Módulo 8<br/>Observabilidade] --> C
+    M9[Módulo 9<br/>DevSecOps] --> C
+    M10[Módulo 10<br/>SRE] --> C
+    M11[Módulo 11<br/>Plataforma] --> C[Módulo 12<br/>Capstone]
 
     C --> E[Banca + Postmortem<br/>ao vivo]
 

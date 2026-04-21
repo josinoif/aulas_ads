@@ -8,7 +8,7 @@
 
 ## Por que este módulo vem aqui
 
-Até aqui você construiu o sistema: pipelines (M2/M4), containers (M5), infra como código (M6), Kubernetes (M7), observabilidade (M8), segurança (M9). Falta responder uma última pergunta, a mais difícil:
+Até aqui você construiu o sistema: pipelines (Módulos 2 e 4), containers (Módulo 5), infra como código (Módulo 6), Kubernetes (Módulo 7), observabilidade (Módulo 8), segurança (Módulo 9). Falta responder uma última pergunta, a mais difícil:
 
 > *"Agora que o sistema existe e é seguro, **como operá-lo bem** durante anos, com times reais, budget finito, pessoas cansando — sem que a qualidade e a sanidade se degradem?"*
 
@@ -112,12 +112,12 @@ velero version --client-only
 
 ```mermaid
 flowchart LR
-    M1[Modulo 1<br/>Cultura] -->|blameless| M10[Modulo 10<br/>SRE]
-    M4[Modulo 4<br/>CD] -->|error budget| M10
-    M7[Modulo 7<br/>K8s] -->|backup/restore| M10
-    M8[Modulo 8<br/>Observabilidade] -->|SLO/SLI, detecao| M10
-    M9[Modulo 9<br/>DevSecOps] -->|runbook de incidente| M10
-    M10 -->|pratica operacional| M11[Modulo 11<br/>Plataforma]
+    M1[Módulo 1<br/>Cultura] -->|blameless| M10[Módulo 10<br/>SRE]
+    M4[Módulo 4<br/>CD] -->|error budget| M10
+    M7[Módulo 7<br/>Kubernetes] -->|backup/restore| M10
+    M8[Módulo 8<br/>Observabilidade] -->|SLO/SLI, detecção| M10
+    M9[Módulo 9<br/>DevSecOps] -->|runbook de incidente| M10
+    M10 -->|prática operacional| M11[Módulo 11<br/>Plataforma]
 
     style M10 fill:#fff3cd
 ```
