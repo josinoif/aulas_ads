@@ -110,3 +110,15 @@ Com isso você termina a base teórica do módulo. Em seguida vêm os **exercíc
 
 **Próximo:** [Exercícios progressivos — Parte 1](../exercicios-progressivos/parte-1-diagnostico.md)  
 **Exercícios deste bloco:** [04-exercicios-resolvidos.md](04-exercicios-resolvidos.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 3 — Exercícios Resolvidos (Automação e Toil)](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

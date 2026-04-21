@@ -605,3 +605,15 @@ python security_report.py bandit.sarif semgrep.sarif pip-audit.json --fail-on hi
 - [ ] Uso `security_report.py` para visualização unificada.
 
 Vá aos [exercícios resolvidos do Bloco 2](./02-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 1 — Exercícios resolvidos](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Bloco 2 — Exercícios resolvidos](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

@@ -247,3 +247,15 @@ Além disso, **100%** é caro. Para código crítico (checkout, agendamento da M
 ## Próximo passo
 
 Siga para o **[Bloco 2 — TDD, BDD e ciclo Red-Green-Refactor](../bloco-2/02-tdd-bdd.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Bloco 1 — Pirâmide de Testes e Fundamentos](01-piramide-testes.md)
+- → Próximo: [Bloco 2 — TDD, BDD e o Ciclo Red-Green-Refactor](../bloco-2/02-tdd-bdd.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

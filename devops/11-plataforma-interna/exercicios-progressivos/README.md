@@ -82,3 +82,15 @@ metrics-report:
 		--survey      data/survey.csv
 EOF
 ```
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Estratégia, personas e Team Topologies](parte-1-estrategia.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

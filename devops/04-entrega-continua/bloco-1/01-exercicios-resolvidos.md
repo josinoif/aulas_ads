@@ -176,3 +176,15 @@ Proposta de checklist. Cada resposta SIM conta 1 ponto.
 
 - Retome o **[Bloco 1](01-ci-cd-deployment.md)** se algum exercício foi difícil.
 - Siga para o **[Bloco 2 — Deployment Pipeline](../bloco-2/02-deployment-pipeline.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](01-ci-cd-deployment.md)
+- → Próximo: [Bloco 2 — Deployment Pipeline e Promoção de Artefatos](../bloco-2/02-deployment-pipeline.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

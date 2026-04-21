@@ -352,3 +352,15 @@ resumo = pulumi.Output.concat(
 ## Próximo passo
 
 - Avance para o **[Bloco 4 — IaC em produção](../bloco-4/04-iac-producao.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Bloco 3 — Pulumi com Python](03-pulumi-python.md)
+- → Próximo: [Bloco 4 — IaC em Produção](../bloco-4/04-iac-producao.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

@@ -137,3 +137,15 @@ O repositório deve conter, ao menos:
 - [ ] Existe pelo menos 1 exceção de segurança documentada com data de revisão (< 90 dias).
 - [ ] README inclui seção "limitações e riscos residuais" honesta.
 - [ ] Runbook de incidente foi **lido em voz alta** por alguém que não o escreveu (teste de clareza).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Parte 5 — Secrets management, incidente simulado e postmortem](exercicios-progressivos/parte-5-secrets-incidente.md)
+- → Próximo: [Referências — Módulo 9 (DevSecOps)](referencias.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+
+<!-- nav:end -->

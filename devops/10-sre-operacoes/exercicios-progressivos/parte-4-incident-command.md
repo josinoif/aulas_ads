@@ -166,3 +166,15 @@ git add -A && git commit -m "feat(sre-p4): incident command + runbooks vivos + t
 - Criar bot Slack que cria canal automático `#incident-YYYYMMDD-<slug>` ao disparar slash command `/incident declare`.
 - Template Jira/GitHub Issue para "declaração de incidente" com campos obrigatórios.
 - Integração com PagerDuty (trial) para rotação real.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md)
+- → Próximo: [Parte 5 — Postmortem Blameless e Learning Review](parte-5-postmortem-learning.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

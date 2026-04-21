@@ -896,3 +896,15 @@ resource "docker_container" "legacy_pg" {
 - **OpenTofu docs** — [opentofu.org/docs/language/](https://opentofu.org/docs/language/).
 - **Kreuzwerker Docker provider** — [registry.terraform.io/providers/kreuzwerker/docker](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs).
 - **Morris, K.** *Infrastructure as Code.* Cap. 6 ("Building Environments").
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

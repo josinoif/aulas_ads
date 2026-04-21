@@ -97,3 +97,15 @@ Se nota falhou em alguma, reescreva antes de aceitar.
 - Você dorme a noite sem sentir que "preciso voltar para arrumar aquilo".
 
 Se tudo acima se aplica, rode `git tag v0.1.0-design-ready` e siga para a Fase 2.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 1 — Design e fundação](01-fase-design.md)
+- → Próximo: [Fase 2 — Entrega contínua end-to-end](../bloco-2/02-fase-entrega.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

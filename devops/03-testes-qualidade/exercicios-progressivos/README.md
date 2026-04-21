@@ -67,3 +67,15 @@ Você **pode** fazer as partes fora de ordem, mas a ordem apresentada **minimiza
 ## Próximo passo
 
 Comece pela **[Parte 1 — Diagnóstico da pirâmide atual](parte-1-diagnostico-piramide.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico da Pirâmide Atual da MediQuick](parte-1-diagnostico-piramide.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

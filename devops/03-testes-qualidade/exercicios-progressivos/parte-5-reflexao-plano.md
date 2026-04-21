@@ -142,3 +142,15 @@ Com este documento, você tem **todos os artefatos** da entrega avaliativa:
 ## Em uma frase
 
 > *O objetivo do módulo não é "ter muitos testes"; é **ter a confiança para entregar rápido**. Teste é ferramenta; confiança é o resultado.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Parte 4 — Quality Gates no Pipeline CI](parte-4-quality-gates-ci.md)
+- → Próximo: [Entrega Avaliativa do Módulo 3](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

@@ -362,3 +362,15 @@ Essa é **a promessa central do K8s** na prática.
 ## Próximo passo
 
 Siga para o **[Bloco 2 — Workloads](../bloco-2/02-workloads.md)**, onde construímos o primeiro serviço real da StreamCast (`auth`) como Deployment + Service + ConfigMap + Secret.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 1 — Fundamentos de Kubernetes](01-fundamentos-k8s.md)
+- → Próximo: [Bloco 2 — Workloads: do Compose ao Cluster](../bloco-2/02-workloads.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

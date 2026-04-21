@@ -176,3 +176,15 @@ Exemplos aceitos na disciplina:
 ---
 
 *Use estas referências para fundamentar suas decisões na entrega avaliativa do Módulo 6.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 6](entrega-avaliativa.md)
+- → Próximo: [Módulo 7 — Kubernetes](../07-kubernetes/README.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+
+<!-- nav:end -->

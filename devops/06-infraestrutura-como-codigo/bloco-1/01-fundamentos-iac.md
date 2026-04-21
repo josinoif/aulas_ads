@@ -559,3 +559,15 @@ Mapeamento dos 10 sintomas para conceitos deste bloco:
 - **Fowler, M.** *InfrastructureAsCode*, [martinfowler.com/bliki/InfrastructureAsCode.html](https://martinfowler.com/bliki/InfrastructureAsCode.html).
 - **HashiCorp** — *What is Infrastructure as Code?*
 - **Google SRE Book** — Cap. 3 ("Embracing Risk") e Cap. 12 ("Effective Troubleshooting").
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

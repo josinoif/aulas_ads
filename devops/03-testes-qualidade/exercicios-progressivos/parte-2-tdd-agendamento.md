@@ -400,3 +400,15 @@ Exemplo de histórico esperado:
 ## Próximo passo
 
 Com o domínio pronto e testado, siga para a **[Parte 3 — Integração com Testcontainers](parte-3-integracao-testcontainers.md)** — você vai adicionar **persistência real em Postgres** e escrever os testes de integração.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Parte 1 — Diagnóstico da Pirâmide Atual da MediQuick](parte-1-diagnostico-piramide.md)
+- → Próximo: [Parte 3 — Integração com Testcontainers (Postgres real)](parte-3-integracao-testcontainers.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

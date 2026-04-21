@@ -154,3 +154,15 @@ Você terminou um curso de DevOps com um **projeto defensável**. O que fazer co
 > *"Daqui a 2 anos, se alguém perguntar sobre o seu capstone, o que você quer conseguir dizer sobre ele?"*
 
 Esse é o critério real. A banca é só um checkpoint.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Marco 4 — Plataforma interna e métricas](parte-4-plataforma-metricas.md)
+- → Próximo: [Entrega avaliativa — Módulo 12 (Capstone)](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

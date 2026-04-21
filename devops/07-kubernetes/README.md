@@ -150,3 +150,14 @@ flowchart LR
 ---
 
 *Material alinhado a: Kubernetes Up & Running (Burns, Beda, Hightower); Programming Kubernetes (Hausenblas, Schimanski); The Kubernetes Book (Poulton); documentação oficial kubernetes.io; Helm docs; ArgoCD docs; CNCF landscape.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 6](../06-infraestrutura-como-codigo/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

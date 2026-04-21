@@ -176,3 +176,15 @@ Um novo engenheiro da OrbitaTech, ao clonar seu repo e seguir o README, consegue
 4. Ver seu serviço no catálogo, com dashboard e docs.
 
 Essa é a **prova definitiva** de que sua plataforma é um **produto** — não só código.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md)
+- → Próximo: [Entrega avaliativa — Módulo 11 (Plataforma Interna)](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

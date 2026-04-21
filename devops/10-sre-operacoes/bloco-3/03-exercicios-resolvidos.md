@@ -233,3 +233,15 @@ Se nenhum passo resolver em 20 min, escalar para IC on-call.
 - [ ] Valido cenários com `dr_simulator.py`.
 - [ ] Escrevo runbooks com critério de sucesso e plano B.
 - [ ] Reconheço armadilhas ("backup não testado", "DR no mesmo cluster").
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Bloco 3 — Disaster Recovery: a capacidade que você só descobre se tem ao usar](03-disaster-recovery.md)
+- → Próximo: [Bloco 4 — Gestão de Incidentes em Escala: papéis, comunicação e aprendizado](../bloco-4/04-incidentes-escala.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

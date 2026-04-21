@@ -389,3 +389,15 @@ python devops/08-observabilidade/bloco-2/metrics_audit.py --url http://localhost
 - `grafana/dashboards/pedidos-red.json` + ConfigMap.
 - `Makefile` com `up`, `down`, `stack`, `apply`.
 - `docs/arquitetura.md` — diagrama inicial (use a do README do Módulo 8 como ponto de partida).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 8 (Observabilidade)](README.md)
+- → Próximo: [Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

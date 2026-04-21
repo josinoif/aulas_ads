@@ -473,3 +473,15 @@ python threat_catalog.py threats.yaml
 - [ ] Uso `threat_catalog.py` para priorizar ameaças de um projeto.
 
 Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Cenário PBL — MedVault: auditoria LGPD expõe dívida de segurança](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

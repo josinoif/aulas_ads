@@ -402,3 +402,15 @@ Nenhum deles é coberto em profundidade neste módulo — mas **você deve saber
 - **Linux Kernel — cgroups (7):** `man 7 cgroups`.
 - **Evans, J.** *"How containers work."* [jvns.ca/blog/2016/10/10/what-even-is-a-container](https://jvns.ca/blog/2016/10/10/what-even-is-a-container/).
 - **NIST SP 800-190** — *Application Container Security Guide*, 2019.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

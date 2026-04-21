@@ -64,3 +64,15 @@ gantt
 Cada marco é completo quando você consegue, ao vivo, mostrar os artefatos rodando. Apresentação polida sem sistema funcionando reprova. Sistema funcionando sem apresentação coerente reprova parcialmente.
 
 Os dois juntos, com honestidade sobre limites e clareza de próximos passos, é o que define **um capstone bem entregue**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 4 — Armadilhas, dicas e orientações de banca](../bloco-4/04-armadilhas-e-dicas.md)
+- → Próximo: [Marco 1 — Design e fundação](parte-1-design-fundacao.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

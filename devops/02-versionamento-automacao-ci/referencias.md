@@ -78,3 +78,15 @@ Material de apoio ao Módulo 2 — Versionamento, Automação e CI. Utilize esta
 ---
 
 *Use estas referências para fundamentar suas respostas nos exercícios, na estratégia de versionamento e na justificativa técnica da entrega avaliativa.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 2](entrega-avaliativa.md)
+- → Próximo: [Módulo 3 — Testes Automatizados e Qualidade de Software](../03-testes-qualidade/README.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+
+<!-- nav:end -->

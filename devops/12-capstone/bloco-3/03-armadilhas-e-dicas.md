@@ -141,3 +141,15 @@ Ambos disparam juntos = sinal genuino
 - Pode dar 30 min para o professor "brincar" com seu ambiente sem entrar em pânico.
 
 Se tudo acima bate, `git tag v0.3.0-operable` e siga para a Fase 4.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 3 — Operação e resiliência](03-fase-operacao.md)
+- → Próximo: [Fase 4 — Plataforma interna, métricas e apresentação final](../bloco-4/04-fase-plataforma.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

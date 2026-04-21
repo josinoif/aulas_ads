@@ -534,3 +534,15 @@ timestamp,ator,fase,evento
 - [ ] Uso `incident_timeline.py` para construir cronologia com MTTA/MTTM/MTTR.
 
 Vá aos [exercícios resolvidos do Bloco 4](./04-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

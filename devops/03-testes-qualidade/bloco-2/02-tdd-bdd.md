@@ -582,3 +582,15 @@ flowchart TD
 - **Freeman, S.; Pryce, N.** *Growing Object-Oriented Software, Guided by Tests.* Addison-Wesley, 2009.
 - **Fowler, M.** *"Mocks Aren't Stubs"* (2007). [martinfowler.com/articles/mocksArentStubs.html](https://martinfowler.com/articles/mocksArentStubs.html)
 - **Humble, J.; Farley, D.** *Entrega Contínua.* Alta Books. Cap. 4. (`books/Entrega Contínua.pdf`)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

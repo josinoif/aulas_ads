@@ -64,3 +64,15 @@ Sugestão: usar referências ao material do módulo e às obras indicadas (Humbl
 - [Bloco 4 — Métricas e impacto](bloco-4/04-metricas-impacto.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Parte 5 — Reflexão Final (30 min)](exercicios-progressivos/parte-5-reflexao.md)
+- → Próximo: [Referências Bibliográficas](referencias.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+
+<!-- nav:end -->

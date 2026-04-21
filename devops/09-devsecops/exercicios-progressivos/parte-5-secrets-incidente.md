@@ -312,3 +312,15 @@ Com essas 5 partes você tem:
 Isso é o que o mercado chama de "DevSecOps pragmático" — não é perfeição, é **maturidade operacional verificável**.
 
 Referências consolidadas estão em [referencias.md](../referencias.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Parte 4 — Admission control e cluster endurecido](parte-4-admission-cluster.md)
+- → Próximo: [Entrega avaliativa — Módulo 9 (DevSecOps)](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

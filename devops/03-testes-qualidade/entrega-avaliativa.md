@@ -135,3 +135,15 @@ Inclua no README do projeto um **link para esses 3 commits** como prova.
 - [Bloco 4 — Integração e E2E](bloco-4/04-integracao-e2e.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Parte 5 — Reflexão e Plano MediQuick](exercicios-progressivos/parte-5-reflexao-plano.md)
+- → Próximo: [Referências Bibliográficas — Módulo 3](referencias.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](README.md)
+
+<!-- nav:end -->

@@ -468,3 +468,15 @@ k8s-deploy:
 ## Próxima fase
 
 Com o sistema rodando de ponta a ponta, a [Fase 3 — Operação e resiliência](../bloco-3/03-fase-operacao.md) adiciona observabilidade, segurança e SRE: **ver** o sistema, **proteger** o sistema, **ensaiar** falha.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 1 — Armadilhas, dicas e orientações de banca](../bloco-1/01-armadilhas-e-dicas.md)
+- → Próximo: [Fase 2 — Armadilhas, dicas e orientações de banca](02-armadilhas-e-dicas.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

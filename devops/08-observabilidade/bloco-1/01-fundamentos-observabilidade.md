@@ -477,3 +477,15 @@ Antes de ir ao Bloco 2, certifique-se de:
 - [ ] Diferenciar dashboard de incidente e dashboard executivo.
 
 Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md) para consolidar.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

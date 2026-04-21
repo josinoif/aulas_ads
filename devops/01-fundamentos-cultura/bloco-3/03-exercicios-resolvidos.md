@@ -158,3 +158,15 @@ Além disso, Chaos Engineering permite **testar hipóteses específicas**: "o qu
 ## Próximo passo
 
 Siga para o **[Bloco 4 — Cultura em prática e anti-padrões](../bloco-4/04-cultura-pratica-antipadroes.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Bloco 3 — Os Três Caminhos (The Three Ways)](03-tres-caminhos.md)
+- → Próximo: [Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](../bloco-4/04-cultura-pratica-antipadroes.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

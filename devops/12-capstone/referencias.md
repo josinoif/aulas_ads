@@ -104,3 +104,15 @@ Para alinhar com o cenário CivicaBR:
 - *PlatformCon* (conferência anual gravada).
 - *SREcon* (USENIX).
 - YouTube: canais da **Thoughtworks**, **Google SRE**, **Honeycomb**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Entrega avaliativa — Módulo 12 (Capstone)](entrega-avaliativa.md)
+- → Próximo: *(fim do curso)*
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+
+<!-- nav:end -->

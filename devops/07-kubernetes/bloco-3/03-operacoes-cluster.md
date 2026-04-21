@@ -928,3 +928,15 @@ flowchart TB
 - [kubernetes.io/docs/reference/access-authn-authz/rbac/](https://kubernetes.io/docs/reference/access-authn-authz/rbac/).
 - [kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/).
 - CIS Kubernetes Benchmark (seções RBAC, NetworkPolicy, Pod Security).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 2 — Exercícios Resolvidos](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Bloco 3 — Exercícios Resolvidos](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

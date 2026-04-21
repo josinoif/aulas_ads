@@ -201,3 +201,15 @@ Avaliação:
 - [ ] Sabe os 2 próximos passos de maior impacto.
 
 Se os itens acima estão marcados, **você está pronto**. Se não estão, o módulo não terminou — respire fundo, e volte ao checklist.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Marco 5 — Defesa com incidente ao vivo](exercicios-progressivos/parte-5-banca-final.md)
+- → Próximo: [Referências — Módulo 12 (Capstone)](referencias.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+
+<!-- nav:end -->

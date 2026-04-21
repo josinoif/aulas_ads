@@ -312,3 +312,15 @@ make clean
 ## Próximo passo
 
 Avance para a **[Parte 2 — Workloads básicos](parte-2-workloads-basicos.md)**, onde substituímos o `nginx` pelo serviço real `auth` em FastAPI + Postgres + Redis.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 7](README.md)
+- → Próximo: [Parte 2 — Workloads básicos da StreamCast](parte-2-workloads-basicos.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

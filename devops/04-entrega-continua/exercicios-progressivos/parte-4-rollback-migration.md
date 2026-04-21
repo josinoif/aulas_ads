@@ -210,3 +210,15 @@ logitrack-tracking/
 ## Próximo passo
 
 Última parada: **[Parte 5 — Plano de Transformação](parte-5-plano-transformacao.md)**, onde você amarra tudo num plano de 6 meses para a LogiTrack.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md)
+- → Próximo: [Parte 5 — Plano de Transformação e Projeção DORA](parte-5-plano-transformacao.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

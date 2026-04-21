@@ -192,3 +192,15 @@ No README do repositório:
 - [Bloco 4 — Produção](bloco-4/04-iac-producao.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Parte 5 — Pipeline CI/CD + Policy + Plano de Adoção](exercicios-progressivos/parte-5-pipeline-e-plano.md)
+- → Próximo: [Referências Bibliográficas — Módulo 6](referencias.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+
+<!-- nav:end -->

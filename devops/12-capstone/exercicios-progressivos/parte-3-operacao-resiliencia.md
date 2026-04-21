@@ -98,3 +98,15 @@ Sanity checks que **você** faz:
 4. Se um dev pede "remover meus dados" (LGPD), quais **comandos** você roda?
 
 Se sabe responder as quatro sem consultar, Marco 3 está pronto.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Marco 2 — Sistema entregando em staging](parte-2-entrega-end-to-end.md)
+- → Próximo: [Marco 4 — Plataforma interna e métricas](parte-4-plataforma-metricas.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

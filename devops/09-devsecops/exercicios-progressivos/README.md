@@ -50,3 +50,15 @@ Ao concluir as 5 partes, o repositório terá:
 - Makefile executa todos os alvos.
 
 Comece pela [Parte 1](./parte-1-threat-model.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Threat model e Dockerfile endurecido](parte-1-threat-model.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

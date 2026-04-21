@@ -189,3 +189,15 @@ Crítica ponto a ponto:
 
 - Retome o **[Bloco 1](01-fundamentos-containers.md)** se algum exercício foi difícil.
 - Siga para o **[Bloco 2 — Dockerfile e boas práticas](../bloco-2/02-dockerfile-boas-praticas.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Bloco 1 — Fundamentos de Containers](01-fundamentos-containers.md)
+- → Próximo: [Bloco 2 — Dockerfile e Boas Práticas](../bloco-2/02-dockerfile-boas-praticas.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

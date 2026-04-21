@@ -354,3 +354,15 @@ Ferramentas como **Pact** automatizam isso: provider publica o que cumpre, consu
 ## Próximo passo
 
 Você concluiu os 4 blocos teóricos. Siga para os **[exercícios progressivos](../exercicios-progressivos/)** — onde você aplica tudo ao cenário da MediQuick em 5 partes práticas.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Bloco 4 — Testes de Integração, E2E e Estratégias](04-integracao-e2e.md)
+- → Próximo: [Exercícios Progressivos — Módulo 3](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

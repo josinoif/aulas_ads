@@ -239,3 +239,15 @@ Adotamos `python:3.12.7-slim-bookworm` como base dos runners Python.
 ## Próximo passo
 
 Avance para a **[Parte 3 — Compose stack](parte-3-compose-stack.md)** para subir API + Worker + Redis + Postgres + Runner juntos.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Parte 1 — Diagnóstico da CodeLab](parte-1-diagnostico.md)
+- → Próximo: [Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

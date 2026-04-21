@@ -128,3 +128,15 @@ Exemplos aceitos na disciplina:
 ---
 
 *Use estas referências para fundamentar suas decisões na containerização da CodeLab e na entrega avaliativa.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 5](entrega-avaliativa.md)
+- → Próximo: [Módulo 6 — Infraestrutura como Código (IaC)](../06-infraestrutura-como-codigo/README.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+
+<!-- nav:end -->

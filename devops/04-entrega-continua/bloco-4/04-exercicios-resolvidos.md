@@ -333,3 +333,15 @@ b) Que cuidado tomar para **não** criar tags duplicadas?
 
 - Revise o **[Bloco 4](04-release-engineering.md)** se necessário.
 - Mergulhe nos **[exercícios progressivos](../exercicios-progressivos/README.md)** — é hora de **construir**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](04-release-engineering.md)
+- → Próximo: [Exercícios Progressivos — Módulo 4](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

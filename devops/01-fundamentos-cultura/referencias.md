@@ -139,3 +139,15 @@ Sempre referencie **autor + obra + capítulo/página** quando possível. Em entr
 ---
 
 *Use estas referências para fundamentar o diagnóstico da CloudStore, o modelo CALMS e o plano de transformação solicitado na entrega avaliativa.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 1](entrega-avaliativa.md)
+- → Próximo: [Módulo 2 — Versionamento, Automação e CI](../02-versionamento-automacao-ci/README.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+
+<!-- nav:end -->

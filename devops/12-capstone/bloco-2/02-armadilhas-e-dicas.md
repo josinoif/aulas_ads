@@ -115,3 +115,15 @@ Se qualquer seta falta, há um elo fraco. A banca vai apontar.
 - README raiz atualizado com links funcionais.
 
 Se tudo marcado, `git tag v0.2.0-delivery-ready` e parta para a Fase 3.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 2 — Entrega contínua end-to-end](02-fase-entrega.md)
+- → Próximo: [Fase 3 — Operação e resiliência](../bloco-3/03-fase-operacao.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

@@ -58,3 +58,15 @@ Ambas são defensáveis. Uma justificativa coerente seria: atacar **change failu
 ---
 
 **Próximo:** [Exercícios progressivos — Parte 1: Diagnóstico](../exercicios-progressivos/parte-1-diagnostico.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 4 — Métricas e Impacto](04-metricas-impacto.md)
+- → Próximo: [Exercícios Progressivos — Módulo 2](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

@@ -744,3 +744,15 @@ PRs de forks **não recebem secrets** por padrão (segurança). Isso pode quebra
 - **GitHub Actions — Environments:** [docs.github.com/en/actions/deployment/targeting-different-environments](https://docs.github.com/en/actions/deployment/targeting-different-environments/using-environments-for-deployment).
 - **GitHub Actions — Artifacts:** [docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts](https://docs.github.com/en/actions/using-workflows/storing-workflow-data-as-artifacts).
 - **pydantic-settings:** [docs.pydantic.dev/latest/concepts/pydantic_settings](https://docs.pydantic.dev/latest/concepts/pydantic_settings/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

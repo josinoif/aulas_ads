@@ -131,3 +131,15 @@ flowchart TB
 Pontos a mirar: `ledger`/DB é o coração de risco; failover não é automático; falta DR testado; falta chaos para validar resiliência em `pix-core`; falta comando em incidentes.
 
 Nos próximos blocos, essa arquitetura ganha **instrumentação operacional**, **experimentos**, **backup** e **processos humanos**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Módulo 10 — Site Reliability Engineering (SRE) e Operações](README.md)
+- → Próximo: [Bloco 1 — SRE como disciplina: economia operacional, toil, capacidade](bloco-1/01-sre-fundamentos.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+
+<!-- nav:end -->

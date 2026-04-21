@@ -638,3 +638,15 @@ python metrics_audit.py --url http://localhost:8000/metrics --top 10
 - [ ] Sei quais exporters prontos usar (node, ksm, postgres, redis).
 
 Vá aos [exercícios resolvidos do Bloco 2](./02-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 1 — Exercícios resolvidos](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Bloco 2 — Exercícios resolvidos](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

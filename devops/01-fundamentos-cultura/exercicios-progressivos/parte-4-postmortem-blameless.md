@@ -98,3 +98,15 @@ Esses arquivos são **anexo** obrigatório do relatório avaliativo.
 ## Próximo passo
 
 Siga para a **[Parte 5 — Reflexão e Plano de Ondas](parte-5-reflexao-plano.md)** — última parte.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeamento-fluxo-valor.md)
+- → Próximo: [Parte 5 — Reflexão Final e Plano de Transformação em Ondas](parte-5-reflexao-plano.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

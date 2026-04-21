@@ -261,3 +261,15 @@ Vamos ter uma call para decidir? Tenho horario amanha as 14h.
 - [ ] Valido catálogo com `catalog_validator.py`.
 - [ ] Planejo deprecation com prazo, suporte, consequência.
 - [ ] Respondo a squad com base em matriz de responsabilidade, sem culpar.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 3 — Service Catalog e Contratos de Plataforma](03-contratos-plataforma.md)
+- → Próximo: [Bloco 4 — Métricas de Plataforma: DORA, SPACE, DevEx e NPS interno](../bloco-4/04-metricas-plataforma.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

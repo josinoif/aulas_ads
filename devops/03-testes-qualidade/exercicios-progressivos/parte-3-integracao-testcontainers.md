@@ -375,3 +375,15 @@ git commit -m "docs: documenta execução de testes e separa unit/integration"
 ## Próximo passo
 
 Siga para a **[Parte 4 — Quality Gates no pipeline CI](parte-4-quality-gates-ci.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Parte 2 — TDD do Serviço de Agendamento](parte-2-tdd-agendamento.md)
+- → Próximo: [Parte 4 — Quality Gates no Pipeline CI](parte-4-quality-gates-ci.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

@@ -87,3 +87,15 @@ Se quiser realmente um ZIP (e o `path` aceitar diretório, o Actions já empacot
 ---
 
 **Próximo:** [Bloco 3 — Automação como redução de toil](../bloco-3/03-automacao-toil.md) e [exercícios do Bloco 3](../bloco-3/03-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 2 — Integração Contínua (CI)](02-integracao-continua.md)
+- → Próximo: [Bloco 3 — Automação como Redução de Toil](../bloco-3/03-automacao-toil.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

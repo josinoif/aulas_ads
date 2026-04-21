@@ -100,3 +100,15 @@ Demonstrar que você é capaz de **tratar plataforma como produto interno**: def
 - [ ] DORA metrics são calculadas por script real (não inventadas).
 - [ ] Survey tem pelo menos 5 respostas; NPS > -20 (mesmo em cenário "crítico").
 - [ ] Roadmap cita **2 decisões baseadas em dado** do survey ou métricas.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Parte 5 — Métricas, survey e evolução](exercicios-progressivos/parte-5-metricas.md)
+- → Próximo: [Referências — Módulo 11 (Plataforma Interna)](referencias.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](README.md)
+
+<!-- nav:end -->

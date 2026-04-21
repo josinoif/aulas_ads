@@ -73,3 +73,15 @@
 - **"Monolith to Microservices"** (Sam Newman) — base para entender por que a plataforma precisa abstrair.
 - **"Working in Public"** (Nadia Eghbal) — insights sobre produtos para desenvolvedores.
 - **"Shape Up"** (Ryan Singer / Basecamp) — ciclo de produto aplicado à plataforma.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Entrega avaliativa — Módulo 11 (Plataforma Interna)](entrega-avaliativa.md)
+- → Próximo: [Módulo 12 — Capstone: da ideia à operação](../12-capstone/README.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](README.md)
+
+<!-- nav:end -->

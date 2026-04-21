@@ -135,3 +135,15 @@ DevOps funciona bem quando o problema é de **fluxo, colaboração e confiabilid
 ## Próximo passo
 
 Quando se sentir confortável com estes conceitos, siga para o **[Bloco 2 — Modelo CALMS](../bloco-2/02-modelo-calms.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Bloco 1 — O que é DevOps e a Parede da Confusão](01-o-que-e-devops.md)
+- → Próximo: [Bloco 2 — Modelo CALMS](../bloco-2/02-modelo-calms.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

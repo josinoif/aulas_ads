@@ -832,3 +832,15 @@ No Módulo 4, o artefato era um `.whl`. Agora o artefato é uma **imagem OCI**. 
 - **Hadolint:** [github.com/hadolint/hadolint](https://github.com/hadolint/hadolint).
 - **BuildKit secrets:** [docs.docker.com/build/building/secrets/](https://docs.docker.com/build/building/secrets/).
 - **OCI Image Labels:** [github.com/opencontainers/image-spec/blob/main/annotations.md](https://github.com/opencontainers/image-spec/blob/main/annotations.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

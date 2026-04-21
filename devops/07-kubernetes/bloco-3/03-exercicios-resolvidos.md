@@ -615,3 +615,15 @@ Sem achados. Cluster passa nos checks básicos.
 ## Próximo passo
 
 Avance para o **[Bloco 4 — Produção, Helm e GitOps](../bloco-4/04-producao-helm-gitops.md)**, onde todos esses YAMLs são empacotados como **Helm chart** parametrizável e sincronizados via **ArgoCD** a partir do git.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 3 — Operações: isolamento, segurança, escala e entrada](03-operacoes-cluster.md)
+- → Próximo: [Bloco 4 — Produção: Helm, GitOps e os limites do K8s](../bloco-4/04-producao-helm-gitops.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

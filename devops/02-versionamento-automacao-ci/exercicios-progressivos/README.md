@@ -13,3 +13,15 @@ Estas cinco partes aplicam o conteúdo dos blocos teóricos ao cenário PBL (Dev
 **Total:** 5h (alinhado à carga do módulo).
 
 As entregas das Partes 2 e 3 (documento de estratégia + arquivo do pipeline) compõem a base da [entrega avaliativa](../entrega-avaliativa.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

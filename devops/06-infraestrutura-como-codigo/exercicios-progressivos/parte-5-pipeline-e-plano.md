@@ -602,3 +602,15 @@ A Nimbus depois deste plano: 40 times, PR + pipeline, < 30 min por ambiente.
 A diferença é de **orgânica** — times deixam de esperar SREs, SREs deixam de ser atendentes, a plataforma passa a ser **produto interno com contrato claro**. IaC é o habilitador técnico; cultura + processo fazem a mudança acontecer.
 
 **É isso que você entrega** na avaliação: não só o código, mas o **plano** de mudança organizacional que o código viabiliza.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md)
+- → Próximo: [Entrega Avaliativa do Módulo 6](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

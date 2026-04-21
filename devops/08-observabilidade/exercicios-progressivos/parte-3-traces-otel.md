@@ -254,3 +254,15 @@ Selecione um trace. Confirme:
 - Se traces não aparecem, verifique logs do `otel-collector` (erros de conexão com Tempo) e variável `OTEL_EXPORTER_OTLP_ENDPOINT` nas apps.
 - `LoggingInstrumentor` precisa rodar **antes** do `structlog.configure()` final, ou os logs sairão sem `trace_id`.
 - Amostragem 100% em produção real explode custo. Reduza gradualmente; mantenha *tail sampling* para erros/latência alta.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md)
+- → Próximo: [Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

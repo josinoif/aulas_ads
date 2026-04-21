@@ -415,3 +415,15 @@ Todos os pontos estão no **canto inferior esquerdo** (baixa maturidade). A Clou
 - **Ohno, T.** *Toyota Production System.* Productivity Press, 1988 (origem conceitual do Lean).
 - **Edmondson, A.** *"Psychological Safety and Learning Behavior in Work Teams"*, 1999.
 - **Hastings, R.; Meyer, E.** *A Regra é Não Ter Regras.* Intrínseca, 2020. (`books/A Regra é Não Ter Regras.pdf`)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

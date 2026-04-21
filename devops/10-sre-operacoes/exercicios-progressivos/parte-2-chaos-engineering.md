@@ -273,3 +273,15 @@ git add -A && git commit -m "feat(sre-p2): chaos engineering 3 experimentos + ga
 - Adicionar `HTTPChaos` para simular 503 do provedor PIX upstream.
 - Integrar o Chaos Mesh API ao pipeline CI: experimento noturno em staging.
 - Usar `Workflow` para encadear experimentos (pod-kill → latency → stress).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md)
+- → Próximo: [Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

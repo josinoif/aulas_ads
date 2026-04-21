@@ -327,3 +327,15 @@ Combine com `promtool check rules` e `promtool test rules` para cobertura dupla 
 - [ ] Escrevo runbook executável ligando diagnóstico a ação.
 - [ ] Conduzo postmortem blameless com timeline, causa-raiz técnica e sistêmica, ações.
 - [ ] Integro validação de regras em CI (`promtool` + `alerts_sanity.py`).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](04-alertas-slo-cultura.md)
+- → Próximo: [Exercícios Progressivos — Módulo 8 (Observabilidade)](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

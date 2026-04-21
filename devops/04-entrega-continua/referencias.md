@@ -158,3 +158,15 @@ Exemplos aceitos na disciplina:
 ---
 
 *Use estas referências para fundamentar suas decisões na transformação do pipeline da LogiTrack e na entrega avaliativa.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 4](entrega-avaliativa.md)
+- → Próximo: [Módulo 5 — Containers](../05-containers/README.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+
+<!-- nav:end -->

@@ -174,3 +174,15 @@ Depois da correção: cada log dentro de um span carrega o `trace_id`, e a corre
 - [ ] Propago contexto W3C Trace Context entre serviços via `traceparent`.
 - [ ] Uso OpenTelemetry SDK + Collector + Tempo sem abrir mão da configuração mínima.
 - [ ] Configuro correlação logs↔traces no Grafana via `trace_id`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](03-logs-traces-otel.md)
+- → Próximo: [Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](../bloco-4/04-alertas-slo-cultura.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

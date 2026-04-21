@@ -248,3 +248,15 @@ Daqui em diante, **cada `git commit`** roda lint + unit antes de permitir. Se al
 ## Próximo passo
 
 Com o pipeline funcionando, siga para a **[Parte 5 — Reflexão e plano MediQuick](parte-5-reflexao-plano.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Parte 3 — Integração com Testcontainers (Postgres real)](parte-3-integracao-testcontainers.md)
+- → Próximo: [Parte 5 — Reflexão e Plano MediQuick](parte-5-reflexao-plano.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

@@ -96,3 +96,15 @@ Filme isso (mesmo curto) e salve em `docs/media/marco2-rollout.mp4` ou similar.
 4. Rode Trivy local contra imagem de staging. Há Critical? Aceito com VEX? Ou bloqueia merge?
 
 Se essas 4 respostas são positivas, o Marco 2 está fechado.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Marco 1 — Design e fundação](parte-1-design-fundacao.md)
+- → Próximo: [Marco 3 — Sistema observável e resiliente](parte-3-operacao-resiliencia.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

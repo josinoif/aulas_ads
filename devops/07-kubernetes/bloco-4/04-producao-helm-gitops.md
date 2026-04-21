@@ -886,3 +886,15 @@ flowchart TB
 - Palladino, Morrison — *GitOps and Kubernetes* (Manning).
 - Documentação oficial do [Helm](https://helm.sh/docs/) e [ArgoCD](https://argo-cd.readthedocs.io/en/stable/).
 - CNCF Landscape: landscape.cncf.io → seção "App Definition & Development" > "Application Definition & Image Build" (charts e alternativas).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 3 — Exercícios Resolvidos](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios Resolvidos](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

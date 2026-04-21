@@ -89,3 +89,15 @@ E os **exercícios progressivos** vão exigir que você produza artefatos concre
 ## Próximo passo
 
 Leia o **[Bloco 1 — O que é DevOps e a Parede da Confusão](bloco-1/01-o-que-e-devops.md)** para começar a entender a raiz histórica dos problemas que a CloudStore vive hoje.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Módulo 1 — Fundamentos de DevOps e Cultura](README.md)
+- → Próximo: [Bloco 1 — O que é DevOps e a Parede da Confusão](bloco-1/01-o-que-e-devops.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+
+<!-- nav:end -->

@@ -111,3 +111,15 @@ O próximo módulo — **[Módulo 2 — Versionamento, Automação e CI](../../0
 > **Sem a cultura, as ferramentas ficam paradas na garagem.**
 
 Bom trabalho.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-blameless.md)
+- → Próximo: [Entrega Avaliativa do Módulo 1](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

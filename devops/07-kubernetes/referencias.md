@@ -143,3 +143,15 @@ Exemplos aceitos na disciplina:
 ---
 
 *Use estas referências para fundamentar suas decisões na entrega avaliativa do Módulo 7.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 7](entrega-avaliativa.md)
+- → Próximo: [Módulo 8 — Observabilidade](../08-observabilidade/README.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](README.md)
+
+<!-- nav:end -->

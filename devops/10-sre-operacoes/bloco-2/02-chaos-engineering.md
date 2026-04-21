@@ -527,3 +527,15 @@ python chaos_plan.py chaos/pod-kill.yaml && kubectl apply -f chaos/pod-kill.yaml
 - [ ] Entendo que **chaos contínuo** é mais valioso que um evento isolado.
 
 Vá aos [exercícios resolvidos do Bloco 2](./02-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Bloco 1 — Exercícios resolvidos](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Bloco 2 — Exercícios resolvidos](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

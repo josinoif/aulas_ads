@@ -103,3 +103,15 @@ Entrega única ao final dos 5: **link do repositório** com tudo integrado. Crit
 ## Próximo passo
 
 Comece pela **[Parte 1 — Diagnóstico](parte-1-diagnostico.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico da CodeLab](parte-1-diagnostico.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

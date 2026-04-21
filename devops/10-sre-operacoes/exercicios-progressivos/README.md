@@ -90,3 +90,15 @@ pagorapay-sre/
 | 3 | 3 — DR | 4 h |
 | 4 | 4 — Incident Command | 3 h |
 | 5 | 5 — Postmortem/Learning | 2 h |
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

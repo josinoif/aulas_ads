@@ -176,3 +176,15 @@ Versione o JSON atualizado do dashboard.
 - **Não logue dados sensíveis**. Se precisar de campo de auditoria, use ID (order_id) — não dados pessoais completos.
 - **Evite labels Loki explosivos**. Não adicione `user_id` como label; mantenha no conteúdo.
 - **Linha única por evento**: `log.info("criando pedido ...")` **não** deve quebrar em múltiplas linhas. Evite newline no `msg`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Parte 1 — Stack observabilidade + métricas RED](parte-1-stack-e-metricas.md)
+- → Próximo: [Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

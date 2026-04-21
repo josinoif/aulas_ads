@@ -118,3 +118,15 @@ Guarde em um arquivo **`parte-1-diagnostico.md`** — vai entrar no relatório f
 ## Próximo passo
 
 Siga para a **[Parte 2 — Análise CALMS](parte-2-analise-calms.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 1](README.md)
+- → Próximo: [Parte 2 — Análise CALMS da CloudStore](parte-2-analise-calms.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

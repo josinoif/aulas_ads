@@ -125,3 +125,14 @@ A plataforma **costura** tudo que vimos: CI/CD, containers, K8s, observabilidade
 ---
 
 *Material alinhado a: Team Topologies (Skelton & Pais, 2019); Platform Engineering on Kubernetes (Salatino, 2023); A Guide to Internal Developer Platforms (Humanitec, 2023); Accelerate (Forsgren, Humble, Kim); State of DevOps Report (DORA, Google Cloud); documentação oficial do Backstage (CNCF); The SPACE of Developer Productivity (ACM Queue, 2021); DevEx (Microsoft Research, 2023); CNCF Platform White Paper (2023).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Referências — Módulo 10 (SRE e Operações)](../10-sre-operacoes/referencias.md)
+- → Próximo: [Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](00-cenario-pbl.md)
+
+<!-- nav:end -->

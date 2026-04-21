@@ -44,3 +44,15 @@ Esses 5 artefatos são os **insumos diretos** do **Relatório de Transformação
 - **À distância** — cada parte tem enunciado autossuficiente.
 
 Boa jornada.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

@@ -618,3 +618,15 @@ if __name__ == "__main__":
 - [ ] Uso `alerts_sanity.py` para higiene contínua.
 
 Vá aos [exercícios resolvidos do Bloco 4](./04-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

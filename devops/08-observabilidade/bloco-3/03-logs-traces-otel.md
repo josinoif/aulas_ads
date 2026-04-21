@@ -612,3 +612,15 @@ python log_trace_demo.py --requests 3 | jq -c '. | select(.trace_id=="...")'
 - [ ] Sei nomear labels Loki de baixa cardinalidade, deixando IDs no conteúdo.
 
 Vá aos [exercícios resolvidos do Bloco 3](./03-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

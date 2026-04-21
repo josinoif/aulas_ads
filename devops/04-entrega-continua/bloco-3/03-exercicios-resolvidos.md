@@ -269,3 +269,15 @@ Para **evitar** o débito voltar:
 
 - Revise o **[Bloco 3](03-estrategias-release.md)** se necessário.
 - Avance para o **[Bloco 4 — Release Engineering, versionamento e rollback](../bloco-4/04-release-engineering.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Bloco 3 — Estratégias de Release: Blue-Green, Canary, Rolling e Feature Flags](03-estrategias-release.md)
+- → Próximo: [Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](../bloco-4/04-release-engineering.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

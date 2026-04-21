@@ -105,3 +105,15 @@ Próximas 3 sprints (6 semanas cada? 2 semanas cada?). Cada uma com:
 - [ ] `anti-golden-paths.md` com ≥ 5 itens.
 - [ ] `roadmap.md` cobre ≥ 3 sprints com metas mensuráveis.
 - [ ] Um PR único; commit message descreve o marco.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Exercícios progressivos — Módulo 11 (Plataforma Interna)](README.md)
+- → Próximo: [Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

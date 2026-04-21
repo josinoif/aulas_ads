@@ -61,3 +61,14 @@ Como Humble & Farley descrevem em *Entrega Contínua*, o pipeline é a **linha d
 ---
 
 *Material alinhado a fundamentação em Entrega Contínua (Humble & Farley), SRE (O'Reilly) e práticas de mercado (GitHub, GitLab, AWS).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 1](../01-fundamentos-cultura/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

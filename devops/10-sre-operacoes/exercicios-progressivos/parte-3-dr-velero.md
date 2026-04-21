@@ -281,3 +281,15 @@ git add -A && git commit -m "feat(sre-p3): velero + dr playbook + drill + simula
 - Backup para bucket S3 **real** (AWS/Backblaze B2/Cloudflare R2) além de MinIO local.
 - Drill entre **clusters k3d diferentes** (simular outra região).
 - Playbook de migração DNS documentado (TTL baixo, quem aciona).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md)
+- → Próximo: [Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

@@ -236,3 +236,15 @@ Ou, se usar cópia local do script em `scripts/runner_isolation.py` do repositó
 ## Próximo passo
 
 Avance para a **[Parte 5 — Plano e limites](parte-5-plano-e-limites.md)** — fechamento do módulo.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md)
+- → Próximo: [Parte 5 — Plano de Adoção e Reconhecimento de Limites](parte-5-plano-e-limites.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

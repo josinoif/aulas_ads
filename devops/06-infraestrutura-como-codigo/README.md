@@ -126,3 +126,14 @@ flowchart LR
 ---
 
 *Material alinhado a: Kief Morris — "Infrastructure as Code" (O'Reilly); HashiCorp Terraform docs; OpenTofu docs; Pulumi docs; Google SRE Book cap. 19; "Terraform: Up & Running" (Yevgeniy Brikman).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 5](../05-containers/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

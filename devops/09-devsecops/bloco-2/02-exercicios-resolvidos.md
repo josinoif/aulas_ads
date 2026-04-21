@@ -253,3 +253,15 @@ Exit code: 1. Qual sua priorização e comunicação ao time?
 - [ ] Sei a resposta correta para vazamento de credencial (rotacionar).
 - [ ] Gero SBOM e o utilizo para reanalisar vulnerabilidades post-hoc.
 - [ ] Uso `security_report.py` ou equivalente para visão unificada.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 2 — Segurança do código e das dependências](02-codigo-dependencias.md)
+- → Próximo: [Bloco 3 — Imagens e supply chain: endurecendo o artefato](../bloco-3/03-imagens-supply-chain.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

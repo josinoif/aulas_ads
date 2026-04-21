@@ -53,3 +53,15 @@ O importante é demonstrar que você consegue **relacionar conceitos** (CI, auto
 ## Fechamento do módulo
 
 Com a reflexão e a **entrega avaliativa** ([entrega-avaliativa.md](../entrega-avaliativa.md)) você encerra o Módulo 2. O módulo não é sobre ferramenta: é sobre **versionamento como controle de risco**, **CI como feedback rápido**, **automação como escalabilidade** e **pipeline como linha de produção de software** — como Humble & Farley descrevem em *Entrega Contínua*.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md)
+- → Próximo: [Entrega Avaliativa do Módulo 2](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

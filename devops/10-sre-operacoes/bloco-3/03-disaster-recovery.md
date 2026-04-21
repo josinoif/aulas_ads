@@ -503,3 +503,15 @@ python dr_simulator.py cenarios.yaml --rpo-alvo-min 5 --rto-alvo-min 60
 - [ ] Uso `dr_simulator.py` para validar RPO/RTO planejados.
 
 Vá aos [exercícios resolvidos do Bloco 3](./03-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

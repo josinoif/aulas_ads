@@ -211,3 +211,15 @@ Reúna os conceitos deste bloco e aplique-os ao cenário:
 - **Humble, J.; Farley, D.** *Entrega Contínua.* Alta Books. (Fundamentos técnicos.)
 - **Allspaw, J.; Hammond, P.** *"10+ Deploys per Day: Dev and Ops Cooperation at Flickr"*. Velocity 2009.
 - **DORA State of DevOps Report** (veja `books/DORA-State of DevOps.pdf`).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

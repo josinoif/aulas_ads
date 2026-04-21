@@ -688,3 +688,15 @@ if __name__ == "__main__":
 - [ ] Uso `rbac_audit.py` periodicamente.
 
 Vá aos [exercícios resolvidos do Bloco 4](./04-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

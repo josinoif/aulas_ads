@@ -122,3 +122,15 @@ Guarde em **`parte-2-calms.md`** — vai entrar na seção 2 do relatório.
 ## Próximo passo
 
 Siga para a **[Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeamento-fluxo-valor.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md)
+- → Próximo: [Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeamento-fluxo-valor.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

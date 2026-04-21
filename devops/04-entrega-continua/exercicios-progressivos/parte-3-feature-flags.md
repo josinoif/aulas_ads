@@ -234,3 +234,15 @@ logitrack-tracking/
 ## Próximo passo
 
 [Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md). Agora o sistema libera features; vamos garantir que desfaz quando precisa.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Parte 2 — Pipeline Multi-estágio com Artefato Único](parte-2-pipeline-multi-estagio.md)
+- → Próximo: [Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

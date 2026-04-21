@@ -580,3 +580,15 @@ python template_audit.py templates/python-fastapi-service
 - [ ] Uso `template_audit.py` para verificar qualidade do golden path.
 
 Vá aos [exercícios resolvidos do Bloco 2](./02-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 1 — Exercícios resolvidos](../bloco-1/01-exercicios-resolvidos.md)
+- → Próximo: [Bloco 2 — Exercícios resolvidos](02-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

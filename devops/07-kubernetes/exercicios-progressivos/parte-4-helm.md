@@ -410,3 +410,15 @@ drift:
 ## Próximo passo
 
 Avance para a **[Parte 5 — GitOps com ArgoCD + plano](parte-5-gitops-e-plano.md)**: instalar ArgoCD, sincronizar do git, escrever runbook, ADRs finais, plano de migração dos demais serviços.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Parte 3 — Resiliência e operações](parte-3-resiliencia.md)
+- → Próximo: [Parte 5 — GitOps com ArgoCD + plano de migração](parte-5-gitops-e-plano.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

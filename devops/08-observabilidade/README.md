@@ -150,3 +150,14 @@ flowchart LR
 ---
 
 *Material alinhado a: Site Reliability Engineering (Beyer et al., Google); The SRE Workbook; Observability Engineering (Majors, Fong-Jones, Miranda); Prometheus Up & Running (Brazil); documentação oficial Prometheus, Grafana, OpenTelemetry.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 7](../07-kubernetes/referencias.md)
+- → Próximo: [Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](00-cenario-pbl.md)
+
+<!-- nav:end -->

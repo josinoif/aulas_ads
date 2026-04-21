@@ -204,3 +204,15 @@ Tom blameless: *"o problema foi no processo, não na pessoa — alice não preci
 - [ ] Migro segredos para Sealed Secrets ou ESO, sem deixar ConfigMap com credenciais.
 - [ ] Configuro audit log e consulto via LogQL para detecção.
 - [ ] Escrevo postmortem blameless com timeline, root cause e ações datadas.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 4 — Segurança do cluster em produção](04-k8s-producao.md)
+- → Próximo: [Exercícios progressivos — Módulo 9 (DevSecOps)](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

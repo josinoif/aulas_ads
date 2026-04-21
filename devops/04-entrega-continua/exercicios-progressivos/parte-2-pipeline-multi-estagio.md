@@ -325,3 +325,15 @@ No `docs/evidencias-parte-2.md`:
 ## Próximo passo
 
 [Parte 3 — Feature Flags e estratégia de release](parte-3-feature-flags.md). Agora o pipeline existe; vamos ensinar o sistema a **liberar features**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Parte 1 — Diagnóstico do Pipeline da LogiTrack](parte-1-diagnostico-pipeline.md)
+- → Próximo: [Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

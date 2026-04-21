@@ -111,3 +111,15 @@ flowchart TB
 ```
 
 Áreas em risco herdadas: ingresso sem WAF, segredos em git, RBAC permissivo, imagens fat. Seu trabalho é endurecer sistematicamente, com feedback rápido no pipeline.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Módulo 9 — DevSecOps](README.md)
+- → Próximo: [Bloco 1 — Fundamentos de DevSecOps](bloco-1/01-fundamentos-devsecops.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+
+<!-- nav:end -->

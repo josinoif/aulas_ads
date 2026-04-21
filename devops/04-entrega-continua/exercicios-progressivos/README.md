@@ -92,3 +92,15 @@ echo "v0.0.0" > VERSION
 ```
 
 Comece pela **[Parte 1 — Diagnóstico](parte-1-diagnostico-pipeline.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico do Pipeline da LogiTrack](parte-1-diagnostico-pipeline.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

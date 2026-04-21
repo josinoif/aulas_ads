@@ -640,3 +640,15 @@ Sem drift. Cluster == Helm release 'auth'.
 ## Próximo passo
 
 Parta para os **[Exercícios Progressivos](../exercicios-progressivos/README.md)**, que integram Blocos 1–4 num entregável coeso para a StreamCast: cluster k3d local rodando 2-3 serviços empacotados em Helm chart, entregues via ArgoCD, com operação madura.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 4 — Produção: Helm, GitOps e os limites do K8s](04-producao-helm-gitops.md)
+- → Próximo: [Exercícios Progressivos — Módulo 7](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

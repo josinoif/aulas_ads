@@ -111,3 +111,15 @@ Arquivo: `docs/diagnostico.md`, seção **5. Primeira peça**.
 ## Próximo passo
 
 Com o diagnóstico pronto, avance para a **[Parte 2 — Dockerfile do runner](parte-2-dockerfile-runner.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 5](README.md)
+- → Próximo: [Parte 2 — Dockerfile do Runner Python](parte-2-dockerfile-runner.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

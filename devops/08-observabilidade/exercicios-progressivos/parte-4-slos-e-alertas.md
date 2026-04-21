@@ -262,3 +262,15 @@ Corrija o que aparecer.
 - `docs/runbooks/pedidos-slo-burn-fast.md`
 - `docs/runbooks/zero-orders.md`
 - Código do `incident-webhook` (mini FastAPI) + Deployment + Service.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md)
+- → Próximo: [Parte 5 — Incidente simulado, postmortem e CI](parte-5-incidente-e-postmortem.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

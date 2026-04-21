@@ -134,3 +134,14 @@ flowchart TB
 ---
 
 *Material alinhado a: Accelerate (Forsgren, Humble, Kim); The DevOps Handbook (Kim et al.); The SRE Book (Beyer et al.); Team Topologies (Skelton & Pais); Building Secure and Reliable Systems (Adkins et al.); Database Reliability Engineering (Campbell, Majors); Release It! (Nygard); Thinking in Systems (Meadows); e toda a bibliografia anterior do curso.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Referências — Módulo 11 (Plataforma Interna)](../11-plataforma-interna/referencias.md)
+- → Próximo: [Projeto Capstone — CivicaBR](00-projeto-capstone.md)
+
+<!-- nav:end -->

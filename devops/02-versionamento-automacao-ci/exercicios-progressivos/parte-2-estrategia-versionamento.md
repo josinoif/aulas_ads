@@ -79,3 +79,15 @@ Use, se quiser, referências ao material (ex.: “conforme Humble & Farley, inte
 ## Próximo passo
 
 Na **Parte 3 — Construção de Pipeline CI** ([parte-3-pipeline-ci.md](parte-3-pipeline-ci.md)) você vai implementar um pipeline real (build, testes, linter, artefato) em um projeto simples, usando GitHub Actions, GitLab CI ou CodeBuild.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md)
+- → Próximo: [Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

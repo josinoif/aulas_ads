@@ -341,3 +341,15 @@ Esse mapa vira pilar do bloco de segurança (Fase 3).
 ## Próxima fase
 
 Com decisões registradas e CI verde, você está pronto para [Fase 2 — Entrega contínua](../bloco-2/02-fase-entrega.md): fazer o sistema **rodar** e **chegar em staging automaticamente**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Projeto Capstone — CivicaBR](../00-projeto-capstone.md)
+- → Próximo: [Fase 1 — Armadilhas, dicas e orientações de banca](01-armadilhas-e-dicas.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

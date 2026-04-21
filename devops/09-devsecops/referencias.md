@@ -76,3 +76,15 @@
 - **Shostack, A.** *Threats: What Every Engineer Should Learn From Star Wars.* Wiley, 2023.
 - **Anderson, R.** *Security Engineering* (3ª ed., 2020) — referência clássica; muito além de DevSecOps.
 - **The Open Source Security Foundation (OpenSSF)** — [openssf.org](https://openssf.org/). Scorecards e guias.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Entrega avaliativa — Módulo 9 (DevSecOps)](entrega-avaliativa.md)
+- → Próximo: [Módulo 10 — Site Reliability Engineering (SRE) e Operações](../10-sre-operacoes/README.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+
+<!-- nav:end -->

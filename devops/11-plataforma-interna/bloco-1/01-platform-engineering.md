@@ -392,3 +392,15 @@ python cognitive_load_survey.py respostas.csv --threshold 3.5
 - [ ] Uso `cognitive_load_survey.py` para identificar squads em risco.
 
 Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

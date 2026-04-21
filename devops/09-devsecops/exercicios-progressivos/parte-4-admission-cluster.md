@@ -373,3 +373,15 @@ rbac-audit:
 - [ ] Audit log existe em `/var/log/k8s-audit/audit.log` dentro do container server.
 
 Próxima: [Parte 5 — secrets, incidente e postmortem](./parte-5-secrets-incidente.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Parte 3 — SBOM, assinatura e proveniência](parte-3-sbom-assinatura.md)
+- → Próximo: [Parte 5 — Secrets management, incidente simulado e postmortem](parte-5-secrets-incidente.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

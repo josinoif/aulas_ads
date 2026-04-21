@@ -70,3 +70,15 @@
 - **Kleppmann, M.** *Designing Data-Intensive Applications.* O'Reilly, 2017. Contexto para compreender por que sistemas distribuídos falham de formas não triviais.
 - **Rosenthal, C. & Jones, N.** *Chaos Engineering.* O'Reilly, 2020. Evolução natural pós-observabilidade: testar o sistema sob estresse real.
 - **Google.** "The Site Reliability Workbook" + "Building Secure and Reliable Systems" — trilogia completa SRE.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Entrega avaliativa — Módulo 8 (Observabilidade)](entrega-avaliativa.md)
+- → Próximo: [Módulo 9 — DevSecOps](../09-devsecops/README.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](README.md)
+
+<!-- nav:end -->

@@ -289,3 +289,15 @@ curl http://localhost:8000/submissoes/<uuid>
 ## Próximo passo
 
 Avance para a **[Parte 4 — Pipeline de imagens](parte-4-pipeline-imagens.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Parte 2 — Dockerfile do Runner Python](parte-2-dockerfile-runner.md)
+- → Próximo: [Parte 4 — Pipeline de Imagens (CI com scan, SBOM, assinatura)](parte-4-pipeline-imagens.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

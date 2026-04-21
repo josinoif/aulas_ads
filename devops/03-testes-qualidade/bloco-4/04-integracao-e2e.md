@@ -572,3 +572,15 @@ Juntando os 4 blocos, a estratégia para a MediQuick é:
 - **Fowler, M.** *"Consumer-Driven Contracts."* [martinfowler.com/articles/consumerDrivenContracts.html](https://martinfowler.com/articles/consumerDrivenContracts.html).
 - **Rainsberger, J.B.** *"Integrated Tests Are a Scam"* (2011). [blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam](https://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam).
 - **Playwright Python:** [playwright.dev/python](https://playwright.dev/python/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

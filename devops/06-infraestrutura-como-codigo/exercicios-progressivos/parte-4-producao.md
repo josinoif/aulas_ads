@@ -485,3 +485,15 @@ Se funciona, Parte 4 está pronta.
 ## Próximo passo
 
 Avance para a **[Parte 5 — Pipeline CI/CD + plano de adoção](parte-5-pipeline-e-plano.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Parte 3 — Mesma Infra em Pulumi (Comparativo)](parte-3-pulumi-paralelo.md)
+- → Próximo: [Parte 5 — Pipeline CI/CD + Policy + Plano de Adoção](parte-5-pipeline-e-plano.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

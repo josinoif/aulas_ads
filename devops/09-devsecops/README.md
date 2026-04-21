@@ -141,3 +141,14 @@ flowchart LR
 ---
 
 *Material alinhado a: NIST SSDF (SP 800-218); OWASP Top 10 (web + API) 2021/2023; OWASP SAMM; CIS Docker / Kubernetes Benchmarks; SLSA framework; documentação Trivy, Syft, cosign, Kyverno; The DevSecOps Handbook (diversos autores); Container Security (Rice, 2020).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Referências — Módulo 8 (Observabilidade)](../08-observabilidade/referencias.md)
+- → Próximo: [Cenário PBL — MedVault: auditoria LGPD expõe dívida de segurança](00-cenario-pbl.md)
+
+<!-- nav:end -->

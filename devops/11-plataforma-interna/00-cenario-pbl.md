@@ -134,3 +134,15 @@ Nota: **Platform Team = produto**, não projeto. Tem backlog, roadmap, survey tr
 ---
 
 Nos próximos blocos essa empresa ganha um **portal**, **golden paths** funcionais, **contratos** formais e **métricas** de saúde.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Módulo 11 — Plataforma Interna de Desenvolvimento (IDP)](README.md)
+- → Próximo: [Bloco 1 — Platform Engineering: times, cognitive load e produto interno](bloco-1/01-platform-engineering.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](README.md)
+
+<!-- nav:end -->

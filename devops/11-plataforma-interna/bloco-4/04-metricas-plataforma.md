@@ -420,3 +420,15 @@ python platform_metrics.py \
 - [ ] Uso `platform_metrics.py` para DORA + NPS agregados.
 
 Vá aos [exercícios resolvidos do Bloco 4](./04-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

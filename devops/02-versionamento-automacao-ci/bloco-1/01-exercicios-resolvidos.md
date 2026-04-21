@@ -102,3 +102,15 @@ Justificativa: os problemas da DevPay (conflitos enormes, bugs em homologação)
 ---
 
 **Próximo:** [Bloco 2 — Integração Contínua](../bloco-2/02-integracao-continua.md) e [exercícios do Bloco 2](../bloco-2/02-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 1 — Versionamento como Controle de Complexidade](01-versionamento.md)
+- → Próximo: [Bloco 2 — Integração Contínua (CI)](../bloco-2/02-integracao-continua.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

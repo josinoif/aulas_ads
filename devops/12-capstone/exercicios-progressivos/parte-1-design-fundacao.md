@@ -76,3 +76,15 @@ Responda em voz alta (ou escrito em `docs/retro/marco1.md`):
 4. *Qual trade-off de LGPD eu ainda não encarei?*
 
 Se responder essas perguntas com sinceridade, o marco 1 está pronto.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Marcos do Capstone — roteiro de 5 partes](README.md)
+- → Próximo: [Marco 2 — Sistema entregando em staging](parte-2-entrega-end-to-end.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

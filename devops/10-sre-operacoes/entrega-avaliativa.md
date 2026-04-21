@@ -102,3 +102,15 @@ O repositório deve conter:
 - [ ] Tabletop tem ata, papéis declarados, aprendizado registrado.
 - [ ] Runbooks têm timestamp da última execução (mostrando que são vivos).
 - [ ] On-call policy inclui **limite** (ex.: ≤ 2 paging fora de horário/sem.) com ação quando ultrapassa.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Parte 5 — Postmortem Blameless e Learning Review](exercicios-progressivos/parte-5-postmortem-learning.md)
+- → Próximo: [Referências — Módulo 10 (SRE e Operações)](referencias.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+
+<!-- nav:end -->

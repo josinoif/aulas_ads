@@ -125,3 +125,15 @@ Se um novo membro do time ler os 4 documentos numa tarde, ele entende:
 - Quando escalar (alerta).
 
 Essa é a **base cultural** sobre a qual as próximas partes constroem.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Exercícios progressivos — Módulo 10 (SRE e Operações)](README.md)
+- → Próximo: [Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

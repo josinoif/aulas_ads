@@ -615,3 +615,15 @@ O plano típico para a MediQuick:
 - **Kim, G. et al.** *The DevOps Handbook.* Cap. 10 — testes rápidos e confiáveis. (`books/DevOps_Handbook_Intro_Part1_Part2.pdf`)
 - **Fowler, M.** *"Test Coverage."* [martinfowler.com/bliki/TestCoverage.html](https://martinfowler.com/bliki/TestCoverage.html).
 - **Fowler, M.** *"Continuous Integration."* [martinfowler.com/articles/continuousIntegration.html](https://martinfowler.com/articles/continuousIntegration.html).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 2](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 3](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

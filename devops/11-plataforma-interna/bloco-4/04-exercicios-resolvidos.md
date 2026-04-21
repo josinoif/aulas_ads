@@ -257,3 +257,15 @@ tender a 100%.
 - [ ] Calculo NPS e faço follow-up com detratores.
 - [ ] Interpreto saída do `platform_metrics.py`.
 - [ ] Reconheço quando "números bons" escondem problema (mandato vs. escolha).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 4 — Métricas de Plataforma: DORA, SPACE, DevEx e NPS interno](04-metricas-plataforma.md)
+- → Próximo: [Exercícios progressivos — Módulo 11 (Plataforma Interna)](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

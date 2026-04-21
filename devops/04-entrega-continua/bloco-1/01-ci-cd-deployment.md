@@ -541,3 +541,15 @@ Staging "parece" produção mas:
 - **DORA State of DevOps 2023 Report:** [cloud.google.com/devops/state-of-devops](https://cloud.google.com/devops/state-of-devops).
 - **Fowler, M.** *"ContinuousDelivery."* [martinfowler.com/bliki/ContinuousDelivery.html](https://martinfowler.com/bliki/ContinuousDelivery.html).
 - **Fowler, M.** *"ContinuousIntegration."* [martinfowler.com/articles/continuousIntegration.html](https://martinfowler.com/articles/continuousIntegration.html).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

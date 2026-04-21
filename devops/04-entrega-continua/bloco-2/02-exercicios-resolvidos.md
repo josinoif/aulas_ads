@@ -224,3 +224,15 @@ A LogiTrack quer começar a medir o próprio pipeline. Proponha **5 métricas op
 
 - Revise o **[Bloco 2](02-deployment-pipeline.md)** se necessário.
 - Avance para o **[Bloco 3 — Estratégias de Release](../bloco-3/03-estrategias-release.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Bloco 2 — Deployment Pipeline e Promoção de Artefatos](02-deployment-pipeline.md)
+- → Próximo: [Bloco 3 — Estratégias de Release: Blue-Green, Canary, Rolling e Feature Flags](../bloco-3/03-estrategias-release.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

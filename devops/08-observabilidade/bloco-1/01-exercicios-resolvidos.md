@@ -184,3 +184,15 @@ Esse exercício prepara o Bloco 4, onde traduzimos *taxas de queima* em alertas 
 - [ ] Projeto um SLO com SLI preciso, janela adequada, budget calculado.
 - [ ] Auditaria um PR rejeitando labels com cardinalidade explosiva.
 - [ ] Diferencio dashboard de incidente de dashboard decorativo.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 1 — Fundamentos da Observabilidade](01-fundamentos-observabilidade.md)
+- → Próximo: [Bloco 2 — Métricas com Prometheus e Grafana](../bloco-2/02-metricas-prometheus.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

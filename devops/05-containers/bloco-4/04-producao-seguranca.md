@@ -679,3 +679,15 @@ Esse workflow cobre: lint → build → push → scan → SBOM → sign. **Tudo 
 - **Sigstore cosign:** [docs.sigstore.dev/signing/quickstart/](https://docs.sigstore.dev/signing/quickstart/).
 - **SLSA framework:** [slsa.dev](https://slsa.dev/).
 - **GitHub — Container Registry:** [docs.github.com/packages/working-with-a-github-packages-registry/working-with-the-container-registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

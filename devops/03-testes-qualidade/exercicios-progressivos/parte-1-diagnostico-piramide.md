@@ -145,3 +145,15 @@ Em 3 a 5 linhas, responda: **o que pode dar errado** em uma transformação dess
 ## Próximo passo
 
 Com o diagnóstico pronto, avance para a **[Parte 2 — TDD do serviço de Agendamento](parte-2-tdd-agendamento.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 3](README.md)
+- → Próximo: [Parte 2 — TDD do Serviço de Agendamento](parte-2-tdd-agendamento.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

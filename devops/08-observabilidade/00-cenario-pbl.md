@@ -144,3 +144,15 @@ flowchart TB
 ```
 
 No Módulo 7 você construiu a camada de orquestração. Agora vai **iluminar** o que acontece dentro dela.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Módulo 8 — Observabilidade](README.md)
+- → Próximo: [Bloco 1 — Fundamentos da Observabilidade](bloco-1/01-fundamentos-observabilidade.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](README.md)
+
+<!-- nav:end -->

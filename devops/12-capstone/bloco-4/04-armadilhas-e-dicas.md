@@ -134,3 +134,15 @@ Independente do resultado, nas 48h seguintes:
    - *"Reduzi time-to-deploy via golden path reprodutível e catálogo Backstage; DORA High sustentado por 4 semanas."*
 
 A melhor parte do capstone é **poder falar dele com profundidade** por anos depois.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 4 — Plataforma interna, métricas e apresentação final](04-fase-plataforma.md)
+- → Próximo: [Marcos do Capstone — roteiro de 5 partes](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

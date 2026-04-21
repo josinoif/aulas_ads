@@ -120,3 +120,15 @@ E os **exercícios progressivos** vão exigir que você **construa código real*
 ## Próximo passo
 
 Leia o **[Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](bloco-1/01-ci-cd-deployment.md)** para estabelecer os conceitos fundamentais antes de desenhar o pipeline.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Módulo 4 — Entrega Contínua (Continuous Delivery)](README.md)
+- → Próximo: [Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](bloco-1/01-ci-cd-deployment.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+
+<!-- nav:end -->

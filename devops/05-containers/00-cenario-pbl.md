@@ -120,3 +120,15 @@ E os **exercícios progressivos** vão exigir que você **construa** a nova Code
 ## Próximo passo
 
 Leia o **[Bloco 1 — Fundamentos de containers](bloco-1/01-fundamentos-containers.md)** para entender **o que** um contêiner realmente é — antes de escrever o primeiro `Dockerfile`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Módulo 5 — Containers](README.md)
+- → Próximo: [Bloco 1 — Fundamentos de Containers](bloco-1/01-fundamentos-containers.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+
+<!-- nav:end -->

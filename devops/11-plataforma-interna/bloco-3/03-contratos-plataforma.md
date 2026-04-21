@@ -497,3 +497,15 @@ python catalog_validator.py catalog/
 - [ ] Uso `catalog_validator.py` para garantir consistência do catálogo.
 
 Vá aos [exercícios resolvidos do Bloco 3](./03-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

@@ -140,3 +140,15 @@ Nenhum repositório de graduação precisa estar em L3; L2 é meta realista de f
 - [ ] Mapeio OWASP Top 10 a controles existentes e identifico lacunas.
 - [ ] Documento aceite de risco com data de revisão e mitigação compensatória.
 - [ ] Sei avaliar nível SLSA de um projeto e roteirizar subida de nível.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 1 — Fundamentos de DevSecOps](01-fundamentos-devsecops.md)
+- → Próximo: [Bloco 2 — Segurança do código e das dependências](../bloco-2/02-codigo-dependencias.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

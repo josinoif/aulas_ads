@@ -157,3 +157,15 @@ Para cada uma das 3 jornadas:
 - [ ] Dashboards abrem sem erros; correlação trace→logs funciona.
 - [ ] Postmortem está em tom sem culpa, usa dados e aponta mudanças sistêmicas.
 - [ ] README tem uma seção "limitações conhecidas" honesta.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Parte 5 — Incidente simulado, postmortem e CI](exercicios-progressivos/parte-5-incidente-e-postmortem.md)
+- → Próximo: [Referências — Módulo 8 (Observabilidade)](referencias.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](README.md)
+
+<!-- nav:end -->

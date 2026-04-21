@@ -226,3 +226,15 @@ jobs:
 - [ ] Workflow agendado de re-scan existe.
 
 Próxima: [Parte 4 — admission e cluster endurecido](./parte-4-admission-cluster.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Parte 2 — Pipeline de segurança no CI](parte-2-pipeline-seguranca.md)
+- → Próximo: [Parte 4 — Admission control e cluster endurecido](parte-4-admission-cluster.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

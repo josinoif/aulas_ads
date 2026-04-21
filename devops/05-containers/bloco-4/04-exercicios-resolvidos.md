@@ -234,3 +234,15 @@ Agora, integrando containers, reescreva em alto nível (sem YAML) a nova sequên
 
 - Faça os **[exercícios progressivos](../exercicios-progressivos/)** — o módulo se integra aqui.
 - [Voltar ao README do módulo](../README.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Bloco 4 — Produção, Segurança, Registries e SBOM](04-producao-seguranca.md)
+- → Próximo: [Exercícios Progressivos — Módulo 5](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

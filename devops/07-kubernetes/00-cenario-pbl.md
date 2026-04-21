@@ -127,3 +127,15 @@ E os **exercícios progressivos** constroem um MVP que coloca **2 ou 3 serviços
 ## Próximo passo
 
 Leia o **[Bloco 1 — Fundamentos de Kubernetes](bloco-1/01-fundamentos-k8s.md)** para entender **o que** é K8s **antes** de instalar o cluster.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Módulo 7 — Kubernetes](README.md)
+- → Próximo: [Bloco 1 — Fundamentos de Kubernetes](bloco-1/01-fundamentos-k8s.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](README.md)
+
+<!-- nav:end -->

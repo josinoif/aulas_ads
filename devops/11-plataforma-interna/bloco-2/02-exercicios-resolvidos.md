@@ -311,3 +311,15 @@ Servico responsavel pelo envio e recebimento de PIX na OrbitaTech.
 - [ ] Audito template com `template_audit.py`.
 - [ ] Distingo *golden path default*, *opção*, *fora*.
 - [ ] Desenho migração incremental sem forçar, com deprecation planejada.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Bloco 2 — Backstage e Golden Paths](02-backstage-golden-paths.md)
+- → Próximo: [Bloco 3 — Service Catalog e Contratos de Plataforma](../bloco-3/03-contratos-plataforma.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

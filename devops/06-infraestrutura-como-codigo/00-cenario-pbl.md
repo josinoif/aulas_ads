@@ -126,3 +126,15 @@ E os **exercícios progressivos** te levam do diagnóstico da Nimbus até um MVP
 ## Próximo passo
 
 Leia o **[Bloco 1 — Fundamentos de IaC](bloco-1/01-fundamentos-iac.md)** para entender **o que** é IaC **antes** de escrever o primeiro recurso.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Módulo 6 — Infraestrutura como Código (IaC)](README.md)
+- → Próximo: [Bloco 1 — Fundamentos de IaC](bloco-1/01-fundamentos-iac.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+
+<!-- nav:end -->

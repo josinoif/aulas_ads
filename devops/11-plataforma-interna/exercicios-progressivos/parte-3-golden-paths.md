@@ -154,3 +154,15 @@ Para cada template:
 - [ ] Helm com probes + resources + PodDisruptionBudget.
 - [ ] `docs/templates.md` documenta ambos.
 - [ ] Screenshots em `docs/screenshots/`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md)
+- → Próximo: [Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

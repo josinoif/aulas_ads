@@ -182,3 +182,15 @@ No README do repositório, links para:
 - [Bloco 4 — Produção e segurança](bloco-4/04-producao-seguranca.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Parte 5 — Plano de Adoção e Reconhecimento de Limites](exercicios-progressivos/parte-5-plano-e-limites.md)
+- → Próximo: [Referências Bibliográficas — Módulo 5](referencias.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+
+<!-- nav:end -->

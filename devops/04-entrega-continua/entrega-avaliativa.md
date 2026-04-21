@@ -155,3 +155,15 @@ Dentro do README do repositório, links diretos para:
 - [Bloco 4 — Release Engineering](bloco-4/04-release-engineering.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Parte 5 — Plano de Transformação e Projeção DORA](exercicios-progressivos/parte-5-plano-transformacao.md)
+- → Próximo: [Referências Bibliográficas — Módulo 4](referencias.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+
+<!-- nav:end -->

@@ -339,3 +339,15 @@ Documente em `docs/observacoes-parte2.md`:
 ## Próximo passo
 
 Avance para a **[Parte 3 — Resiliência e operações](parte-3-resiliencia.md)**: probes, limits, HPA, Ingress, NetworkPolicy, RBAC, PDB — zerar os achados do `k8s_audit.py`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md)
+- → Próximo: [Parte 3 — Resiliência e operações](parte-3-resiliencia.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

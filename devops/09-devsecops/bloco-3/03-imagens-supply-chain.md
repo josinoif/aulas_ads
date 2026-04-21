@@ -589,3 +589,15 @@ if __name__ == "__main__":
 - [ ] Uso `dockerfile_audit.py` para verificação rápida local.
 
 Vá aos [exercícios resolvidos do Bloco 3](./03-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

@@ -320,3 +320,15 @@ Ao final da parte 5, reflita e escreva em `docs/aprendizados.md`:
 - Se a LogisGo tivesse 10× mais tráfego, qual a primeira parte desta stack que quebraria?
 
 Essa é a pedra de toque do módulo — **observabilidade é prática contínua, não entrega única**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md)
+- → Próximo: [Entrega avaliativa — Módulo 8 (Observabilidade)](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

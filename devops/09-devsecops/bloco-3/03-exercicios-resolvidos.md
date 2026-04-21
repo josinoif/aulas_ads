@@ -296,3 +296,15 @@ O VEX é publicado junto do SBOM/release e pode ser consumido por scanners moder
 - [ ] Escrevo política Kyverno para hardening (registry, runAsNonRoot, limits).
 - [ ] Emito VEX para CVEs não aplicáveis ao produto.
 - [ ] Uso `dockerfile_audit.py` como checklist rápido.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Bloco 3 — Imagens e supply chain: endurecendo o artefato](03-imagens-supply-chain.md)
+- → Próximo: [Bloco 4 — Segurança do cluster em produção](../bloco-4/04-k8s-producao.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

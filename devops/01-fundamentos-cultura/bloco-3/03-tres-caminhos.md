@@ -366,3 +366,15 @@ WIP caótico (20 simultâneas) | WIP=20 | throughput=0.40 tarefas/dia | lead tim
 - **Little, J.D.C.** *"A Proof for the Queuing Formula: L = λW"*. Operations Research, 1961.
 - **Rosenthal, C.; Jones, N.** *Chaos Engineering.* O'Reilly, 2020.
 - **Kniberg, H.** *Lean from the Trenches.* Pragmatic Bookshelf, 2011.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 2](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 3](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

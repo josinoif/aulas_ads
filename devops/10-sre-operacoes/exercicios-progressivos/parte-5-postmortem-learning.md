@@ -182,3 +182,15 @@ Ao concluir as 5 partes, você tem **uma operação SRE funcional de ponta a pon
 Isso difere de **apenas ter observabilidade** — é o que o Módulo 10 acrescenta à pilha DevOps.
 
 Pronto para o Módulo 11 (Plataforma Interna) ou Módulo 12 (Capstone).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md)
+- → Próximo: [Entrega avaliativa — Módulo 10 (SRE e Operações)](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

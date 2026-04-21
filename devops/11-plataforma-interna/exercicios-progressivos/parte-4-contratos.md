@@ -99,3 +99,15 @@ Declare ao menos 1 item a deprecar. Template no Bloco 3. Inclui:
 - [ ] ≥ 1 deprecation declarada com cronograma explícito.
 - [ ] `responsibility-matrix.md` presente.
 - [ ] `make catalog-validate` exit 0.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md)
+- → Próximo: [Parte 5 — Métricas, survey e evolução](parte-5-metricas.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

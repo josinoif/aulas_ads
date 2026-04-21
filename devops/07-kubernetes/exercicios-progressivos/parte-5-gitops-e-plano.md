@@ -460,3 +460,15 @@ Atualize o `README.md` do repo com:
 ## Próximo passo: entrega avaliativa
 
 Com as 5 partes finalizadas, consolide o repositório final conforme a **[Entrega Avaliativa](../entrega-avaliativa.md)** e submeta o link para o professor.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Parte 4 — Empacotamento com Helm](parte-4-helm.md)
+- → Próximo: [Entrega Avaliativa do Módulo 7](../entrega-avaliativa.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

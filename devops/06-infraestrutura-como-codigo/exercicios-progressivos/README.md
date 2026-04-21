@@ -89,3 +89,15 @@ Esse é o material da **entrega avaliativa** do módulo ([entrega-avaliativa.md]
 ## Próximo passo
 
 Comece pela **[Parte 1 — Diagnóstico](parte-1-diagnostico.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Diagnóstico da Nimbus](parte-1-diagnostico.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

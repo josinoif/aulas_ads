@@ -116,3 +116,15 @@ python --version
 ## Próximo passo
 
 Comece pela **[Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 4 — Exercícios Resolvidos](../bloco-4/04-exercicios-resolvidos.md)
+- → Próximo: [Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

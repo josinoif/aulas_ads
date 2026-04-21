@@ -49,3 +49,15 @@ Ao final, a entrega avaliativa pede o **arquivo do pipeline**, a **estratégia d
 ## Próximo passo
 
 Leia o **[Bloco 1 — Versionamento como controle de complexidade](bloco-1/01-versionamento.md)** para começar a construir as bases que a DevPay (e qualquer time) precisa para reduzir risco e ganhar previsibilidade.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Módulo 2 — Versionamento, Automação e CI](README.md)
+- → Próximo: [Bloco 1 — Versionamento como Controle de Complexidade](bloco-1/01-versionamento.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+
+<!-- nav:end -->

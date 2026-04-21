@@ -512,3 +512,15 @@ E agora fica explicitamente endereçado:
 - **Forsgren, N.; Humble, J.; Kim, G.** *Accelerate*, 2018. IT Revolution.
 - **release-please (Google):** [github.com/googleapis/release-please](https://github.com/googleapis/release-please).
 - **git-cliff:** [git-cliff.org](https://git-cliff.org/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

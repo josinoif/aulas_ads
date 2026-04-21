@@ -255,3 +255,15 @@ scan: sast sca
 - [ ] Branch protection configurada em `main`.
 
 Próxima: [Parte 3 — SBOM, assinatura e proveniência](./parte-3-sbom-assinatura.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 9 — DevSecOps**
+
+- ← Anterior: [Parte 1 — Threat model e Dockerfile endurecido](parte-1-threat-model.md)
+- → Próximo: [Parte 3 — SBOM, assinatura e proveniência](parte-3-sbom-assinatura.md)
+- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+
+<!-- nav:end -->

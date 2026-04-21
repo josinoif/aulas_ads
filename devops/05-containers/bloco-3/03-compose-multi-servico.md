@@ -630,3 +630,15 @@ Para tudo isso, **Módulo 7** (Kubernetes). Mas entender o Compose é a ponte �
 - **Kane, S. P.; Matthias, K.** *Docker — Up & Running.* Cap. 10.
 - **Healthchecks:** [docs.docker.com/engine/reference/builder/#healthcheck](https://docs.docker.com/engine/reference/builder/#healthcheck).
 - **Profiles:** [docs.docker.com/compose/profiles/](https://docs.docker.com/compose/profiles/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 2](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 3](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+
+<!-- nav:end -->

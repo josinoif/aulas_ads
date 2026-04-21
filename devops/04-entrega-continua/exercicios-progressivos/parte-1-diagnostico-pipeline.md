@@ -126,3 +126,15 @@ exercicios/parte-1/
 ## Próximo passo
 
 Ao terminar, abra a **[Parte 2 — Pipeline multi-estágio](parte-2-pipeline-multi-estagio.md)**, onde você vai **construir** o pipeline que desenhou.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 4](README.md)
+- → Próximo: [Parte 2 — Pipeline Multi-estágio com Artefato Único](parte-2-pipeline-multi-estagio.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

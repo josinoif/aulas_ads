@@ -135,3 +135,14 @@ flowchart LR
 ---
 
 *Material alinhado a: Google SRE Book e SRE Workbook; Chaos Engineering (Rosenthal & Jones, 2020); Learning Chaos Engineering (Miles, 2019); Seeking SRE (Blank-Edelman, 2018); ICS FEMA (Incident Command System); documentação Chaos Mesh, Litmus, Velero; Etsy Debriefing Facilitation Guide; John Allspaw sobre blameless postmortems.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Referências — Módulo 9 (DevSecOps)](../09-devsecops/referencias.md)
+- → Próximo: [Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](00-cenario-pbl.md)
+
+<!-- nav:end -->

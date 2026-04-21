@@ -71,3 +71,15 @@ Se quiser, relacione com as métricas do Bloco 4 (lead time, change failure rate
 ## Próximo passo
 
 Na **Parte 5 — Reflexão final** ([parte-5-reflexao.md](parte-5-reflexao.md)) você responde a perguntas provocativas sobre CI, automação e responsabilidade.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md)
+- → Próximo: [Parte 5 — Reflexão Final (30 min)](parte-5-reflexao.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

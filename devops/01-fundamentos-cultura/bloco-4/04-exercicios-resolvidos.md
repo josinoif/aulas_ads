@@ -187,3 +187,15 @@ A CTO da CloudStore quer adotar o modelo Netflix integral: liberdade total, sem 
 ## Próximo passo
 
 Você concluiu os 4 blocos teóricos. Agora siga para os **[Exercícios Progressivos](../exercicios-progressivos/)** — 5 partes que aplicam tudo ao cenário da CloudStore e produzem artefatos para a entrega avaliativa.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](04-cultura-pratica-antipadroes.md)
+- → Próximo: [Exercícios Progressivos — Módulo 1](../exercicios-progressivos/README.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

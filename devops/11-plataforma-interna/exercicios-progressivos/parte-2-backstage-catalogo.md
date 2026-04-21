@@ -135,3 +135,15 @@ catalog-validate:
 - [ ] `make catalog-validate` retorna exit 0 (catálogo válido).
 - [ ] `docs/catalog-guia.md` claro para um dev externo seguir.
 - [ ] Screenshot incluído em `docs/screenshots/portal.png`.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 11 — Plataforma interna**
+
+- ← Anterior: [Parte 1 — Estratégia, personas e Team Topologies](parte-1-estrategia.md)
+- → Próximo: [Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md)
+- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+
+<!-- nav:end -->

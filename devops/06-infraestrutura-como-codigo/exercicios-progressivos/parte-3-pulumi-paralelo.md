@@ -423,3 +423,15 @@ Funcionou sem erro? Parte 3 completa.
 ## Próximo passo
 
 Avance para a **[Parte 4 — Produção (multi-env + state remoto + secrets)](parte-4-producao.md)**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md)
+- → Próximo: [Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

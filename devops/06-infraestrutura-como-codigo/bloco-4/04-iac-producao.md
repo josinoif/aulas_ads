@@ -796,3 +796,15 @@ Resposta integrada:
 - **SOPS** — [github.com/getsops/sops](https://github.com/getsops/sops).
 - **Checkov** — [checkov.io](https://www.checkov.io/).
 - **Open Policy Agent** — [openpolicyagent.org](https://www.openpolicyagent.org/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

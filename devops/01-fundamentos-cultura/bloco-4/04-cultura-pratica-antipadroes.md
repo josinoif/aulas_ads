@@ -458,3 +458,15 @@ flowchart TB
 - **Google Cloud / DORA.** *State of DevOps Report* (anual desde 2014). (`books/DORA-State of DevOps.pdf`)
 - **Rosenthal, C.; Jones, N.** *Chaos Engineering.* O'Reilly, 2020.
 - **Kim, G. et al.** *The DevOps Handbook.* IT Revolution, 2016. Parte V (Continual Learning).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+
+<!-- nav:end -->

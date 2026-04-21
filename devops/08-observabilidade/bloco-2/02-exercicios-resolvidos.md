@@ -185,3 +185,15 @@ histogram_quantile(
 - [ ] Monto um `PrometheusRule` com alerta que inclui runbook e severidade.
 - [ ] Uso `metrics_audit.py` para detectar explosões de cardinalidade.
 - [ ] Sei diagnosticar um dashboard que dá valores estranhos.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 8 — Observabilidade**
+
+- ← Anterior: [Bloco 2 — Métricas com Prometheus e Grafana](02-metricas-prometheus.md)
+- → Próximo: [Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](../bloco-3/03-logs-traces-otel.md)
+- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+
+<!-- nav:end -->

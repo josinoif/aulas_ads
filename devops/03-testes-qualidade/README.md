@@ -114,3 +114,14 @@ flowchart LR
 ---
 
 *Material alinhado a: Continuous Delivery (Humble & Farley), The DevOps Handbook (Kim et al.), xUnit Test Patterns (Meszaros), Growing Object-Oriented Software Guided by Tests (Freeman & Pryce), Specification by Example (Adzic).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Referências Bibliográficas](../02-versionamento-automacao-ci/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

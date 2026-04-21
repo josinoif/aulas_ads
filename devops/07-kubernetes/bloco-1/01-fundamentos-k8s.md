@@ -722,3 +722,15 @@ mindmap
 - Burns, Beda, Hightower & Evenson — *Kubernetes Up & Running*, Caps. 1-5.
 - [kubernetes.io/docs/concepts/overview/components/](https://kubernetes.io/docs/concepts/overview/components/).
 - [kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/](https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios Resolvidos](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

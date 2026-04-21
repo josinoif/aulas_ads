@@ -453,3 +453,15 @@ Mesmo solo, declare:
 ## Próxima fase
 
 O sistema está instrumentado, seguro e resiliente. A [Fase 4 — Plataforma e apresentação](../bloco-4/04-fase-plataforma.md) costura um portal interno, consolida métricas e prepara a **defesa ao vivo** com incidente simulado.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Fase 2 — Armadilhas, dicas e orientações de banca](../bloco-2/02-armadilhas-e-dicas.md)
+- → Próximo: [Fase 3 — Armadilhas, dicas e orientações de banca](03-armadilhas-e-dicas.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+
+<!-- nav:end -->

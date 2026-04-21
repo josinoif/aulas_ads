@@ -603,3 +603,15 @@ Em empresa grande, é comum encontrar **ambos** coexistindo. O que **não** se r
 - **Pulumi Docker provider** — [pulumi.com/registry/packages/docker/](https://www.pulumi.com/registry/packages/docker/).
 - **Pulumi unit testing** — [pulumi.com/docs/using-pulumi/testing/unit/](https://www.pulumi.com/docs/using-pulumi/testing/unit/).
 - **Morris, K.** *Infrastructure as Code.* Cap. 7 (Configuração), Cap. 9 (Testes).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 6 — Infraestrutura como código**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 2](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 3](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+
+<!-- nav:end -->

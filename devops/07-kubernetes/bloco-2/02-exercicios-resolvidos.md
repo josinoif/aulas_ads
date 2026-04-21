@@ -517,3 +517,15 @@ Esse padrão estabelece a base da **política como código para K8s** que o Bloc
 ## Próximo passo
 
 Avance para o **[Bloco 3 — Operações](../bloco-3/03-operacoes-cluster.md)**: namespaces, RBAC, NetworkPolicy, HPA, Ingress e PVC — os elementos que transformam um Deployment funcional num sistema **operável em produção**.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 7 — Kubernetes**
+
+- ← Anterior: [Bloco 2 — Workloads: do Compose ao Cluster](02-workloads.md)
+- → Próximo: [Bloco 3 — Operações: isolamento, segurança, escala e entrada](../bloco-3/03-operacoes-cluster.md)
+- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+
+<!-- nav:end -->

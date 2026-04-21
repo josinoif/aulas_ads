@@ -69,3 +69,15 @@
 - **Humble, J.** *The Art of DevOps* vídeos (vários).
 - **Nicole Forsgren, Gene Kim** — qualquer publicação DORA/State of DevOps.
 - **"Normal Accidents"** (Charles Perrault, 1984) — livro-clássico sobre acidentes em sistemas complexos; muda perspectiva.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Entrega avaliativa — Módulo 10 (SRE e Operações)](entrega-avaliativa.md)
+- → Próximo: [Módulo 11 — Plataforma Interna de Desenvolvimento (IDP)](../11-plataforma-interna/README.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+
+<!-- nav:end -->

@@ -154,3 +154,15 @@ Exemplos aceitos na disciplina:
 ---
 
 *Use estas referências para fundamentar suas decisões na estratégia de testes da MediQuick e na entrega avaliativa.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Entrega Avaliativa do Módulo 3](entrega-avaliativa.md)
+- → Próximo: [Módulo 4 — Entrega Contínua (Continuous Delivery)](../04-entrega-continua/README.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](README.md)
+
+<!-- nav:end -->

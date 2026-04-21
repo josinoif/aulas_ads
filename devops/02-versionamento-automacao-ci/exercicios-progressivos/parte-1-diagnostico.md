@@ -78,3 +78,15 @@ Escolha **dois** problemas e para cada um faça um **mapeamento simples de causa
 ## Próximo passo
 
 Com o diagnóstico feito, siga para a **Parte 2 — Estratégia de versionamento** ([parte-2-estrategia-versionamento.md](parte-2-estrategia-versionamento.md)), onde você vai propor branching, política de PR e critérios de merge para a DevPay.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Exercícios Progressivos — Módulo 2](README.md)
+- → Próximo: [Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

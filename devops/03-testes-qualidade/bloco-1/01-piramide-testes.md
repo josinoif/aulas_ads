@@ -453,3 +453,15 @@ A recomendação estratégica que emerge:
 - **Meszaros, G.** *xUnit Test Patterns.* Addison-Wesley, 2007.
 - **Martin, R. C.** *Clean Code.* Prentice Hall, 2008. Cap. 9 — Clean Tests.
 - **Kim, G. et al.** *The DevOps Handbook.* Cap. 10 — Enable Fast and Reliable Automated Testing. (`books/DevOps_Handbook_Intro_Part1_Part2.pdf`)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 3 — Testes e qualidade de software**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+
+<!-- nav:end -->

@@ -479,3 +479,15 @@ python toil_tracker.py data/toil-log.csv --budget-horas 20 --semana-inicio 2026-
 - [ ] Trato confiabilidade como item priorizável de backlog.
 
 Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 10 — SRE e operações**
+
+- ← Anterior: [Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+
+<!-- nav:end -->

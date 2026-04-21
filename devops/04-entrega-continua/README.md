@@ -115,3 +115,14 @@ Aqui tratamos do **pipeline de entrega em si**: como construir, como promover ar
 ---
 
 *Material alinhado a: Continuous Delivery (Humble & Farley), The DevOps Handbook (Kim et al.), Release It! (Nygard), Accelerate (Forsgren, Humble, Kim), Google SRE Book (Beyer et al.), Feature Toggles (Hodgson/Fowler).*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 3](../03-testes-qualidade/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

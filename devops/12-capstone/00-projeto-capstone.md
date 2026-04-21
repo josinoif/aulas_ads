@@ -205,3 +205,15 @@ gantt
 > **Qual é a próxima decisão mais importante que seu sistema enfrenta, e como seu sistema atual está preparado para suportá-la?**
 
 Se você conseguir responder essa pergunta **com evidência** (ADRs, métricas, ensaios), o capstone está cumprido. As fases a seguir são o caminho para chegar lá.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 12 — Capstone integrador**
+
+- ← Anterior: [Módulo 12 — Capstone: da ideia à operação](README.md)
+- → Próximo: [Fase 1 — Design e fundação](bloco-1/01-fase-design.md)
+- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+
+<!-- nav:end -->

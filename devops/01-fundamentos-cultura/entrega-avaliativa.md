@@ -117,3 +117,15 @@ Anexo ao relatório: o **VSM** produzido na Parte 3, com gargalos identificados.
 - [Bloco 4 — Cultura em prática](bloco-4/04-cultura-pratica-antipadroes.md)
 - [Exercícios progressivos](exercicios-progressivos/)
 - [Referências bibliográficas](referencias.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
+
+- ← Anterior: [Parte 5 — Reflexão Final e Plano de Transformação em Ondas](exercicios-progressivos/parte-5-reflexao-plano.md)
+- → Próximo: [Referências Bibliográficas — Módulo 1](referencias.md)
+- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+
+<!-- nav:end -->

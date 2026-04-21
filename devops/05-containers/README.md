@@ -126,3 +126,14 @@ Aqui tratamos da **unidade atômica** (a imagem), de como construí-la bem e de 
 ---
 
 *Material alinhado a: Docker Documentation, Docker — Up & Running (Matthias & Kane), Container Security (Liz Rice), The Kubernetes Book (Nigel Poulton), NIST SP 800-190 (Application Container Security Guide), OCI Image Spec.*
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 5 — Containers e orquestração**
+
+- ← Anterior: [Referências Bibliográficas — Módulo 4](../04-entrega-continua/referencias.md)
+- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+
+<!-- nav:end -->

@@ -498,3 +498,15 @@ No próximo bloco você verá **Integração Contínua (CI)** em detalhe: pipeli
 
 **Próximo:** [Bloco 2 — Integração Contínua](../bloco-2/02-integracao-continua.md)  
 **Exercícios deste bloco:** [01-exercicios-resolvidos.md](01-exercicios-resolvidos.md)
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
+- → Próximo: [Bloco 1 — Exercícios Resolvidos (Versionamento)](01-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

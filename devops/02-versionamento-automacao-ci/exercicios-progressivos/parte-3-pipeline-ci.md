@@ -127,3 +127,15 @@ Isso será parte da **entrega avaliativa do módulo** (ver [entrega-avaliativa.m
 ## Próximo passo
 
 Na **Parte 4 — Quebra controlada** ([parte-4-quebra-controlada.md](parte-4-quebra-controlada.md)) o professor (ou você, em dupla) introduz um erro proposital (teste falhando, lint falhando ou build falhando); você interpreta os logs, corrige e reflete sobre o impacto.
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md)
+- → Próximo: [Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->

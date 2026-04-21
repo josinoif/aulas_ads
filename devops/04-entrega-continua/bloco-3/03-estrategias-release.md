@@ -599,3 +599,15 @@ Flag deveria ser temporária; virou `if` do negócio ("cliente X tem flag Y, cli
 - **Kim, G. et al.** *The DevOps Handbook*, cap. 12.
 - **Argo Rollouts (canary/blue-green em K8s):** [argoproj.github.io/argo-rollouts](https://argoproj.github.io/argo-rollouts/).
 - **Kayenta (automated canary analysis):** [github.com/spinnaker/kayenta](https://github.com/spinnaker/kayenta).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 4 — Entrega contínua**
+
+- ← Anterior: [Exercícios Resolvidos — Bloco 2](../bloco-2/02-exercicios-resolvidos.md)
+- → Próximo: [Exercícios Resolvidos — Bloco 3](03-exercicios-resolvidos.md)
+- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+
+<!-- nav:end -->

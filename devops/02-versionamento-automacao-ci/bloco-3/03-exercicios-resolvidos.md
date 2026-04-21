@@ -71,3 +71,15 @@ O trabalho manual, repetitivo e propenso a falha (esquecer um passo ou rodar em 
 ---
 
 **Próximo:** [Bloco 4 — Métricas e impacto](../bloco-4/04-metricas-impacto.md) e [exercícios do Bloco 4](../bloco-4/04-exercicios-resolvidos.md).
+
+---
+
+<!-- nav:start -->
+
+**Navegação — Módulo 2 — Versionamento e integração contínua**
+
+- ← Anterior: [Bloco 3 — Automação como Redução de Toil](03-automacao-toil.md)
+- → Próximo: [Bloco 4 — Métricas e Impacto](../bloco-4/04-metricas-impacto.md)
+- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+
+<!-- nav:end -->
