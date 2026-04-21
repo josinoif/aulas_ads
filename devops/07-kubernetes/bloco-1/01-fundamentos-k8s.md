@@ -727,10 +727,8 @@ mindmap
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
-- → Próximo: [Bloco 1 — Exercícios Resolvidos](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 1 — Exercícios Resolvidos](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

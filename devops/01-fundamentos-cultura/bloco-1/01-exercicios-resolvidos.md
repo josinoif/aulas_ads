@@ -140,10 +140,8 @@ Quando se sentir confortável com estes conceitos, siga para o **[Bloco 2 — Mo
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Bloco 1 — O que é DevOps e a Parede da Confusão](01-o-que-e-devops.md)
-- → Próximo: [Bloco 2 — Modelo CALMS](../bloco-2/02-modelo-calms.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — O que é DevOps e a Parede da Confusão](01-o-que-e-devops.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Bloco 2 — Modelo CALMS](../bloco-2/02-modelo-calms.md) |
 
 <!-- nav:end -->

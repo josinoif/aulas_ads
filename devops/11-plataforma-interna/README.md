@@ -130,9 +130,8 @@ A plataforma **costura** tudo que vimos: CI/CD, containers, K8s, observabilidade
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Referências — Módulo 10 (SRE e Operações)](../10-sre-operacoes/referencias.md)
-- → Próximo: [Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências — Módulo 10 (SRE e Operações)](../10-sre-operacoes/referencias.md) | **↑ Índice**<br>Módulo 11 — Plataforma interna | **Próximo →**<br>[Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](00-cenario-pbl.md) |
 
 <!-- nav:end -->

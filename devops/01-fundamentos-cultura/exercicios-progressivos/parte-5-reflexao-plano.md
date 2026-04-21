@@ -116,10 +116,8 @@ Bom trabalho.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-blameless.md)
-- → Próximo: [Entrega Avaliativa do Módulo 1](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-blameless.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 1](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

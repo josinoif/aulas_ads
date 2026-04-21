@@ -325,10 +325,8 @@ Essa é a pedra de toque do módulo — **observabilidade é prática contínua,
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md)
-- → Próximo: [Entrega avaliativa — Módulo 8 (Observabilidade)](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Entrega avaliativa — Módulo 8 (Observabilidade)](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

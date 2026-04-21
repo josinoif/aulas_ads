@@ -140,10 +140,8 @@ catalog-validate:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Parte 1 — Estratégia, personas e Team Topologies](parte-1-estrategia.md)
-- → Próximo: [Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Estratégia, personas e Team Topologies](parte-1-estrategia.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md) |
 
 <!-- nav:end -->

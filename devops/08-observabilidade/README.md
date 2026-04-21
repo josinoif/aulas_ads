@@ -155,9 +155,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 7](../07-kubernetes/referencias.md)
-- → Próximo: [Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 7](../07-kubernetes/referencias.md) | **↑ Índice**<br>Módulo 8 — Observabilidade | **Próximo →**<br>[Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](00-cenario-pbl.md) |
 
 <!-- nav:end -->

@@ -75,10 +75,8 @@
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Entrega avaliativa — Módulo 8 (Observabilidade)](entrega-avaliativa.md)
-- → Próximo: [Módulo 9 — DevSecOps](../09-devsecops/README.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega avaliativa — Módulo 8 (Observabilidade)](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](README.md) | **Próximo →**<br>[Módulo 9 — DevSecOps](../09-devsecops/README.md) |
 
 <!-- nav:end -->

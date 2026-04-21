@@ -66,9 +66,8 @@ Como Humble & Farley descrevem em *Entrega Contínua*, o pipeline é a **linha d
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 1](../01-fundamentos-cultura/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 1](../01-fundamentos-cultura/referencias.md) | **↑ Índice**<br>Módulo 2 — Versionamento e integração contínua | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

@@ -136,10 +136,8 @@ Nos próximos blocos, essa arquitetura ganha **instrumentação operacional**, *
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Módulo 10 — Site Reliability Engineering (SRE) e Operações](README.md)
-- → Próximo: [Bloco 1 — SRE como disciplina: economia operacional, toil, capacidade](bloco-1/01-sre-fundamentos.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 10 — Site Reliability Engineering (SRE) e Operações](README.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](README.md) | **Próximo →**<br>[Bloco 1 — SRE como disciplina: economia operacional, toil, capacidade](bloco-1/01-sre-fundamentos.md) |
 
 <!-- nav:end -->

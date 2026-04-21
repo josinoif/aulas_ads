@@ -517,10 +517,8 @@ E agora fica explicitamente endereçado:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

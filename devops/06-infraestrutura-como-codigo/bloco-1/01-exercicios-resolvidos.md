@@ -215,10 +215,8 @@ c) Como "state encryption" protege segredos?
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Bloco 1 — Fundamentos de IaC](01-fundamentos-iac.md)
-- → Próximo: [Bloco 2 — OpenTofu com Provider Docker](../bloco-2/02-opentofu-docker.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Fundamentos de IaC](01-fundamentos-iac.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Bloco 2 — OpenTofu com Provider Docker](../bloco-2/02-opentofu-docker.md) |
 
 <!-- nav:end -->

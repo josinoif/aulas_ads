@@ -181,10 +181,8 @@ Versione o JSON atualizado do dashboard.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Parte 1 — Stack observabilidade + métricas RED](parte-1-stack-e-metricas.md)
-- → Próximo: [Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Stack observabilidade + métricas RED](parte-1-stack-e-metricas.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md) |
 
 <!-- nav:end -->

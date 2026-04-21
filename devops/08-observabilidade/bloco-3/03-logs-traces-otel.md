@@ -617,10 +617,8 @@ Vá aos [exercícios resolvidos do Bloco 3](./03-exercicios-resolvidos.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md)
-- → Próximo: [Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Exercícios resolvidos](../bloco-2/02-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Bloco 3 — Exercícios resolvidos](03-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

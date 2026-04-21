@@ -116,10 +116,8 @@ flowchart TB
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Módulo 9 — DevSecOps](README.md)
-- → Próximo: [Bloco 1 — Fundamentos de DevSecOps](bloco-1/01-fundamentos-devsecops.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 9 — DevSecOps](README.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](README.md) | **Próximo →**<br>[Bloco 1 — Fundamentos de DevSecOps](bloco-1/01-fundamentos-devsecops.md) |
 
 <!-- nav:end -->

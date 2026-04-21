@@ -368,10 +368,8 @@ O bloco `lifecycle { ignore_changes = [...] }` é escape válido para atributos 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Bloco 2 — OpenTofu com Provider Docker](02-opentofu-docker.md)
-- → Próximo: [Bloco 3 — Pulumi com Python](../bloco-3/03-pulumi-python.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — OpenTofu com Provider Docker](02-opentofu-docker.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Bloco 3 — Pulumi com Python](../bloco-3/03-pulumi-python.md) |
 
 <!-- nav:end -->

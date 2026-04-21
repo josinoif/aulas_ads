@@ -274,10 +274,8 @@ Para **evitar** o débito voltar:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Bloco 3 — Estratégias de Release: Blue-Green, Canary, Rolling e Feature Flags](03-estrategias-release.md)
-- → Próximo: [Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](../bloco-4/04-release-engineering.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Estratégias de Release: Blue-Green, Canary, Rolling e Feature Flags](03-estrategias-release.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](../bloco-4/04-release-engineering.md) |
 
 <!-- nav:end -->

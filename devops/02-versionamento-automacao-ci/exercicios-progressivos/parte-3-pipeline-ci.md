@@ -132,10 +132,8 @@ Na **Parte 4 — Quebra controlada** ([parte-4-quebra-controlada.md](parte-4-que
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md)
-- → Próximo: [Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md) |
 
 <!-- nav:end -->

@@ -338,10 +338,8 @@ b) Que cuidado tomar para **não** criar tags duplicadas?
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](04-release-engineering.md)
-- → Próximo: [Exercícios Progressivos — Módulo 4](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Release Engineering: Versionamento, Migrations e Rollback](04-release-engineering.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 4](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

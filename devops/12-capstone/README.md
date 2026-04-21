@@ -139,9 +139,8 @@ flowchart TB
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Referências — Módulo 11 (Plataforma Interna)](../11-plataforma-interna/referencias.md)
-- → Próximo: [Projeto Capstone — CivicaBR](00-projeto-capstone.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências — Módulo 11 (Plataforma Interna)](../11-plataforma-interna/referencias.md) | **↑ Índice**<br>Módulo 12 — Capstone integrador | **Próximo →**<br>[Projeto Capstone — CivicaBR](00-projeto-capstone.md) |
 
 <!-- nav:end -->

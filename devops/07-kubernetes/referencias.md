@@ -148,10 +148,8 @@ Exemplos aceitos na disciplina:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 7](entrega-avaliativa.md)
-- → Próximo: [Módulo 8 — Observabilidade](../08-observabilidade/README.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 7](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](README.md) | **Próximo →**<br>[Módulo 8 — Observabilidade](../08-observabilidade/README.md) |
 
 <!-- nav:end -->

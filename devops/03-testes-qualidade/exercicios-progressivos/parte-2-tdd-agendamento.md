@@ -405,10 +405,8 @@ Com o domínio pronto e testado, siga para a **[Parte 3 — Integração com Tes
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Parte 1 — Diagnóstico da Pirâmide Atual da MediQuick](parte-1-diagnostico-piramide.md)
-- → Próximo: [Parte 3 — Integração com Testcontainers (Postgres real)](parte-3-integracao-testcontainers.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico da Pirâmide Atual da MediQuick](parte-1-diagnostico-piramide.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Parte 3 — Integração com Testcontainers (Postgres real)](parte-3-integracao-testcontainers.md) |
 
 <!-- nav:end -->

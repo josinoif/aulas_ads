@@ -342,10 +342,8 @@ Bom capstone. Você está mais próximo do engenheiro DevOps sênior do que quan
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 3 — Armadilhas, dicas e orientações de banca](../bloco-3/03-armadilhas-e-dicas.md)
-- → Próximo: [Fase 4 — Armadilhas, dicas e orientações de banca](04-armadilhas-e-dicas.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 3 — Armadilhas, dicas e orientações de banca](../bloco-3/03-armadilhas-e-dicas.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 4 — Armadilhas, dicas e orientações de banca](04-armadilhas-e-dicas.md) |
 
 <!-- nav:end -->

@@ -76,10 +76,8 @@ Na **Parte 5 — Reflexão final** ([parte-5-reflexao.md](parte-5-reflexao.md)) 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md)
-- → Próximo: [Parte 5 — Reflexão Final (30 min)](parte-5-reflexao.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Parte 5 — Reflexão Final (30 min)](parte-5-reflexao.md) |
 
 <!-- nav:end -->

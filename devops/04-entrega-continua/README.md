@@ -120,9 +120,8 @@ Aqui tratamos do **pipeline de entrega em si**: como construir, como promover ar
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 3](../03-testes-qualidade/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 3](../03-testes-qualidade/referencias.md) | **↑ Índice**<br>Módulo 4 — Entrega contínua | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

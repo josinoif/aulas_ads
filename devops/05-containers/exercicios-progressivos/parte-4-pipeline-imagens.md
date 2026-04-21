@@ -241,10 +241,8 @@ Avance para a **[Parte 5 — Plano e limites](parte-5-plano-e-limites.md)** — 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md)
-- → Próximo: [Parte 5 — Plano de Adoção e Reconhecimento de Limites](parte-5-plano-e-limites.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Parte 5 — Plano de Adoção e Reconhecimento de Limites](parte-5-plano-e-limites.md) |
 
 <!-- nav:end -->

@@ -420,10 +420,8 @@ Avance para a **[Parte 4 — Helm chart](parte-4-helm.md)**: empacote esses ~10 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Parte 2 — Workloads básicos da StreamCast](parte-2-workloads-basicos.md)
-- → Próximo: [Parte 4 — Empacotamento com Helm](parte-4-helm.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Workloads básicos da StreamCast](parte-2-workloads-basicos.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Parte 4 — Empacotamento com Helm](parte-4-helm.md) |
 
 <!-- nav:end -->

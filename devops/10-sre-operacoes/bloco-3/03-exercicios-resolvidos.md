@@ -238,10 +238,8 @@ Se nenhum passo resolver em 20 min, escalar para IC on-call.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Bloco 3 — Disaster Recovery: a capacidade que você só descobre se tem ao usar](03-disaster-recovery.md)
-- → Próximo: [Bloco 4 — Gestão de Incidentes em Escala: papéis, comunicação e aprendizado](../bloco-4/04-incidentes-escala.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Disaster Recovery: a capacidade que você só descobre se tem ao usar](03-disaster-recovery.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Bloco 4 — Gestão de Incidentes em Escala: papéis, comunicação e aprendizado](../bloco-4/04-incidentes-escala.md) |
 
 <!-- nav:end -->

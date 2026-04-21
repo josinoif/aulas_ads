@@ -116,10 +116,8 @@ Com o diagnóstico pronto, avance para a **[Parte 2 — Dockerfile do runner](pa
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 5](README.md)
-- → Próximo: [Parte 2 — Dockerfile do Runner Python](parte-2-dockerfile-runner.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 5](README.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Parte 2 — Dockerfile do Runner Python](parte-2-dockerfile-runner.md) |
 
 <!-- nav:end -->

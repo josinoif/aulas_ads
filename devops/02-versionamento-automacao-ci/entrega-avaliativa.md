@@ -69,10 +69,8 @@ Sugestão: usar referências ao material do módulo e às obras indicadas (Humbl
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Parte 5 — Reflexão Final (30 min)](exercicios-progressivos/parte-5-reflexao.md)
-- → Próximo: [Referências Bibliográficas](referencias.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Reflexão Final (30 min)](exercicios-progressivos/parte-5-reflexao.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](README.md) | **Próximo →**<br>[Referências Bibliográficas](referencias.md) |
 
 <!-- nav:end -->

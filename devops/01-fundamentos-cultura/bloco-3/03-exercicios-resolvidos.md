@@ -163,10 +163,8 @@ Siga para o **[Bloco 4 — Cultura em prática e anti-padrões](../bloco-4/04-cu
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Bloco 3 — Os Três Caminhos (The Three Ways)](03-tres-caminhos.md)
-- → Próximo: [Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](../bloco-4/04-cultura-pratica-antipadroes.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Os Três Caminhos (The Three Ways)](03-tres-caminhos.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](../bloco-4/04-cultura-pratica-antipadroes.md) |
 
 <!-- nav:end -->

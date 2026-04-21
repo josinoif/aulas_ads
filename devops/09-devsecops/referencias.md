@@ -81,10 +81,8 @@
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Entrega avaliativa — Módulo 9 (DevSecOps)](entrega-avaliativa.md)
-- → Próximo: [Módulo 10 — Site Reliability Engineering (SRE) e Operações](../10-sre-operacoes/README.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega avaliativa — Módulo 9 (DevSecOps)](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](README.md) | **Próximo →**<br>[Módulo 10 — Site Reliability Engineering (SRE) e Operações](../10-sre-operacoes/README.md) |
 
 <!-- nav:end -->

@@ -55,10 +55,8 @@ Comece pela [Parte 1](./parte-1-threat-model.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — Threat model e Dockerfile endurecido](parte-1-threat-model.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Parte 1 — Threat model e Dockerfile endurecido](parte-1-threat-model.md) |
 
 <!-- nav:end -->

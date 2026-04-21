@@ -400,10 +400,8 @@ No próximo bloco: **Automação como redução de toil** (SRE) e como CI se enc
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 1 — Exercícios Resolvidos (Versionamento)](../bloco-1/01-exercicios-resolvidos.md)
-- → Próximo: [Bloco 2 — Exercícios Resolvidos (Integração Contínua)](02-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Exercícios Resolvidos (Versionamento)](../bloco-1/01-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Bloco 2 — Exercícios Resolvidos (Integração Contínua)](02-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

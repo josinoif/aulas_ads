@@ -577,10 +577,8 @@ Juntando os 4 blocos, a estratégia para a MediQuick é:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

@@ -181,10 +181,8 @@ Exemplos aceitos na disciplina:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 6](entrega-avaliativa.md)
-- → Próximo: [Módulo 7 — Kubernetes](../07-kubernetes/README.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 6](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](README.md) | **Próximo →**<br>[Módulo 7 — Kubernetes](../07-kubernetes/README.md) |
 
 <!-- nav:end -->

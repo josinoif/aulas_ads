@@ -146,9 +146,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Referências — Módulo 8 (Observabilidade)](../08-observabilidade/referencias.md)
-- → Próximo: [Cenário PBL — MedVault: auditoria LGPD expõe dívida de segurança](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências — Módulo 8 (Observabilidade)](../08-observabilidade/referencias.md) | **↑ Índice**<br>Módulo 9 — DevSecOps | **Próximo →**<br>[Cenário PBL — MedVault: auditoria LGPD expõe dívida de segurança](00-cenario-pbl.md) |
 
 <!-- nav:end -->

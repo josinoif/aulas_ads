@@ -239,10 +239,8 @@ logitrack-tracking/
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Parte 2 — Pipeline Multi-estágio com Artefato Único](parte-2-pipeline-multi-estagio.md)
-- → Próximo: [Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Pipeline Multi-estágio com Artefato Único](parte-2-pipeline-multi-estagio.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md) |
 
 <!-- nav:end -->

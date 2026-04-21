@@ -145,10 +145,8 @@ Nenhum repositório de graduação precisa estar em L3; L2 é meta realista de f
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Bloco 1 — Fundamentos de DevSecOps](01-fundamentos-devsecops.md)
-- → Próximo: [Bloco 2 — Segurança do código e das dependências](../bloco-2/02-codigo-dependencias.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Fundamentos de DevSecOps](01-fundamentos-devsecops.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Bloco 2 — Segurança do código e das dependências](../bloco-2/02-codigo-dependencias.md) |
 
 <!-- nav:end -->

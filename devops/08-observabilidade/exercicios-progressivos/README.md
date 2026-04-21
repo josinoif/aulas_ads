@@ -67,10 +67,8 @@ Aproximadamente **60–90 min por parte**, dependendo de familiaridade.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — Stack observabilidade + métricas RED](parte-1-stack-e-metricas.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Parte 1 — Stack observabilidade + métricas RED](parte-1-stack-e-metricas.md) |
 
 <!-- nav:end -->

@@ -367,10 +367,8 @@ Siga para o **[Bloco 2 — Workloads](../bloco-2/02-workloads.md)**, onde constr
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 1 — Fundamentos de Kubernetes](01-fundamentos-k8s.md)
-- → Próximo: [Bloco 2 — Workloads: do Compose ao Cluster](../bloco-2/02-workloads.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Fundamentos de Kubernetes](01-fundamentos-k8s.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 2 — Workloads: do Compose ao Cluster](../bloco-2/02-workloads.md) |
 
 <!-- nav:end -->

@@ -458,10 +458,8 @@ O sistema está instrumentado, seguro e resiliente. A [Fase 4 — Plataforma e a
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 2 — Armadilhas, dicas e orientações de banca](../bloco-2/02-armadilhas-e-dicas.md)
-- → Próximo: [Fase 3 — Armadilhas, dicas e orientações de banca](03-armadilhas-e-dicas.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 2 — Armadilhas, dicas e orientações de banca](../bloco-2/02-armadilhas-e-dicas.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 3 — Armadilhas, dicas e orientações de banca](03-armadilhas-e-dicas.md) |
 
 <!-- nav:end -->

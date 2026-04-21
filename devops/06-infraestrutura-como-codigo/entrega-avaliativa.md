@@ -197,10 +197,8 @@ No README do repositório:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Parte 5 — Pipeline CI/CD + Policy + Plano de Adoção](exercicios-progressivos/parte-5-pipeline-e-plano.md)
-- → Próximo: [Referências Bibliográficas — Módulo 6](referencias.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Pipeline CI/CD + Policy + Plano de Adoção](exercicios-progressivos/parte-5-pipeline-e-plano.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 6](referencias.md) |
 
 <!-- nav:end -->

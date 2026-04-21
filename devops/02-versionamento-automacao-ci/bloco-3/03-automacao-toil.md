@@ -170,10 +170,8 @@ Isso mantém a mesma ideia: install → lint → build → test → artefato.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 2 — Exercícios Resolvidos (Integração Contínua)](../bloco-2/02-exercicios-resolvidos.md)
-- → Próximo: [Bloco 3 — Exercícios Resolvidos (Automação e Toil)](03-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Exercícios Resolvidos (Integração Contínua)](../bloco-2/02-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Bloco 3 — Exercícios Resolvidos (Automação e Toil)](03-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

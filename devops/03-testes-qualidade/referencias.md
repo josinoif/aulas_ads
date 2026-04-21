@@ -159,10 +159,8 @@ Exemplos aceitos na disciplina:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 3](entrega-avaliativa.md)
-- → Próximo: [Módulo 4 — Entrega Contínua (Continuous Delivery)](../04-entrega-continua/README.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 3](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](README.md) | **Próximo →**<br>[Módulo 4 — Entrega Contínua (Continuous Delivery)](../04-entrega-continua/README.md) |
 
 <!-- nav:end -->

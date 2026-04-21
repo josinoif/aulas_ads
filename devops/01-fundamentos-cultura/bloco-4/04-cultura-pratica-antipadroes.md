@@ -463,10 +463,8 @@ flowchart TB
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Resolvidos — Bloco 3](../bloco-3/03-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 4](04-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

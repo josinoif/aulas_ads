@@ -358,10 +358,8 @@ resource "docker_container" "api" {
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Bloco 4 — IaC em Produção](04-iac-producao.md)
-- → Próximo: [Exercícios Progressivos — Módulo 6](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — IaC em Produção](04-iac-producao.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 6](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

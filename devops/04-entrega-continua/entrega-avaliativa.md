@@ -160,10 +160,8 @@ Dentro do README do repositório, links diretos para:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Parte 5 — Plano de Transformação e Projeção DORA](exercicios-progressivos/parte-5-plano-transformacao.md)
-- → Próximo: [Referências Bibliográficas — Módulo 4](referencias.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Plano de Transformação e Projeção DORA](exercicios-progressivos/parte-5-plano-transformacao.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 4](referencias.md) |
 
 <!-- nav:end -->

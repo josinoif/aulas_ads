@@ -49,10 +49,8 @@ Boa jornada.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Resolvidos — Bloco 4](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md) |
 
 <!-- nav:end -->

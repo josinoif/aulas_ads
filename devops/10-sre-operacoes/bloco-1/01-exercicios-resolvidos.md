@@ -184,10 +184,8 @@ Argumento estruturado:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Bloco 1 — SRE como disciplina: economia operacional, toil, capacidade](01-sre-fundamentos.md)
-- → Próximo: [Bloco 2 — Chaos Engineering: descobrir fragilidades antes do cliente](../bloco-2/02-chaos-engineering.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — SRE como disciplina: economia operacional, toil, capacidade](01-sre-fundamentos.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Bloco 2 — Chaos Engineering: descobrir fragilidades antes do cliente](../bloco-2/02-chaos-engineering.md) |
 
 <!-- nav:end -->

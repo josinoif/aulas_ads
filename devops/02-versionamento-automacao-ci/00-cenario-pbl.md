@@ -54,10 +54,8 @@ Leia o **[Bloco 1 — Versionamento como controle de complexidade](bloco-1/01-ve
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Módulo 2 — Versionamento, Automação e CI](README.md)
-- → Próximo: [Bloco 1 — Versionamento como Controle de Complexidade](bloco-1/01-versionamento.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 2 — Versionamento, Automação e CI](README.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](README.md) | **Próximo →**<br>[Bloco 1 — Versionamento como Controle de Complexidade](bloco-1/01-versionamento.md) |
 
 <!-- nav:end -->

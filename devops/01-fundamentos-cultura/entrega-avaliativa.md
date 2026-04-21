@@ -122,10 +122,8 @@ Anexo ao relatório: o **VSM** produzido na Parte 3, com gargalos identificados.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Parte 5 — Reflexão Final e Plano de Transformação em Ondas](exercicios-progressivos/parte-5-reflexao-plano.md)
-- → Próximo: [Referências Bibliográficas — Módulo 1](referencias.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Reflexão Final e Plano de Transformação em Ondas](exercicios-progressivos/parte-5-reflexao-plano.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 1](referencias.md) |
 
 <!-- nav:end -->

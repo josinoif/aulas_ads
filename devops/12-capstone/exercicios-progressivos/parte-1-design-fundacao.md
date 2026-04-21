@@ -81,10 +81,8 @@ Se responder essas perguntas com sinceridade, o marco 1 está pronto.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Marcos do Capstone — roteiro de 5 partes](README.md)
-- → Próximo: [Marco 2 — Sistema entregando em staging](parte-2-entrega-end-to-end.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Marcos do Capstone — roteiro de 5 partes](README.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Marco 2 — Sistema entregando em staging](parte-2-entrega-end-to-end.md) |
 
 <!-- nav:end -->

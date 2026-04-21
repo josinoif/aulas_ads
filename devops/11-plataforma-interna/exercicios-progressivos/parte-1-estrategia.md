@@ -110,10 +110,8 @@ Próximas 3 sprints (6 semanas cada? 2 semanas cada?). Cada uma com:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Exercícios progressivos — Módulo 11 (Plataforma Interna)](README.md)
-- → Próximo: [Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios progressivos — Módulo 11 (Plataforma Interna)](README.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md) |
 
 <!-- nav:end -->

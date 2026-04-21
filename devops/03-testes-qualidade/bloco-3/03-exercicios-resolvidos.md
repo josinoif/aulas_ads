@@ -362,10 +362,8 @@ Siga para o **[Bloco 4 — Integração, E2E e estratégias](../bloco-4/04-integ
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Bloco 3 — Quality Gates, Cobertura e Shift-Left](03-quality-gates.md)
-- → Próximo: [Bloco 4 — Testes de Integração, E2E e Estratégias](../bloco-4/04-integracao-e2e.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Quality Gates, Cobertura e Shift-Left](03-quality-gates.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Bloco 4 — Testes de Integração, E2E e Estratégias](../bloco-4/04-integracao-e2e.md) |
 
 <!-- nav:end -->

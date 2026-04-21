@@ -115,10 +115,8 @@ Com isso você termina a base teórica do módulo. Em seguida vêm os **exercíc
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 3 — Exercícios Resolvidos (Automação e Toil)](../bloco-3/03-exercicios-resolvidos.md)
-- → Próximo: [Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](04-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Exercícios Resolvidos (Automação e Toil)](../bloco-3/03-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](04-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

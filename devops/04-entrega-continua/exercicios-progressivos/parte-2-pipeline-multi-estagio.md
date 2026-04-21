@@ -330,10 +330,8 @@ No `docs/evidencias-parte-2.md`:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Parte 1 — Diagnóstico do Pipeline da LogiTrack](parte-1-diagnostico-pipeline.md)
-- → Próximo: [Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico do Pipeline da LogiTrack](parte-1-diagnostico-pipeline.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md) |
 
 <!-- nav:end -->

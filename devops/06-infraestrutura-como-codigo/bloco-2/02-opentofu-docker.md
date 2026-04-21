@@ -901,10 +901,8 @@ resource "docker_container" "legacy_pg" {
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Resolvidos — Bloco 1](../bloco-1/01-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 2](02-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

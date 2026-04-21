@@ -127,10 +127,8 @@ Siga para a **[Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeament
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md)
-- → Próximo: [Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeamento-fluxo-valor.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico dos Silos](parte-1-diagnostico-silos.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Parte 3 — Mapeamento do Fluxo de Valor (VSM)](parte-3-mapeamento-fluxo-valor.md) |
 
 <!-- nav:end -->

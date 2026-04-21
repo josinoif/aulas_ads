@@ -162,10 +162,8 @@ Para cada uma das 3 jornadas:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Parte 5 — Incidente simulado, postmortem e CI](exercicios-progressivos/parte-5-incidente-e-postmortem.md)
-- → Próximo: [Referências — Módulo 8 (Observabilidade)](referencias.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Incidente simulado, postmortem e CI](exercicios-progressivos/parte-5-incidente-e-postmortem.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](README.md) | **Próximo →**<br>[Referências — Módulo 8 (Observabilidade)](referencias.md) |
 
 <!-- nav:end -->

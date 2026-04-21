@@ -627,10 +627,8 @@ Avance para a **[Parte 3 — Mesma infra em Pulumi](parte-3-pulumi-paralelo.md)*
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Parte 1 — Diagnóstico da Nimbus](parte-1-diagnostico.md)
-- → Próximo: [Parte 3 — Mesma Infra em Pulumi (Comparativo)](parte-3-pulumi-paralelo.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico da Nimbus](parte-1-diagnostico.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Parte 3 — Mesma Infra em Pulumi (Comparativo)](parte-3-pulumi-paralelo.md) |
 
 <!-- nav:end -->

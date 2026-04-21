@@ -146,10 +146,8 @@ Siga para a **[Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Parte 2 — Análise CALMS da CloudStore](parte-2-analise-calms.md)
-- → Próximo: [Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-blameless.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Análise CALMS da CloudStore](parte-2-analise-calms.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Parte 4 — Template de Postmortem Blameless](parte-4-postmortem-blameless.md) |
 
 <!-- nav:end -->

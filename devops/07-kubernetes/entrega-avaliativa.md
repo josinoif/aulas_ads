@@ -206,10 +206,8 @@ No README:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Parte 5 — GitOps com ArgoCD + plano de migração](exercicios-progressivos/parte-5-gitops-e-plano.md)
-- → Próximo: [Referências Bibliográficas — Módulo 7](referencias.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — GitOps com ArgoCD + plano de migração](exercicios-progressivos/parte-5-gitops-e-plano.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 7](referencias.md) |
 
 <!-- nav:end -->

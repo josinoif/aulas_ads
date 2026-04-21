@@ -378,10 +378,8 @@ Próxima: [Parte 5 — secrets, incidente e postmortem](./parte-5-secrets-incide
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Parte 3 — SBOM, assinatura e proveniência](parte-3-sbom-assinatura.md)
-- → Próximo: [Parte 5 — Secrets management, incidente simulado e postmortem](parte-5-secrets-incidente.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — SBOM, assinatura e proveniência](parte-3-sbom-assinatura.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Parte 5 — Secrets management, incidente simulado e postmortem](parte-5-secrets-incidente.md) |
 
 <!-- nav:end -->

@@ -522,10 +522,8 @@ Avance para o **[Bloco 3 — Operações](../bloco-3/03-operacoes-cluster.md)**:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 2 — Workloads: do Compose ao Cluster](02-workloads.md)
-- → Próximo: [Bloco 3 — Operações: isolamento, segurança, escala e entrada](../bloco-3/03-operacoes-cluster.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Workloads: do Compose ao Cluster](02-workloads.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 3 — Operações: isolamento, segurança, escala e entrada](../bloco-3/03-operacoes-cluster.md) |
 
 <!-- nav:end -->

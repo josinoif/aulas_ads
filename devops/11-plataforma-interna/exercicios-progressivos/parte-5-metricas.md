@@ -181,10 +181,8 @@ Essa é a **prova definitiva** de que sua plataforma é um **produto** — não 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md)
-- → Próximo: [Entrega avaliativa — Módulo 11 (Plataforma Interna)](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Entrega avaliativa — Módulo 11 (Plataforma Interna)](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

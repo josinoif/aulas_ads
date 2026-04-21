@@ -397,10 +397,8 @@ Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](../00-cenario-pbl.md)
-- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — OrbitaTech: 5 para 28 squads em 18 meses](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

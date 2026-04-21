@@ -63,10 +63,8 @@ Ambas são defensáveis. Uma justificativa coerente seria: atacar **change failu
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 4 — Métricas e Impacto](04-metricas-impacto.md)
-- → Próximo: [Exercícios Progressivos — Módulo 2](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Métricas e Impacto](04-metricas-impacto.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 2](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

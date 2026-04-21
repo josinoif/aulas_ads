@@ -278,10 +278,8 @@ git add -A && git commit -m "feat(sre-p2): chaos engineering 3 experimentos + ga
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md)
-- → Próximo: [Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md) |
 
 <!-- nav:end -->

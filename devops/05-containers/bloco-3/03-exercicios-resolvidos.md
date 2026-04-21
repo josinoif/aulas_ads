@@ -341,10 +341,8 @@ ENVIRONMENT=production docker compose -f docker-compose.yml up -d
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Bloco 3 — Docker Compose e Ambientes Multi-Serviço](03-compose-multi-servico.md)
-- → Próximo: [Bloco 4 — Produção, Segurança, Registries e SBOM](../bloco-4/04-producao-seguranca.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Docker Compose e Ambientes Multi-Serviço](03-compose-multi-servico.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Bloco 4 — Produção, Segurança, Registries e SBOM](../bloco-4/04-producao-seguranca.md) |
 
 <!-- nav:end -->

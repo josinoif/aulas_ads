@@ -317,10 +317,8 @@ Avance para a **[Parte 2 — Workloads básicos](parte-2-workloads-basicos.md)**
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 7](README.md)
-- → Próximo: [Parte 2 — Workloads básicos da StreamCast](parte-2-workloads-basicos.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 7](README.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Parte 2 — Workloads básicos da StreamCast](parte-2-workloads-basicos.md) |
 
 <!-- nav:end -->

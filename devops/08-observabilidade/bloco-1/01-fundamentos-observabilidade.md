@@ -482,10 +482,8 @@ Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md) para 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](../00-cenario-pbl.md)
-- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — LogisGo: um cluster verde, um negócio no escuro](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

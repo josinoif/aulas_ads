@@ -808,10 +808,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 1 — Exercícios Resolvidos](../bloco-1/01-exercicios-resolvidos.md)
-- → Próximo: [Bloco 2 — Exercícios Resolvidos](02-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Exercícios Resolvidos](../bloco-1/01-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 2 — Exercícios Resolvidos](02-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

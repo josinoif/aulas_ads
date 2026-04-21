@@ -186,10 +186,8 @@ score-inquilino          2             2.50             7.0               2.5   
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Bloco 1 — Platform Engineering: times, cognitive load e produto interno](01-platform-engineering.md)
-- → Próximo: [Bloco 2 — Backstage e Golden Paths](../bloco-2/02-backstage-golden-paths.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Platform Engineering: times, cognitive load e produto interno](01-platform-engineering.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Bloco 2 — Backstage e Golden Paths](../bloco-2/02-backstage-golden-paths.md) |
 
 <!-- nav:end -->

@@ -458,10 +458,8 @@ A recomendação estratégica que emerge:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

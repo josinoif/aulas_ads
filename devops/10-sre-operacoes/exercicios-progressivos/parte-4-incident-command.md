@@ -171,10 +171,8 @@ git add -A && git commit -m "feat(sre-p4): incident command + runbooks vivos + t
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md)
-- → Próximo: [Parte 5 — Postmortem Blameless e Learning Review](parte-5-postmortem-learning.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Disaster Recovery real com Velero](parte-3-dr-velero.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Parte 5 — Postmortem Blameless e Learning Review](parte-5-postmortem-learning.md) |
 
 <!-- nav:end -->

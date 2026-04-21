@@ -74,10 +74,8 @@
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Entrega avaliativa — Módulo 10 (SRE e Operações)](entrega-avaliativa.md)
-- → Próximo: [Módulo 11 — Plataforma Interna de Desenvolvimento (IDP)](../11-plataforma-interna/README.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega avaliativa — Módulo 10 (SRE e Operações)](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](README.md) | **Próximo →**<br>[Módulo 11 — Plataforma Interna de Desenvolvimento (IDP)](../11-plataforma-interna/README.md) |
 
 <!-- nav:end -->

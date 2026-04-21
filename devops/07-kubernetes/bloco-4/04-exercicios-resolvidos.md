@@ -645,10 +645,8 @@ Parta para os **[Exercícios Progressivos](../exercicios-progressivos/README.md)
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 4 — Produção: Helm, GitOps e os limites do K8s](04-producao-helm-gitops.md)
-- → Próximo: [Exercícios Progressivos — Módulo 7](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Produção: Helm, GitOps e os limites do K8s](04-producao-helm-gitops.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 7](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

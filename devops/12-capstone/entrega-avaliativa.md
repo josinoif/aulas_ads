@@ -206,10 +206,8 @@ Se os itens acima estão marcados, **você está pronto**. Se não estão, o mó
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Marco 5 — Defesa com incidente ao vivo](exercicios-progressivos/parte-5-banca-final.md)
-- → Próximo: [Referências — Módulo 12 (Capstone)](referencias.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Marco 5 — Defesa com incidente ao vivo](exercicios-progressivos/parte-5-banca-final.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](README.md) | **Próximo →**<br>[Referências — Módulo 12 (Capstone)](referencias.md) |
 
 <!-- nav:end -->

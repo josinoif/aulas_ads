@@ -131,9 +131,8 @@ Aqui tratamos da **unidade atômica** (a imagem), de como construí-la bem e de 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 4](../04-entrega-continua/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 4](../04-entrega-continua/referencias.md) | **↑ Índice**<br>Módulo 5 — Containers e orquestração | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

@@ -230,10 +230,8 @@ Próxima: [Parte 2 — pipeline SAST/SCA/Secrets/IaC](./parte-2-pipeline-seguran
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Exercícios progressivos — Módulo 9 (DevSecOps)](README.md)
-- → Próximo: [Parte 2 — Pipeline de segurança no CI](parte-2-pipeline-seguranca.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios progressivos — Módulo 9 (DevSecOps)](README.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Parte 2 — Pipeline de segurança no CI](parte-2-pipeline-seguranca.md) |
 
 <!-- nav:end -->

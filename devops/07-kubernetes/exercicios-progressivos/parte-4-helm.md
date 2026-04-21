@@ -415,10 +415,8 @@ Avance para a **[Parte 5 — GitOps com ArgoCD + plano](parte-5-gitops-e-plano.m
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Parte 3 — Resiliência e operações](parte-3-resiliencia.md)
-- → Próximo: [Parte 5 — GitOps com ArgoCD + plano de migração](parte-5-gitops-e-plano.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Resiliência e operações](parte-3-resiliencia.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Parte 5 — GitOps com ArgoCD + plano de migração](parte-5-gitops-e-plano.md) |
 
 <!-- nav:end -->

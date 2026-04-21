@@ -184,10 +184,8 @@ Avance para a **[Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md)**.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 6](README.md)
-- → Próximo: [Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 6](README.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md) |
 
 <!-- nav:end -->

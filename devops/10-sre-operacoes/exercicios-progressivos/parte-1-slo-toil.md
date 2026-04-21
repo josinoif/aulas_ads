@@ -130,10 +130,8 @@ Essa é a **base cultural** sobre a qual as próximas partes constroem.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Exercícios progressivos — Módulo 10 (SRE e Operações)](README.md)
-- → Próximo: [Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios progressivos — Módulo 10 (SRE e Operações)](README.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md) |
 
 <!-- nav:end -->

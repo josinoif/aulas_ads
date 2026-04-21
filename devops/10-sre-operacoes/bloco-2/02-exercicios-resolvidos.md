@@ -223,10 +223,8 @@ Ata publicada em <24h em docs/game-days/2026-04-20.md. Tickets abertos.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Bloco 2 — Chaos Engineering: descobrir fragilidades antes do cliente](02-chaos-engineering.md)
-- → Próximo: [Bloco 3 — Disaster Recovery: a capacidade que você só descobre se tem ao usar](../bloco-3/03-disaster-recovery.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Chaos Engineering: descobrir fragilidades antes do cliente](02-chaos-engineering.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Bloco 3 — Disaster Recovery: a capacidade que você só descobre se tem ao usar](../bloco-3/03-disaster-recovery.md) |
 
 <!-- nav:end -->

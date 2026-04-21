@@ -189,10 +189,8 @@ Esse exercício prepara o Bloco 4, onde traduzimos *taxas de queima* em alertas 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 1 — Fundamentos da Observabilidade](01-fundamentos-observabilidade.md)
-- → Próximo: [Bloco 2 — Métricas com Prometheus e Grafana](../bloco-2/02-metricas-prometheus.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Fundamentos da Observabilidade](01-fundamentos-observabilidade.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Bloco 2 — Métricas com Prometheus e Grafana](../bloco-2/02-metricas-prometheus.md) |
 
 <!-- nav:end -->

@@ -58,10 +58,8 @@ Com a reflexão e a **entrega avaliativa** ([entrega-avaliativa.md](../entrega-a
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md)
-- → Próximo: [Entrega Avaliativa do Módulo 2](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Quebra Controlada (1h)](parte-4-quebra-controlada.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 2](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

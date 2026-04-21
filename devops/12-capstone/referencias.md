@@ -109,10 +109,8 @@ Para alinhar com o cenário CivicaBR:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Entrega avaliativa — Módulo 12 (Capstone)](entrega-avaliativa.md)
-- → Próximo: *(fim do curso)*
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega avaliativa — Módulo 12 (Capstone)](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](README.md) | **Próximo →**<br>_(fim do curso)_ |
 
 <!-- nav:end -->

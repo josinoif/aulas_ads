@@ -121,10 +121,8 @@ Comece pela **[Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 4 — Exercícios Resolvidos](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Exercícios Resolvidos](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md) |
 
 <!-- nav:end -->

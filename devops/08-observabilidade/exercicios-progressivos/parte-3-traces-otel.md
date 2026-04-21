@@ -259,10 +259,8 @@ Selecione um trace. Confirme:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md)
-- → Próximo: [Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Parte 4 — SLOs, alertas burn-rate e runbooks](parte-4-slos-e-alertas.md) |
 
 <!-- nav:end -->

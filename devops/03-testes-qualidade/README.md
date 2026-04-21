@@ -119,9 +119,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Referências Bibliográficas](../02-versionamento-automacao-ci/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas](../02-versionamento-automacao-ci/referencias.md) | **↑ Índice**<br>Módulo 3 — Testes e qualidade de software | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

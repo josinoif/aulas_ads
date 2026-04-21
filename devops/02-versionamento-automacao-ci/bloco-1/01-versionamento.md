@@ -503,10 +503,8 @@ No próximo bloco você verá **Integração Contínua (CI)** em detalhe: pipeli
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
-- → Próximo: [Bloco 1 — Exercícios Resolvidos (Versionamento)](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Bloco 1 — Exercícios Resolvidos (Versionamento)](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

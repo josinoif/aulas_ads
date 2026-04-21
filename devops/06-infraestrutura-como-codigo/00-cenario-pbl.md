@@ -131,10 +131,8 @@ Leia o **[Bloco 1 — Fundamentos de IaC](bloco-1/01-fundamentos-iac.md)** para 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Módulo 6 — Infraestrutura como Código (IaC)](README.md)
-- → Próximo: [Bloco 1 — Fundamentos de IaC](bloco-1/01-fundamentos-iac.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 6 — Infraestrutura como Código (IaC)](README.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](README.md) | **Próximo →**<br>[Bloco 1 — Fundamentos de IaC](bloco-1/01-fundamentos-iac.md) |
 
 <!-- nav:end -->

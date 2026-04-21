@@ -139,10 +139,8 @@ A melhor parte do capstone é **poder falar dele com profundidade** por anos dep
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 4 — Plataforma interna, métricas e apresentação final](04-fase-plataforma.md)
-- → Próximo: [Marcos do Capstone — roteiro de 5 partes](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 4 — Plataforma interna, métricas e apresentação final](04-fase-plataforma.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Marcos do Capstone — roteiro de 5 partes](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

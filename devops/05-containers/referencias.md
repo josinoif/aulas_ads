@@ -133,10 +133,8 @@ Exemplos aceitos na disciplina:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 5](entrega-avaliativa.md)
-- → Próximo: [Módulo 6 — Infraestrutura como Código (IaC)](../06-infraestrutura-como-codigo/README.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 5](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](README.md) | **Próximo →**<br>[Módulo 6 — Infraestrutura como Código (IaC)](../06-infraestrutura-como-codigo/README.md) |
 
 <!-- nav:end -->

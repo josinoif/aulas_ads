@@ -216,10 +216,8 @@ Reúna os conceitos deste bloco e aplique-os ao cenário:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

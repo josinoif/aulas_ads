@@ -18,10 +18,8 @@ As entregas das Partes 2 e 3 (documento de estratégia + arquivo do pipeline) co
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Exercícios Resolvidos (Métricas e Impacto)](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md) |
 
 <!-- nav:end -->

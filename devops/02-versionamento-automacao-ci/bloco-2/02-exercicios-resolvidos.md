@@ -92,10 +92,8 @@ Se quiser realmente um ZIP (e o `path` aceitar diretório, o Actions já empacot
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Bloco 2 — Integração Contínua (CI)](02-integracao-continua.md)
-- → Próximo: [Bloco 3 — Automação como Redução de Toil](../bloco-3/03-automacao-toil.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Integração Contínua (CI)](02-integracao-continua.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Bloco 3 — Automação como Redução de Toil](../bloco-3/03-automacao-toil.md) |
 
 <!-- nav:end -->

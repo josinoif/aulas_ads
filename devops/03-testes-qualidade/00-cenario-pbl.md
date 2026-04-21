@@ -116,10 +116,8 @@ Leia o **[Bloco 1 — Pirâmide de testes e fundamentos](bloco-1/01-piramide-tes
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Módulo 3 — Testes Automatizados e Qualidade de Software](README.md)
-- → Próximo: [Bloco 1 — Pirâmide de Testes e Fundamentos](bloco-1/01-piramide-testes.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 3 — Testes Automatizados e Qualidade de Software](README.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](README.md) | **Próximo →**<br>[Bloco 1 — Pirâmide de Testes e Fundamentos](bloco-1/01-piramide-testes.md) |
 
 <!-- nav:end -->

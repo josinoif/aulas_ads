@@ -97,9 +97,8 @@ Tudo o que vem depois — pipelines, contêineres, Kubernetes, IaC, observabilid
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: *(início do curso)*
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>_(início do curso)_ | **↑ Índice**<br>Módulo 1 — Fundamentos e cultura DevOps | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

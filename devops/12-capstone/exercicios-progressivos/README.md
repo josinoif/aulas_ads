@@ -69,10 +69,8 @@ Os dois juntos, com honestidade sobre limites e clareza de próximos passos, é 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 4 — Armadilhas, dicas e orientações de banca](../bloco-4/04-armadilhas-e-dicas.md)
-- → Próximo: [Marco 1 — Design e fundação](parte-1-design-fundacao.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 4 — Armadilhas, dicas e orientações de banca](../bloco-4/04-armadilhas-e-dicas.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Marco 1 — Design e fundação](parte-1-design-fundacao.md) |
 
 <!-- nav:end -->

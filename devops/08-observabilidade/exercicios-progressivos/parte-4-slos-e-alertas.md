@@ -267,10 +267,8 @@ Corrija o que aparecer.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md)
-- → Próximo: [Parte 5 — Incidente simulado, postmortem e CI](parte-5-incidente-e-postmortem.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Traces distribuídos com OpenTelemetry + Tempo](parte-3-traces-otel.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Parte 5 — Incidente simulado, postmortem e CI](parte-5-incidente-e-postmortem.md) |
 
 <!-- nav:end -->

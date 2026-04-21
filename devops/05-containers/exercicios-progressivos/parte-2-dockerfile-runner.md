@@ -244,10 +244,8 @@ Avance para a **[Parte 3 — Compose stack](parte-3-compose-stack.md)** para sub
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Parte 1 — Diagnóstico da CodeLab](parte-1-diagnostico.md)
-- → Próximo: [Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico da CodeLab](parte-1-diagnostico.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Parte 3 — Stack Local com Docker Compose](parte-3-compose-stack.md) |
 
 <!-- nav:end -->

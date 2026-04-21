@@ -286,10 +286,8 @@ git add -A && git commit -m "feat(sre-p3): velero + dr playbook + drill + simula
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md)
-- → Próximo: [Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Programa de Chaos Engineering](parte-2-chaos-engineering.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md) |
 
 <!-- nav:end -->

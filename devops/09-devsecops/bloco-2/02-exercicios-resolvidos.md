@@ -258,10 +258,8 @@ Exit code: 1. Qual sua priorização e comunicação ao time?
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Bloco 2 — Segurança do código e das dependências](02-codigo-dependencias.md)
-- → Próximo: [Bloco 3 — Imagens e supply chain: endurecendo o artefato](../bloco-3/03-imagens-supply-chain.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Segurança do código e das dependências](02-codigo-dependencias.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Bloco 3 — Imagens e supply chain: endurecendo o artefato](../bloco-3/03-imagens-supply-chain.md) |
 
 <!-- nav:end -->

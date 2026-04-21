@@ -316,10 +316,8 @@ Servico responsavel pelo envio e recebimento de PIX na OrbitaTech.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Bloco 2 — Backstage e Golden Paths](02-backstage-golden-paths.md)
-- → Próximo: [Bloco 3 — Service Catalog e Contratos de Plataforma](../bloco-3/03-contratos-plataforma.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Backstage e Golden Paths](02-backstage-golden-paths.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Bloco 3 — Service Catalog e Contratos de Plataforma](../bloco-3/03-contratos-plataforma.md) |
 
 <!-- nav:end -->

@@ -425,10 +425,8 @@ Vá aos [exercícios resolvidos do Bloco 4](./04-exercicios-resolvidos.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md)
-- → Próximo: [Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Exercícios resolvidos](../bloco-3/03-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Bloco 4 — Exercícios resolvidos](04-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

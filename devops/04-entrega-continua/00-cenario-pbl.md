@@ -125,10 +125,8 @@ Leia o **[Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](bloc
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Módulo 4 — Entrega Contínua (Continuous Delivery)](README.md)
-- → Próximo: [Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](bloco-1/01-ci-cd-deployment.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 4 — Entrega Contínua (Continuous Delivery)](README.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](README.md) | **Próximo →**<br>[Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](bloco-1/01-ci-cd-deployment.md) |
 
 <!-- nav:end -->

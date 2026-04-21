@@ -187,10 +187,8 @@ Pronto para o Módulo 11 (Plataforma Interna) ou Módulo 12 (Capstone).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md)
-- → Próximo: [Entrega avaliativa — Módulo 10 (SRE e Operações)](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Incident Command System + Tabletop](parte-4-incident-command.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Entrega avaliativa — Módulo 10 (SRE e Operações)](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

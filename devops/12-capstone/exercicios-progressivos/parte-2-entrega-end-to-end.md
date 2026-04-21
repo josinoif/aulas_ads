@@ -101,10 +101,8 @@ Se essas 4 respostas são positivas, o Marco 2 está fechado.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Marco 1 — Design e fundação](parte-1-design-fundacao.md)
-- → Próximo: [Marco 3 — Sistema observável e resiliente](parte-3-operacao-resiliencia.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Marco 1 — Design e fundação](parte-1-design-fundacao.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Marco 3 — Sistema observável e resiliente](parte-3-operacao-resiliencia.md) |
 
 <!-- nav:end -->

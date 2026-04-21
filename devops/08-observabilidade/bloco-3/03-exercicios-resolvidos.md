@@ -179,10 +179,8 @@ Depois da correção: cada log dentro de um span carrega o `trace_id`, e a corre
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](03-logs-traces-otel.md)
-- → Próximo: [Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](../bloco-4/04-alertas-slo-cultura.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](03-logs-traces-otel.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](../bloco-4/04-alertas-slo-cultura.md) |
 
 <!-- nav:end -->

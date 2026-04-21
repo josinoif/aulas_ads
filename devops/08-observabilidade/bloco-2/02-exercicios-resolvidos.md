@@ -190,10 +190,8 @@ histogram_quantile(
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 2 — Métricas com Prometheus e Grafana](02-metricas-prometheus.md)
-- → Próximo: [Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](../bloco-3/03-logs-traces-otel.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Métricas com Prometheus e Grafana](02-metricas-prometheus.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Bloco 3 — Logs (Loki) e Traces (Tempo) com OpenTelemetry](../bloco-3/03-logs-traces-otel.md) |
 
 <!-- nav:end -->

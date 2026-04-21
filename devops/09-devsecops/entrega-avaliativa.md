@@ -142,10 +142,8 @@ O repositório deve conter, ao menos:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Parte 5 — Secrets management, incidente simulado e postmortem](exercicios-progressivos/parte-5-secrets-incidente.md)
-- → Próximo: [Referências — Módulo 9 (DevSecOps)](referencias.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Secrets management, incidente simulado e postmortem](exercicios-progressivos/parte-5-secrets-incidente.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](README.md) | **Próximo →**<br>[Referências — Módulo 9 (DevSecOps)](referencias.md) |
 
 <!-- nav:end -->

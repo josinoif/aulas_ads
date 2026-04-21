@@ -239,10 +239,8 @@ Agora, integrando containers, reescreva em alto nível (sem YAML) a nova sequên
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Bloco 4 — Produção, Segurança, Registries e SBOM](04-producao-seguranca.md)
-- → Próximo: [Exercícios Progressivos — Módulo 5](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Produção, Segurança, Registries e SBOM](04-producao-seguranca.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 5](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

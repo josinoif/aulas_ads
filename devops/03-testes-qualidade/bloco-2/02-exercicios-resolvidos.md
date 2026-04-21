@@ -343,10 +343,8 @@ Siga para o **[Bloco 3 — Quality Gates, cobertura e shift-left](../bloco-3/03-
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Bloco 2 — TDD, BDD e o Ciclo Red-Green-Refactor](02-tdd-bdd.md)
-- → Próximo: [Bloco 3 — Quality Gates, Cobertura e Shift-Left](../bloco-3/03-quality-gates.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — TDD, BDD e o Ciclo Red-Green-Refactor](02-tdd-bdd.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Bloco 3 — Quality Gates, Cobertura e Shift-Left](../bloco-3/03-quality-gates.md) |
 
 <!-- nav:end -->

@@ -187,10 +187,8 @@ No README do repositório, links para:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Parte 5 — Plano de Adoção e Reconhecimento de Limites](exercicios-progressivos/parte-5-plano-e-limites.md)
-- → Próximo: [Referências Bibliográficas — Módulo 5](referencias.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Plano de Adoção e Reconhecimento de Limites](exercicios-progressivos/parte-5-plano-e-limites.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 5](referencias.md) |
 
 <!-- nav:end -->

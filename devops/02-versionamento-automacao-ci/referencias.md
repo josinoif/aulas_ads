@@ -83,10 +83,8 @@ Material de apoio ao Módulo 2 — Versionamento, Automação e CI. Utilize esta
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 2](entrega-avaliativa.md)
-- → Próximo: [Módulo 3 — Testes Automatizados e Qualidade de Software](../03-testes-qualidade/README.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 2](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](README.md) | **Próximo →**<br>[Módulo 3 — Testes Automatizados e Qualidade de Software](../03-testes-qualidade/README.md) |
 
 <!-- nav:end -->

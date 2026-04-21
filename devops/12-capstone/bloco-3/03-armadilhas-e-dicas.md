@@ -146,10 +146,8 @@ Se tudo acima bate, `git tag v0.3.0-operable` e siga para a Fase 4.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 3 — Operação e resiliência](03-fase-operacao.md)
-- → Próximo: [Fase 4 — Plataforma interna, métricas e apresentação final](../bloco-4/04-fase-plataforma.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 3 — Operação e resiliência](03-fase-operacao.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 4 — Plataforma interna, métricas e apresentação final](../bloco-4/04-fase-plataforma.md) |
 
 <!-- nav:end -->

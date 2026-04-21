@@ -85,10 +85,8 @@ Se tudo bate, o Marco 4 está pronto — só falta a banca.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Marco 3 — Sistema observável e resiliente](parte-3-operacao-resiliencia.md)
-- → Próximo: [Marco 5 — Defesa com incidente ao vivo](parte-5-banca-final.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Marco 3 — Sistema observável e resiliente](parte-3-operacao-resiliencia.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Marco 5 — Defesa com incidente ao vivo](parte-5-banca-final.md) |
 
 <!-- nav:end -->

@@ -301,10 +301,8 @@ O VEX é publicado junto do SBOM/release e pode ser consumido por scanners moder
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Bloco 3 — Imagens e supply chain: endurecendo o artefato](03-imagens-supply-chain.md)
-- → Próximo: [Bloco 4 — Segurança do cluster em produção](../bloco-4/04-k8s-producao.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Imagens e supply chain: endurecendo o artefato](03-imagens-supply-chain.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Bloco 4 — Segurança do cluster em produção](../bloco-4/04-k8s-producao.md) |
 
 <!-- nav:end -->

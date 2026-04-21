@@ -262,10 +262,8 @@ tender a 100%.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Bloco 4 — Métricas de Plataforma: DORA, SPACE, DevEx e NPS interno](04-metricas-plataforma.md)
-- → Próximo: [Exercícios progressivos — Módulo 11 (Plataforma Interna)](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Métricas de Plataforma: DORA, SPACE, DevEx e NPS interno](04-metricas-plataforma.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Exercícios progressivos — Módulo 11 (Plataforma Interna)](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

@@ -144,10 +144,8 @@ Sempre referencie **autor + obra + capítulo/página** quando possível. Em entr
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 1](entrega-avaliativa.md)
-- → Próximo: [Módulo 2 — Versionamento, Automação e CI](../02-versionamento-automacao-ci/README.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 1](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](README.md) | **Próximo →**<br>[Módulo 2 — Versionamento, Automação e CI](../02-versionamento-automacao-ci/README.md) |
 
 <!-- nav:end -->

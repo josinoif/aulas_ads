@@ -215,10 +215,8 @@ logitrack-tracking/
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md)
-- → Próximo: [Parte 5 — Plano de Transformação e Projeção DORA](parte-5-plano-transformacao.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Feature Flags e Estratégia de Release](parte-3-feature-flags.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Parte 5 — Plano de Transformação e Projeção DORA](parte-5-plano-transformacao.md) |
 
 <!-- nav:end -->

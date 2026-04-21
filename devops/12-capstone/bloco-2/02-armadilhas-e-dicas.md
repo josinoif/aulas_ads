@@ -120,10 +120,8 @@ Se tudo marcado, `git tag v0.2.0-delivery-ready` e parta para a Fase 3.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 2 — Entrega contínua end-to-end](02-fase-entrega.md)
-- → Próximo: [Fase 3 — Operação e resiliência](../bloco-3/03-fase-operacao.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 2 — Entrega contínua end-to-end](02-fase-entrega.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 3 — Operação e resiliência](../bloco-3/03-fase-operacao.md) |
 
 <!-- nav:end -->

@@ -131,9 +131,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 5](../05-containers/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 5](../05-containers/referencias.md) | **↑ Índice**<br>Módulo 6 — Infraestrutura como código | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

@@ -104,10 +104,8 @@ Declare ao menos 1 item a deprecar. Template no Bloco 3. Inclui:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md)
-- → Próximo: [Parte 5 — Métricas, survey e evolução](parte-5-metricas.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 3 — Golden paths: dois templates funcionais](parte-3-golden-paths.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Parte 5 — Métricas, survey e evolução](parte-5-metricas.md) |
 
 <!-- nav:end -->

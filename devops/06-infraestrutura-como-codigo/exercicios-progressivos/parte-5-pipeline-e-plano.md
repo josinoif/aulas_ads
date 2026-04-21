@@ -607,10 +607,8 @@ A diferença é de **orgânica** — times deixam de esperar SREs, SREs deixam d
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md)
-- → Próximo: [Entrega Avaliativa do Módulo 6](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 6](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

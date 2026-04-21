@@ -181,10 +181,8 @@ Proposta de checklist. Cada resposta SIM conta 1 ponto.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](01-ci-cd-deployment.md)
-- → Próximo: [Bloco 2 — Deployment Pipeline e Promoção de Artefatos](../bloco-2/02-deployment-pipeline.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — CI vs. Continuous Delivery vs. Continuous Deployment](01-ci-cd-deployment.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Bloco 2 — Deployment Pipeline e Promoção de Artefatos](../bloco-2/02-deployment-pipeline.md) |
 
 <!-- nav:end -->

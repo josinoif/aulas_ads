@@ -252,10 +252,8 @@ Siga para o **[Bloco 2 — TDD, BDD e ciclo Red-Green-Refactor](../bloco-2/02-td
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Bloco 1 — Pirâmide de Testes e Fundamentos](01-piramide-testes.md)
-- → Próximo: [Bloco 2 — TDD, BDD e o Ciclo Red-Green-Refactor](../bloco-2/02-tdd-bdd.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Pirâmide de Testes e Fundamentos](01-piramide-testes.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Bloco 2 — TDD, BDD e o Ciclo Red-Green-Refactor](../bloco-2/02-tdd-bdd.md) |
 
 <!-- nav:end -->

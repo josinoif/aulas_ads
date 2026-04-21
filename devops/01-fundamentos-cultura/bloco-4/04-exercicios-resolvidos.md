@@ -192,10 +192,8 @@ Você concluiu os 4 blocos teóricos. Agora siga para os **[Exercícios Progress
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](04-cultura-pratica-antipadroes.md)
-- → Próximo: [Exercícios Progressivos — Módulo 1](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Cultura em Prática, Anti-padrões e Introdução às Métricas DORA](04-cultura-pratica-antipadroes.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 1](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

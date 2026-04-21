@@ -83,10 +83,8 @@ Com o diagnóstico feito, siga para a **Parte 2 — Estratégia de versionamento
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 2](README.md)
-- → Próximo: [Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 2](README.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Parte 2 — Estratégia de Versionamento (1h)](parte-2-estrategia-versionamento.md) |
 
 <!-- nav:end -->

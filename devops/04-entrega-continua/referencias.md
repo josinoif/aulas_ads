@@ -163,10 +163,8 @@ Exemplos aceitos na disciplina:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Entrega Avaliativa do Módulo 4](entrega-avaliativa.md)
-- → Próximo: [Módulo 5 — Containers](../05-containers/README.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega Avaliativa do Módulo 4](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](README.md) | **Próximo →**<br>[Módulo 5 — Containers](../05-containers/README.md) |
 
 <!-- nav:end -->

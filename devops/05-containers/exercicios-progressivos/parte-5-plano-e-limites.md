@@ -185,10 +185,8 @@ Antes disso, **Módulo 6 — Infraestrutura como Código** trata de **onde** ess
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Parte 4 — Pipeline de Imagens (CI com scan, SBOM, assinatura)](parte-4-pipeline-imagens.md)
-- → Próximo: [Entrega Avaliativa do Módulo 5](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Pipeline de Imagens (CI com scan, SBOM, assinatura)](parte-4-pipeline-imagens.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 5](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

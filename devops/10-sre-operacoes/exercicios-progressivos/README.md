@@ -95,10 +95,8 @@ pagorapay-sre/
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md)
-- → Próximo: [Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Exercícios resolvidos](../bloco-4/04-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Parte 1 — SLOs, Error Budget Policy e Toil Tracker](parte-1-slo-toil.md) |
 
 <!-- nav:end -->

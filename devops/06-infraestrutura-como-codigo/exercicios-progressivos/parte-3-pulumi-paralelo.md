@@ -428,10 +428,8 @@ Avance para a **[Parte 4 — Produção (multi-env + state remoto + secrets)](pa
 
 <!-- nav:start -->
 
-**Navegação — Módulo 6 — Infraestrutura como código**
-
-- ← Anterior: [Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md)
-- → Próximo: [Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md)
-- ↑ Índice do módulo: [Módulo 6 — Infraestrutura como código](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — IaC v0 com OpenTofu](parte-2-iac-v0-opentofu.md) | **↑ Índice**<br>[Módulo 6 — Infraestrutura como código](../README.md) | **Próximo →**<br>[Parte 4 — Produção: Multi-ambiente + State Remoto + Secrets](parte-4-producao.md) |
 
 <!-- nav:end -->

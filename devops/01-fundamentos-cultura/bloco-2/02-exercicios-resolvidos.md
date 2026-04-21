@@ -218,10 +218,8 @@ Siga para o **[Bloco 3 — Os Três Caminhos](../bloco-3/03-tres-caminhos.md)**.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Bloco 2 — Modelo CALMS](02-modelo-calms.md)
-- → Próximo: [Bloco 3 — Os Três Caminhos (The Three Ways)](../bloco-3/03-tres-caminhos.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Modelo CALMS](02-modelo-calms.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](../README.md) | **Próximo →**<br>[Bloco 3 — Os Três Caminhos (The Three Ways)](../bloco-3/03-tres-caminhos.md) |
 
 <!-- nav:end -->

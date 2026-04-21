@@ -132,10 +132,8 @@ Leia o **[Bloco 1 — Fundamentos de Kubernetes](bloco-1/01-fundamentos-k8s.md)*
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Módulo 7 — Kubernetes](README.md)
-- → Próximo: [Bloco 1 — Fundamentos de Kubernetes](bloco-1/01-fundamentos-k8s.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 7 — Kubernetes](README.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](README.md) | **Próximo →**<br>[Bloco 1 — Fundamentos de Kubernetes](bloco-1/01-fundamentos-k8s.md) |
 
 <!-- nav:end -->

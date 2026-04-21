@@ -140,10 +140,8 @@ Inclua no README do projeto um **link para esses 3 commits** como prova.
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Parte 5 — Reflexão e Plano MediQuick](exercicios-progressivos/parte-5-reflexao-plano.md)
-- → Próximo: [Referências Bibliográficas — Módulo 3](referencias.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Reflexão e Plano MediQuick](exercicios-progressivos/parte-5-reflexao-plano.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](README.md) | **Próximo →**<br>[Referências Bibliográficas — Módulo 3](referencias.md) |
 
 <!-- nav:end -->

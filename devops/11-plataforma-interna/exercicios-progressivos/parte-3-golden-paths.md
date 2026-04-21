@@ -159,10 +159,8 @@ Para cada template:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md)
-- → Próximo: [Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 2 — Backstage e Software Catalog](parte-2-backstage-catalogo.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](../README.md) | **Próximo →**<br>[Parte 4 — Capabilities, tiers e contratos](parte-4-contratos.md) |
 
 <!-- nav:end -->

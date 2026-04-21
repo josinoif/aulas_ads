@@ -484,10 +484,8 @@ Vá aos [exercícios resolvidos do Bloco 1](./01-exercicios-resolvidos.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](../00-cenario-pbl.md)
-- → Próximo: [Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Bloco 1 — Exercícios resolvidos](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

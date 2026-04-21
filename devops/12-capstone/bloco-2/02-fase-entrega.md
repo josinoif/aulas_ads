@@ -473,10 +473,8 @@ Com o sistema rodando de ponta a ponta, a [Fase 3 — Operação e resiliência]
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 1 — Armadilhas, dicas e orientações de banca](../bloco-1/01-armadilhas-e-dicas.md)
-- → Próximo: [Fase 2 — Armadilhas, dicas e orientações de banca](02-armadilhas-e-dicas.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 1 — Armadilhas, dicas e orientações de banca](../bloco-1/01-armadilhas-e-dicas.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 2 — Armadilhas, dicas e orientações de banca](02-armadilhas-e-dicas.md) |
 
 <!-- nav:end -->

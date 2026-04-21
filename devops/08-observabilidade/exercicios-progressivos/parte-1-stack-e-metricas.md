@@ -394,10 +394,8 @@ python devops/08-observabilidade/bloco-2/metrics_audit.py --url http://localhost
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 8 (Observabilidade)](README.md)
-- → Próximo: [Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 8 (Observabilidade)](README.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Parte 2 — Logs estruturados com Loki](parte-2-logs-estruturados.md) |
 
 <!-- nav:end -->

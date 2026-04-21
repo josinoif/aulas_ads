@@ -150,10 +150,8 @@ Com o diagnóstico pronto, avance para a **[Parte 2 — TDD do serviço de Agend
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Exercícios Progressivos — Módulo 3](README.md)
-- → Próximo: [Parte 2 — TDD do Serviço de Agendamento](parte-2-tdd-agendamento.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Exercícios Progressivos — Módulo 3](README.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Parte 2 — TDD do Serviço de Agendamento](parte-2-tdd-agendamento.md) |
 
 <!-- nav:end -->

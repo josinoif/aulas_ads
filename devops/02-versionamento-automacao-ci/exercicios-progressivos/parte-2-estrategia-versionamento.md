@@ -84,10 +84,8 @@ Na **Parte 3 — Construção de Pipeline CI** ([parte-3-pipeline-ci.md](parte-3
 
 <!-- nav:start -->
 
-**Navegação — Módulo 2 — Versionamento e integração contínua**
-
-- ← Anterior: [Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md)
-- → Próximo: [Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md)
-- ↑ Índice do módulo: [Módulo 2 — Versionamento e integração contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Diagnóstico (30 min)](parte-1-diagnostico.md) | **↑ Índice**<br>[Módulo 2 — Versionamento e integração contínua](../README.md) | **Próximo →**<br>[Parte 3 — Construção de Pipeline CI (2h)](parte-3-pipeline-ci.md) |
 
 <!-- nav:end -->

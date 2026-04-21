@@ -140,9 +140,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Referências — Módulo 9 (DevSecOps)](../09-devsecops/referencias.md)
-- → Próximo: [Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências — Módulo 9 (DevSecOps)](../09-devsecops/referencias.md) | **↑ Índice**<br>Módulo 10 — SRE e operações | **Próximo →**<br>[Cenário PBL — PagoraPay: a fintech de PIX que queimou o orçamento da confiabilidade](00-cenario-pbl.md) |
 
 <!-- nav:end -->

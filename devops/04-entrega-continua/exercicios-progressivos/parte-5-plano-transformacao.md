@@ -191,10 +191,8 @@ Esse conjunto **é** seu portfólio para entrevistas na área DevOps/Platform En
 
 <!-- nav:start -->
 
-**Navegação — Módulo 4 — Entrega contínua**
-
-- ← Anterior: [Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md)
-- → Próximo: [Entrega Avaliativa do Módulo 4](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 4 — Entrega contínua](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Rollback e Migration Expand/Contract](parte-4-rollback-migration.md) | **↑ Índice**<br>[Módulo 4 — Entrega contínua](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 4](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

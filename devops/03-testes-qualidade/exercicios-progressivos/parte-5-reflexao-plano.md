@@ -147,10 +147,8 @@ Com este documento, você tem **todos os artefatos** da entrega avaliativa:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 3 — Testes e qualidade de software**
-
-- ← Anterior: [Parte 4 — Quality Gates no Pipeline CI](parte-4-quality-gates-ci.md)
-- → Próximo: [Entrega Avaliativa do Módulo 3](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 3 — Testes e qualidade de software](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Quality Gates no Pipeline CI](parte-4-quality-gates-ci.md) | **↑ Índice**<br>[Módulo 3 — Testes e qualidade de software](../README.md) | **Próximo →**<br>[Entrega Avaliativa do Módulo 3](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

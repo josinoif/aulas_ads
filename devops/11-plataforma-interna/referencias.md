@@ -78,10 +78,8 @@
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Entrega avaliativa — Módulo 11 (Plataforma Interna)](entrega-avaliativa.md)
-- → Próximo: [Módulo 12 — Capstone: da ideia à operação](../12-capstone/README.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Entrega avaliativa — Módulo 11 (Plataforma Interna)](entrega-avaliativa.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](README.md) | **Próximo →**<br>[Módulo 12 — Capstone: da ideia à operação](../12-capstone/README.md) |
 
 <!-- nav:end -->

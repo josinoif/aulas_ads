@@ -210,10 +210,8 @@ Se você conseguir responder essa pergunta **com evidência** (ADRs, métricas, 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Módulo 12 — Capstone: da ideia à operação](README.md)
-- → Próximo: [Fase 1 — Design e fundação](bloco-1/01-fase-design.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 12 — Capstone: da ideia à operação](README.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](README.md) | **Próximo →**<br>[Fase 1 — Design e fundação](bloco-1/01-fase-design.md) |
 
 <!-- nav:end -->

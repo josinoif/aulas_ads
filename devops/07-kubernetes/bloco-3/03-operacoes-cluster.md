@@ -933,10 +933,8 @@ flowchart TB
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 2 — Exercícios Resolvidos](../bloco-2/02-exercicios-resolvidos.md)
-- → Próximo: [Bloco 3 — Exercícios Resolvidos](03-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Exercícios Resolvidos](../bloco-2/02-exercicios-resolvidos.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 3 — Exercícios Resolvidos](03-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

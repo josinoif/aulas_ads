@@ -407,10 +407,8 @@ Nenhum deles é coberto em profundidade neste módulo — mas **você deve saber
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md)
-- → Próximo: [Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Cenário PBL — Problema Norteador do Módulo](../00-cenario-pbl.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Exercícios Resolvidos — Bloco 1](01-exercicios-resolvidos.md) |
 
 <!-- nav:end -->

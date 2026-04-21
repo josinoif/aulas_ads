@@ -187,10 +187,8 @@ explicacao formal em 24h. Como Comms conduz? Que template voce usa?"
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Bloco 4 — Gestão de Incidentes em Escala: papéis, comunicação e aprendizado](04-incidentes-escala.md)
-- → Próximo: [Exercícios progressivos — Módulo 10 (SRE e Operações)](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Gestão de Incidentes em Escala: papéis, comunicação e aprendizado](04-incidentes-escala.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](../README.md) | **Próximo →**<br>[Exercícios progressivos — Módulo 10 (SRE e Operações)](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->

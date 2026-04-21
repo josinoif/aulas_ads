@@ -291,10 +291,8 @@ def test_chmod_777_aviso(tmp_path):
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Bloco 2 — Dockerfile e Boas Práticas](02-dockerfile-boas-praticas.md)
-- → Próximo: [Bloco 3 — Docker Compose e Ambientes Multi-Serviço](../bloco-3/03-compose-multi-servico.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 2 — Dockerfile e Boas Práticas](02-dockerfile-boas-praticas.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Bloco 3 — Docker Compose e Ambientes Multi-Serviço](../bloco-3/03-compose-multi-servico.md) |
 
 <!-- nav:end -->

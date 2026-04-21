@@ -317,10 +317,8 @@ Referências consolidadas estão em [referencias.md](../referencias.md).
 
 <!-- nav:start -->
 
-**Navegação — Módulo 9 — DevSecOps**
-
-- ← Anterior: [Parte 4 — Admission control e cluster endurecido](parte-4-admission-cluster.md)
-- → Próximo: [Entrega avaliativa — Módulo 9 (DevSecOps)](../entrega-avaliativa.md)
-- ↑ Índice do módulo: [Módulo 9 — DevSecOps](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 4 — Admission control e cluster endurecido](parte-4-admission-cluster.md) | **↑ Índice**<br>[Módulo 9 — DevSecOps](../README.md) | **Próximo →**<br>[Entrega avaliativa — Módulo 9 (DevSecOps)](../entrega-avaliativa.md) |
 
 <!-- nav:end -->

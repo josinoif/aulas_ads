@@ -620,10 +620,8 @@ Avance para o **[Bloco 4 — Produção, Helm e GitOps](../bloco-4/04-producao-h
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Bloco 3 — Operações: isolamento, segurança, escala e entrada](03-operacoes-cluster.md)
-- → Próximo: [Bloco 4 — Produção: Helm, GitOps e os limites do K8s](../bloco-4/04-producao-helm-gitops.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 3 — Operações: isolamento, segurança, escala e entrada](03-operacoes-cluster.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Bloco 4 — Produção: Helm, GitOps e os limites do K8s](../bloco-4/04-producao-helm-gitops.md) |
 
 <!-- nav:end -->

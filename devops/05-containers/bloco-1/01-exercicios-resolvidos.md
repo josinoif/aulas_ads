@@ -194,10 +194,8 @@ Crítica ponto a ponto:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Bloco 1 — Fundamentos de Containers](01-fundamentos-containers.md)
-- → Próximo: [Bloco 2 — Dockerfile e Boas Práticas](../bloco-2/02-dockerfile-boas-praticas.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 1 — Fundamentos de Containers](01-fundamentos-containers.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](../README.md) | **Próximo →**<br>[Bloco 2 — Dockerfile e Boas Práticas](../bloco-2/02-dockerfile-boas-praticas.md) |
 
 <!-- nav:end -->

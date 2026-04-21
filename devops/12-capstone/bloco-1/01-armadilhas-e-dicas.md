@@ -102,10 +102,8 @@ Se tudo acima se aplica, rode `git tag v0.1.0-design-ready` e siga para a Fase 2
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Fase 1 — Design e fundação](01-fase-design.md)
-- → Próximo: [Fase 2 — Entrega contínua end-to-end](../bloco-2/02-fase-entrega.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Fase 1 — Design e fundação](01-fase-design.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 2 — Entrega contínua end-to-end](../bloco-2/02-fase-entrega.md) |
 
 <!-- nav:end -->

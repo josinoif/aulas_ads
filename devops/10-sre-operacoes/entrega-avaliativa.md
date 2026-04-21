@@ -107,10 +107,8 @@ O repositório deve conter:
 
 <!-- nav:start -->
 
-**Navegação — Módulo 10 — SRE e operações**
-
-- ← Anterior: [Parte 5 — Postmortem Blameless e Learning Review](exercicios-progressivos/parte-5-postmortem-learning.md)
-- → Próximo: [Referências — Módulo 10 (SRE e Operações)](referencias.md)
-- ↑ Índice do módulo: [Módulo 10 — SRE e operações](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Postmortem Blameless e Learning Review](exercicios-progressivos/parte-5-postmortem-learning.md) | **↑ Índice**<br>[Módulo 10 — SRE e operações](README.md) | **Próximo →**<br>[Referências — Módulo 10 (SRE e Operações)](referencias.md) |
 
 <!-- nav:end -->

@@ -344,10 +344,8 @@ Avance para a **[Parte 3 — Resiliência e operações](parte-3-resiliencia.md)
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md)
-- → Próximo: [Parte 3 — Resiliência e operações](parte-3-resiliencia.md)
-- ↑ Índice do módulo: [Módulo 7 — Kubernetes](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 1 — Cluster local + primeiros manifests](parte-1-cluster-local.md) | **↑ Índice**<br>[Módulo 7 — Kubernetes](../README.md) | **Próximo →**<br>[Parte 3 — Resiliência e operações](parte-3-resiliencia.md) |
 
 <!-- nav:end -->

@@ -346,10 +346,8 @@ Com decisões registradas e CI verde, você está pronto para [Fase 2 — Entreg
 
 <!-- nav:start -->
 
-**Navegação — Módulo 12 — Capstone integrador**
-
-- ← Anterior: [Projeto Capstone — CivicaBR](../00-projeto-capstone.md)
-- → Próximo: [Fase 1 — Armadilhas, dicas e orientações de banca](01-armadilhas-e-dicas.md)
-- ↑ Índice do módulo: [Módulo 12 — Capstone integrador](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Projeto Capstone — CivicaBR](../00-projeto-capstone.md) | **↑ Índice**<br>[Módulo 12 — Capstone integrador](../README.md) | **Próximo →**<br>[Fase 1 — Armadilhas, dicas e orientações de banca](01-armadilhas-e-dicas.md) |
 
 <!-- nav:end -->

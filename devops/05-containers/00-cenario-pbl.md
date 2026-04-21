@@ -125,10 +125,8 @@ Leia o **[Bloco 1 — Fundamentos de containers](bloco-1/01-fundamentos-containe
 
 <!-- nav:start -->
 
-**Navegação — Módulo 5 — Containers e orquestração**
-
-- ← Anterior: [Módulo 5 — Containers](README.md)
-- → Próximo: [Bloco 1 — Fundamentos de Containers](bloco-1/01-fundamentos-containers.md)
-- ↑ Índice do módulo: [Módulo 5 — Containers e orquestração](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 5 — Containers](README.md) | **↑ Índice**<br>[Módulo 5 — Containers e orquestração](README.md) | **Próximo →**<br>[Bloco 1 — Fundamentos de Containers](bloco-1/01-fundamentos-containers.md) |
 
 <!-- nav:end -->

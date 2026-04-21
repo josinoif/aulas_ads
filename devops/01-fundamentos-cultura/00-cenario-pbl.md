@@ -94,10 +94,8 @@ Leia o **[Bloco 1 — O que é DevOps e a Parede da Confusão](bloco-1/01-o-que-
 
 <!-- nav:start -->
 
-**Navegação — Módulo 1 — Fundamentos e cultura DevOps**
-
-- ← Anterior: [Módulo 1 — Fundamentos de DevOps e Cultura](README.md)
-- → Próximo: [Bloco 1 — O que é DevOps e a Parede da Confusão](bloco-1/01-o-que-e-devops.md)
-- ↑ Índice do módulo: [Módulo 1 — Fundamentos e cultura DevOps](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Módulo 1 — Fundamentos de DevOps e Cultura](README.md) | **↑ Índice**<br>[Módulo 1 — Fundamentos e cultura DevOps](README.md) | **Próximo →**<br>[Bloco 1 — O que é DevOps e a Parede da Confusão](bloco-1/01-o-que-e-devops.md) |
 
 <!-- nav:end -->

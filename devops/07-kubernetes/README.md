@@ -155,9 +155,8 @@ flowchart LR
 
 <!-- nav:start -->
 
-**Navegação — Módulo 7 — Kubernetes**
-
-- ← Anterior: [Referências Bibliográficas — Módulo 6](../06-infraestrutura-como-codigo/referencias.md)
-- → Próximo: [Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Referências Bibliográficas — Módulo 6](../06-infraestrutura-como-codigo/referencias.md) | **↑ Índice**<br>Módulo 7 — Kubernetes | **Próximo →**<br>[Cenário PBL — Problema Norteador do Módulo](00-cenario-pbl.md) |
 
 <!-- nav:end -->

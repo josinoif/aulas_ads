@@ -105,10 +105,8 @@ Demonstrar que você é capaz de **tratar plataforma como produto interno**: def
 
 <!-- nav:start -->
 
-**Navegação — Módulo 11 — Plataforma interna**
-
-- ← Anterior: [Parte 5 — Métricas, survey e evolução](exercicios-progressivos/parte-5-metricas.md)
-- → Próximo: [Referências — Módulo 11 (Plataforma Interna)](referencias.md)
-- ↑ Índice do módulo: [Módulo 11 — Plataforma interna](README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Parte 5 — Métricas, survey e evolução](exercicios-progressivos/parte-5-metricas.md) | **↑ Índice**<br>[Módulo 11 — Plataforma interna](README.md) | **Próximo →**<br>[Referências — Módulo 11 (Plataforma Interna)](referencias.md) |
 
 <!-- nav:end -->

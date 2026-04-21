@@ -332,10 +332,8 @@ Combine com `promtool check rules` e `promtool test rules` para cobertura dupla 
 
 <!-- nav:start -->
 
-**Navegação — Módulo 8 — Observabilidade**
-
-- ← Anterior: [Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](04-alertas-slo-cultura.md)
-- → Próximo: [Exercícios Progressivos — Módulo 8 (Observabilidade)](../exercicios-progressivos/README.md)
-- ↑ Índice do módulo: [Módulo 8 — Observabilidade](../README.md)
+| &nbsp; | &nbsp; | &nbsp; |
+|:--|:--:|--:|
+| **← Anterior**<br>[Bloco 4 — Alertas, SLO-based alerting, runbooks e cultura on-call](04-alertas-slo-cultura.md) | **↑ Índice**<br>[Módulo 8 — Observabilidade](../README.md) | **Próximo →**<br>[Exercícios Progressivos — Módulo 8 (Observabilidade)](../exercicios-progressivos/README.md) |
 
 <!-- nav:end -->
