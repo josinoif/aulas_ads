@@ -1,6 +1,6 @@
-# Tutorial: Upload e listagem/download de arquivos
+# Tutorial: Upload e listagem/download de arquivos (React 19)
 
-Neste tutorial você vai criar um formulário de **upload** de arquivo (envio com FormData para uma API) e uma área que simula **listagem e download**. A API pode ser simulada com um serviço como [CRUDCrud](https://crudcrud.com) ou um backend local; aqui usamos uma URL de exemplo.
+Neste tutorial você vai criar um formulário de **upload** usando `<form action>` + `useActionState` + `useFormStatus`, e uma área que simula **listagem e download**. Usamos [httpbin.org](https://httpbin.org) como endpoint de eco para testar o envio.
 
 ## Passo 1: Configurar o projeto
 
@@ -11,76 +11,117 @@ npm install
 npm install axios
 ```
 
-## Passo 2: Componente de Upload (com CSS Module)
+## Passo 2: Botão reutilizável com `useFormStatus`
 
-Crie a pasta `src/components` e o arquivo `src/components/UploadArquivo.module.css`:
+Crie a pasta `src/components` e o arquivo `src/components/BotaoEnviar.jsx`:
+
+```jsx
+import { useFormStatus } from 'react-dom';
+
+function BotaoEnviar({ children = 'Enviar' }) {
+  const { pending } = useFormStatus();
+  return (
+    <button type="submit" disabled={pending}>
+      {pending ? 'Enviando…' : children}
+    </button>
+  );
+}
+
+export default BotaoEnviar;
+```
+
+## Passo 3: Componente de Upload com `useActionState`
+
+Crie `src/components/UploadArquivo.module.css`:
 
 ```css
 .section {
   margin-bottom: 24px;
 }
 
+.preview {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
 .success {
-  color: green;
+  color: #0a7f2e;
 }
 
 .error {
-  color: red;
+  color: #b00020;
 }
 ```
 
-Crie o arquivo `src/components/UploadArquivo.jsx`:
+Crie `src/components/UploadArquivo.jsx`:
 
 ```jsx
-import { useState } from 'react';
+import { useActionState } from 'react';
 import axios from 'axios';
+import BotaoEnviar from './BotaoEnviar';
 import styles from './UploadArquivo.module.css';
 
+async function enviarArquivo(prev, formData) {
+  const arquivo = formData.get('arquivo');
+
+  if (!arquivo || !(arquivo instanceof File) || arquivo.size === 0) {
+    return { status: 'error', mensagem: 'Selecione um arquivo válido.' };
+  }
+
+  const MAX_MB = 5;
+  if (arquivo.size > MAX_MB * 1024 * 1024) {
+    return {
+      status: 'error',
+      mensagem: `Arquivo maior que ${MAX_MB}MB.`,
+    };
+  }
+
+  try {
+    const fd = new FormData();
+    fd.append('arquivo', arquivo);
+
+    const res = await axios.post('https://httpbin.org/post', fd, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    });
+
+    if (res.status >= 200 && res.status < 300) {
+      return {
+        status: 'success',
+        mensagem: `Arquivo "${arquivo.name}" enviado (${formatar(arquivo.size)}).`,
+      };
+    }
+    return { status: 'error', mensagem: `HTTP ${res.status}` };
+  } catch (err) {
+    return { status: 'error', mensagem: err.message };
+  }
+}
+
+function formatar(bytes) {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / 1024 / 1024).toFixed(2)} MB`;
+}
+
 function UploadArquivo() {
-  const [arquivo, setArquivo] = useState(null);
-  const [status, setStatus] = useState(''); // 'enviando' | 'sucesso' | 'erro'
-  const [nomeArquivo, setNomeArquivo] = useState('');
-
-  const handleFileChange = (e) => {
-    const file = e.target.files?.[0];
-    if (file) {
-      setArquivo(file);
-      setNomeArquivo(file.name);
-      setStatus('');
-    }
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!arquivo) return;
-    setStatus('enviando');
-    try {
-      const formData = new FormData();
-      formData.append('arquivo', arquivo);
-      await axios.post('https://httpbin.org/post', formData, {
-        headers: { 'Content-Type': 'multipart/form-data' },
-      });
-      setStatus('sucesso');
-      setArquivo(null);
-      setNomeArquivo('');
-      e.target.reset();
-    } catch (err) {
-      setStatus('erro');
-    }
-  };
+  const [state, formAction] = useActionState(enviarArquivo, {
+    status: 'idle',
+    mensagem: '',
+  });
 
   return (
     <div className={styles.section}>
       <h3>Upload de arquivo</h3>
-      <form onSubmit={handleSubmit}>
-        <input type="file" onChange={handleFileChange} />
-        {nomeArquivo && <p>Arquivo selecionado: {nomeArquivo}</p>}
-        <button type="submit" disabled={!arquivo || status === 'enviando'}>
-          {status === 'enviando' ? 'Enviando...' : 'Enviar'}
-        </button>
+      <form action={formAction}>
+        <input type="file" name="arquivo" />
+        <BotaoEnviar>Enviar</BotaoEnviar>
       </form>
-      {status === 'sucesso' && <p className={styles.success}>Enviado com sucesso!</p>}
-      {status === 'erro' && <p className={styles.error}>Erro ao enviar.</p>}
+      {state.status === 'success' && (
+        <p className={styles.success}>{state.mensagem}</p>
+      )}
+      {state.status === 'error' && (
+        <p className={styles.error}>{state.mensagem}</p>
+      )}
     </div>
   );
 }
@@ -88,7 +129,13 @@ function UploadArquivo() {
 export default UploadArquivo;
 ```
 
-## Passo 3: Componente de listagem e download (simulado, com CSS Module)
+Destaques:
+
+- O `<input type="file" name="arquivo" />` automaticamente entra no `FormData` passado para a action — **não precisa de `useState` nem `onChange`**.
+- A action valida tamanho/tipo e devolve `{ status, mensagem }`.
+- O `BotaoEnviar` cuida do `pending` via `useFormStatus`.
+
+## Passo 4: Listagem e download (simulado)
 
 Crie `src/components/ListaArquivos.module.css`:
 
@@ -99,6 +146,12 @@ Crie `src/components/ListaArquivos.module.css`:
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
   margin-bottom: 8px;
 }
 
@@ -136,7 +189,7 @@ function ListaArquivos() {
       <ul className={styles.list}>
         {arquivosSimulados.map((arq) => (
           <li key={arq.id} className={styles.item}>
-            {arq.nome}{' '}
+            <span>{arq.nome}</span>
             <button onClick={() => handleDownload(arq.nome, arq.url)}>
               Baixar
             </button>
@@ -153,15 +206,33 @@ function ListaArquivos() {
 export default ListaArquivos;
 ```
 
-## Passo 4: Integrar no App (com CSS Module)
+### Exemplo: download a partir de um blob
+
+Se a API devolver o arquivo como blob, você pode forçar o download assim:
+
+```jsx
+async function baixar(url, nomeSugerido) {
+  const res = await fetch(url);
+  const blob = await res.blob();
+  const href = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = href;
+  link.download = nomeSugerido;
+  link.click();
+  URL.revokeObjectURL(href);
+}
+```
+
+## Passo 5: Integrar no App
 
 Crie `src/App.module.css`:
 
 ```css
 .container {
   padding: 24px;
-  max-width: 500px;
+  max-width: 560px;
   margin: 0 auto;
+  font-family: system-ui, sans-serif;
 }
 
 .title {
@@ -179,7 +250,7 @@ import ListaArquivos from './components/ListaArquivos';
 function App() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Upload e download de arquivos</h1>
+      <h1 className={styles.title}>Upload e download (React 19)</h1>
       <UploadArquivo />
       <ListaArquivos />
     </div>
@@ -189,19 +260,21 @@ function App() {
 export default App;
 ```
 
-## Passo 5: Executar a aplicação
+## Passo 6: Executar a aplicação
 
 ```bash
 npm run dev
 ```
 
-Selecione um arquivo, clique em Enviar e observe o estado "Enviando..." e a resposta (httpbin.org devolve o que recebeu). A listagem mostra como disparar um download; em produção você usaria a URL retornada pela API.
+Selecione um arquivo e clique em Enviar. Você verá o botão "Enviando…", depois a mensagem de sucesso com o nome e tamanho do arquivo. A listagem mostra como disparar um download; em produção você usaria a URL retornada pela API.
 
 ## Explicação dos principais elementos
 
-- **FormData**: monta o corpo da requisição como multipart/form-data; `append('arquivo', file)` envia o arquivo com o nome do campo esperado pelo backend.
-- **input type="file"**: `e.target.files[0]` é o objeto **File**; tem `name`, `size`, `type`.
-- **Download**: em uma API real, o backend pode retornar uma URL de download ou o blob; com blob você usa `URL.createObjectURL(blob)` e um `<a download>` para forçar o download.
+- **`FormData`**: montado automaticamente a partir do `<form>`; campos com `name` são incluídos.
+- **`<input type="file" name="arquivo">`**: o browser já coloca o `File` no FormData.
+- **`useActionState`**: gerencia o retorno da action (`status` + `mensagem`).
+- **`useFormStatus`**: o botão é desabilitado e muda o texto sem precisar de prop.
+- **Download**: usando um `<a>` temporário com `download` ou `URL.createObjectURL(blob)`.
 
 ## Próximos passos
 

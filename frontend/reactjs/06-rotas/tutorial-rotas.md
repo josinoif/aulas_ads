@@ -1,6 +1,6 @@
-# Tutorial: Rotas com React Router
+# Tutorial: Rotas com React Router v7
 
-Neste tutorial você vai configurar o React Router em um projeto React, criar rotas para Home, Sobre e um detalhe com parâmetro, e usar `Link` e `useNavigate`.
+Neste tutorial você vai configurar o **React Router v7** em um projeto React 19, criar rotas para Home, Sobre e um detalhe com parâmetro, e usar `Link`, `NavLink` e `useNavigate`.
 
 ## Passo 1: Criar o projeto e instalar o React Router
 
@@ -11,11 +11,13 @@ npm install
 npm install react-router-dom
 ```
 
+> O `react-router-dom` v7 é compatível com React 19.
+
 ## Passo 2: Criar os componentes de página
 
 Crie a pasta `src/pages` e os arquivos:
 
-**src/pages/Home.jsx:**
+**`src/pages/Home.jsx`:**
 
 ```jsx
 function Home() {
@@ -30,7 +32,7 @@ function Home() {
 export default Home;
 ```
 
-**src/pages/Sobre.jsx:**
+**`src/pages/Sobre.jsx`:**
 
 ```jsx
 function Sobre() {
@@ -45,17 +47,20 @@ function Sobre() {
 export default Sobre;
 ```
 
-**src/pages/Usuario.jsx:**
+**`src/pages/Usuario.jsx`:**
 
 ```jsx
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 
 function Usuario() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   return (
     <div>
       <h2>Usuário</h2>
       <p>ID do usuário: {id}</p>
+      <button onClick={() => navigate('/')}>Voltar para Home</button>
     </div>
   );
 }
@@ -63,7 +68,7 @@ function Usuario() {
 export default Usuario;
 ```
 
-**src/pages/NaoEncontrada.jsx:**
+**`src/pages/NaoEncontrada.jsx`:**
 
 ```jsx
 import { Link } from 'react-router-dom';
@@ -71,7 +76,7 @@ import { Link } from 'react-router-dom';
 function NaoEncontrada() {
   return (
     <div>
-      <h2>404 - Página não encontrada</h2>
+      <h2>404 — Página não encontrada</h2>
       <Link to="/">Voltar ao início</Link>
     </div>
   );
@@ -80,39 +85,53 @@ function NaoEncontrada() {
 export default NaoEncontrada;
 ```
 
-## Passo 3: Criar o layout com navegação (CSS Module)
+## Passo 3: Criar o layout com navegação
 
 Crie `src/components/Layout.module.css`:
 
 ```css
 .container {
   padding: 24px;
-  max-width: 600px;
+  max-width: 720px;
   margin: 0 auto;
+  font-family: system-ui, sans-serif;
 }
 
 .nav {
-  margin-bottom: 20px;
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
 }
 
 .navLink {
-  margin-right: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.active {
+  color: #0a7f2e;
+  font-weight: 600;
 }
 ```
 
 Crie `src/components/Layout.jsx`:
 
 ```jsx
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import styles from './Layout.module.css';
 
 function Layout() {
+  const linkClass = ({ isActive }) =>
+    isActive ? `${styles.navLink} ${styles.active}` : styles.navLink;
+
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <Link to="/" className={styles.navLink}>Home</Link>
-        <Link to="/sobre" className={styles.navLink}>Sobre</Link>
-        <Link to="/usuario/1">Usuário 1</Link>
+        <NavLink to="/" end className={linkClass}>Home</NavLink>
+        <NavLink to="/sobre" className={linkClass}>Sobre</NavLink>
+        <NavLink to="/usuario/1" className={linkClass}>Usuário 1</NavLink>
       </nav>
       <Outlet />
     </div>
@@ -122,12 +141,13 @@ function Layout() {
 export default Layout;
 ```
 
-- **Outlet**: é onde o React Router renderiza o componente filho da rota correspondente.
-- **CSS Module**: estilos do layout em arquivo separado, com classes escopadas.
+- **`NavLink`** aplica a classe "active" automaticamente quando a rota casa.
+- **`end`** impede que a rota "/" fique ativa em todas as páginas.
+- **`Outlet`** é onde o React Router renderiza o componente filho.
 
 ## Passo 4: Configurar o Router no App
 
-Substitua `src/App.jsx` por:
+Substitua `src/App.jsx`:
 
 ```jsx
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -155,9 +175,9 @@ function App() {
 export default App;
 ```
 
-- **index**: rota filha que corresponde ao path do pai (aqui `/`).
-- **usuario/:id**: `:id` é um parâmetro; em `Usuario` você lê com `useParams().id`.
-- **path="*"**: captura qualquer URL não definida (404).
+- **`index`**: rota filha que casa com o path do pai (aqui `/`).
+- **`usuario/:id`**: `:id` é um parâmetro; em `Usuario` você lê com `useParams().id`.
+- **`path="*"`**: captura qualquer URL não definida (404).
 
 ## Passo 5: Executar a aplicação
 
@@ -165,16 +185,17 @@ export default App;
 npm run dev
 ```
 
-Navegue pelos links e acesse diretamente `/usuario/42` para ver o parâmetro na página.
+Navegue pelos links, acesse `/usuario/42` direto na URL para ver o parâmetro e clique em "Voltar para Home" para testar o `useNavigate`. Tente acessar `/inexistente` para ver a página 404.
 
 ## Explicação dos principais elementos
 
-- **BrowserRouter**: usa a API History; a URL no navegador reflete a rota atual.
-- **Routes / Route**: cada `Route` associa um `path` a um `element` (componente).
-- **Link**: navega sem recarregar a página; o atributo `to` é o path.
-- **Outlet**: dentro de um layout, renderiza o componente da rota filha ativa.
-- **useParams**: retorna um objeto com os parâmetros da URL (ex.: `{ id: '1' }`).
+- **`BrowserRouter`**: usa a API History; a URL no navegador reflete a rota atual.
+- **`Routes` / `Route`**: cada `<Route>` associa um `path` a um `element`.
+- **`NavLink`**: versão de `Link` que conhece a rota atual (útil para menu).
+- **`Outlet`**: dentro de um layout, renderiza o componente da rota filha ativa.
+- **`useParams`**: retorna um objeto com os parâmetros da URL.
+- **`useNavigate`**: hook para navegar programaticamente (após login, salvar, etc.).
 
 ## Próximos passos
 
-No módulo [07 - Layouts](../07-layouts/) você verá como estruturar cabeçalho, menu e área de conteúdo de forma responsiva.
+No módulo [07 - Layouts](../07-layouts/) você verá como estruturar cabeçalho, menu e área de conteúdo de forma responsiva com CSS Modules.

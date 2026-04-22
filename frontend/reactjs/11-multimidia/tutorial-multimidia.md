@@ -1,6 +1,6 @@
-# Tutorial: Player de áudio/vídeo e galeria de imagens
+# Tutorial: Player de áudio/vídeo e galeria de imagens (React 19)
 
-Neste tutorial você vai criar um **player** simples com play/pause e barra de progresso para áudio ou vídeo, e uma **galeria** que exibe imagens (com URLs de exemplo). Tudo controlado por estado e refs no React.
+Neste tutorial você vai criar um **player** simples com play/pause e barra de progresso para áudio ou vídeo, e uma **galeria** que exibe imagens (com URLs de exemplo). Tudo controlado por estado e refs no React — com a novidade de `ref` como prop comum do React 19.
 
 ## Passo 1: Configurar o projeto
 

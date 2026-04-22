@@ -21,6 +21,27 @@ Muitas aplicações precisam que o usuário **envie arquivos** (upload) ou **bai
 - Validar tipo e tamanho do arquivo no frontend (e sempre no backend) para evitar envio de arquivos inválidos ou muito grandes.
 - Exibir progresso de upload quando possível (axios com `onUploadProgress`, ou fetch com ReadableStream).
 - Para preview de imagens, use `FileReader.readAsDataURL(file)` e defina o resultado em um estado que será usado no `src` de uma `<img>`.
+- **No React 19**, prefira `<form action={minhaAction}>` + `useActionState` para uploads: o `FormData` (incluindo o `File`) chega pronto na action, e `useFormStatus` dá `pending` no botão sem código extra.
+
+## Diagrama do fluxo de upload
+
+```mermaid
+sequenceDiagram
+    participant User as Usuário
+    participant Input as &lt;input type=file&gt;
+    participant Form as &lt;form action={...}&gt;
+    participant Act as Action (FormData)
+    participant API as API
+
+    User->>Input: seleciona arquivo
+    Input-->>Form: File no FormData
+    User->>Form: clica "Enviar"
+    Form->>Act: chama action(prev, formData)
+    Act->>API: POST multipart/form-data
+    API-->>Act: ok / erro
+    Act-->>Form: novo state
+    Form-->>User: feedback (sucesso/erro)
+```
 
 ---
 

@@ -1,314 +1,182 @@
-### Introdução ao `useEffect`
+# `useEffect`
 
-O `useEffect` é um hook fundamental no React, introduzido na versão 16.8, que permite lidar com efeitos colaterais em componentes funcionais. Antes da sua introdução, os componentes de classe dependiam de métodos do ciclo de vida, como `componentDidMount`, `componentDidUpdate` e `componentWillUnmount`, para executar lógica após a renderização. Embora funcionais, esses métodos frequentemente tornavam o código confuso e difícil de manter, pois concentravam várias responsabilidades em um único local.
+## Introdução
 
-O `useEffect` resolve esse problema ao oferecer uma abordagem declarativa e flexível para gerenciar efeitos colaterais, como requisições HTTP, manipulação do DOM, subscrições a eventos e limpeza de recursos. Com ele, os componentes funcionais podem lidar com tarefas complexas de maneira mais organizada e intuitiva.
-
----
-
-### **Vantagens e Desvantagens de Usar o `useEffect`**
-
-#### **Vantagens:**
-1. **API Simples e Unificada**: Substitui múltiplos métodos de ciclo de vida por uma única função, simplificando a lógica de efeitos.
-2. **Flexibilidade**: Permite configurar facilmente quando o efeito deve ser executado, usando dependências.
-3. **Separação de Lógicas**: É possível declarar múltiplos `useEffect` no mesmo componente, dividindo as responsabilidades.
-4. **Limpeza de Recursos**: Oferece suporte nativo à limpeza de efeitos, evitando problemas de memória.
-
-#### **Desvantagens:**
-1. **Re-renderizações Desnecessárias**: Dependências mal configuradas podem causar re-execuções frequentes e afetar a performance.
-2. **Complexidade com Estados Relacionados**: Quando há muitos estados relacionados, os efeitos podem ficar difíceis de gerenciar.
-3. **Cuidado com Efeitos Assíncronos**: Lidar com funções assíncronas dentro do `useEffect` pode gerar comportamento inesperado se não for bem projetado.
-
----
-
-### **Casos de Uso Comuns do `useEffect`**
-
-1. **Requisições HTTP**: Buscar dados de uma API ao carregar um componente.
-   ```jsx
-   useEffect(() => {
-     fetch("https://api.example.com/data")
-       .then(response => response.json())
-       .then(data => setData(data));
-   }, []); // Executa apenas na montagem do componente.
-   ```
-
-2. **Manipulação do DOM**: Atualizar o título da página com base em um estado.
-   ```jsx
-   useEffect(() => {
-     document.title = `Você tem ${count} notificações`;
-   }, [count]); // Executa quando o estado 'count' muda.
-   ```
-
-3. **Subscrições a Eventos**: Adicionar e remover ouvintes de eventos.
-   ```jsx
-   useEffect(() => {
-     const handleResize = () => setWidth(window.innerWidth);
-     window.addEventListener("resize", handleResize);
-
-     return () => {
-       window.removeEventListener("resize", handleResize);
-     }; // Limpeza ao desmontar o componente.
-   }, []);
-   ```
-
-4. **Temporizadores**: Configurar e limpar intervalos.
-   ```jsx
-   useEffect(() => {
-     const interval = setInterval(() => {
-       setTime((prev) => prev + 1);
-     }, 1000);
-
-     return () => clearInterval(interval); // Limpa o intervalo.
-   }, []);
-   ```
-
-5. **Integrações com APIs de Terceiros**: Inicializar bibliotecas ou SDKs de terceiros.
-6. **Sincronização de Estados**: Atualizar estados relacionados em resposta a mudanças em outros estados ou props.
-
----
-
-### **Conclusão**
-
-O `useEffect` é uma ferramenta indispensável no desenvolvimento de aplicações React modernas, permitindo que componentes funcionais lidem com efeitos colaterais de forma eficiente e organizada. Apesar de sua flexibilidade, seu uso requer cuidado, especialmente em cenários complexos com dependências e estados relacionados. Bem utilizado, o `useEffect` simplifica o código, melhora a legibilidade e aumenta a produtividade no desenvolvimento.
-
-
-## Casos de Uso 
-
-Aqui está uma lista de casos de uso comuns para o `useEffect` com exemplos de código:
-
----
-
-### **1. Buscar Dados de uma API**
-Exemplo de requisição a uma API ao carregar um componente.
+O `useEffect` permite rodar **efeitos colaterais** (side effects) em componentes funcionais: sincronizar com APIs externas, ajustar o DOM, assinar eventos, iniciar/parar timers, etc. A documentação oficial deixa claro: `useEffect` é para sincronizar o componente com **sistemas externos** ao React.
 
 ```jsx
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from 'react';
 
-const FetchData = () => {
-  const [data, setData] = useState([]);
+function DocTitulo({ contador }) {
+  useEffect(() => {
+    document.title = `Contador: ${contador}`;
+  }, [contador]);
+
+  return <p>Veja a aba do navegador.</p>;
+}
+```
+
+---
+
+## Anatomia e fluxo
+
+```mermaid
+flowchart TB
+    Render[Renderização] --> DOMUpdate[Commit no DOM]
+    DOMUpdate --> Cleanup{Existe cleanup<br/>do efeito anterior?}
+    Cleanup -- sim --> RunCleanup[Executa cleanup]
+    Cleanup -- não --> CheckDeps
+    RunCleanup --> CheckDeps{Array de<br/>dependências mudou?}
+    CheckDeps -- sim ou primeira --> RunEffect[Executa efeito]
+    CheckDeps -- não --> Idle[Nada a fazer]
+    RunEffect --> Idle
+```
+
+Assinatura: `useEffect(setup, dependencies?)`
+
+- **`setup`**: função que roda após o commit. Pode retornar **outra função** (cleanup) que o React chamará antes do próximo `setup` ou ao desmontar.
+- **`dependencies`**:
+  - `undefined` (sem array): roda a cada render.
+  - `[]`: roda uma vez (na montagem).
+  - `[a, b]`: roda quando `a` ou `b` mudam (comparação `Object.is`).
+
+---
+
+## Quando **não** usar `useEffect`
+
+Na [documentação oficial](https://react.dev/learn/you-might-not-need-an-effect) há uma lista de antipadrões comuns:
+
+- **Transformar dados para render** → calcule direto no corpo do componente ou com `useMemo`.
+- **Resetar estado quando a prop muda** → use uma `key` no componente.
+- **Comunicar com o pai** → chame a callback recebida via props.
+- **Buscar dados** em apps maiores → prefira bibliotecas (TanStack Query) ou, no React 19, o hook `use` (no caso de Server Components/frameworks).
+
+`useEffect` deve ser a **última escolha**, reservada para sincronização com algo fora do React (navegador, timers, APIs externas, WebSockets).
+
+---
+
+## Vantagens e desvantagens
+
+**Vantagens:**
+
+1. API unificada para montagem, atualização e desmontagem.
+2. Múltiplos efeitos no mesmo componente (separe por responsabilidade).
+3. Cleanup previne vazamentos de memória.
+4. Declarativo: dependências tornam reexecuções previsíveis.
+
+**Desvantagens / armadilhas:**
+
+1. **Dependências mal declaradas** geram loops ou bugs sutis (use `eslint-plugin-react-hooks`).
+2. **Corridas (race conditions)** em fetch exigem flag `ignore` ou `AbortController`.
+3. **StrictMode** roda efeitos duas vezes em dev (montar → desmontar → remontar) — você *precisa* ter cleanup.
+
+---
+
+## Padrão recomendado para fetch com cleanup
+
+```jsx
+import { useEffect, useState } from 'react';
+
+function Pokemons() {
+  const [lista, setLista] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [erro, setErro] = useState(null);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon")
-      .then((response) => response.json())
-      .then((result) => {
-        setData(result.results);
+    const controller = new AbortController();
+
+    async function carregar() {
+      setLoading(true);
+      setErro(null);
+      try {
+        const res = await fetch('https://pokeapi.co/api/v2/pokemon', {
+          signal: controller.signal,
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const data = await res.json();
+        setLista(data.results);
+      } catch (e) {
+        if (e.name !== 'AbortError') setErro(e.message);
+      } finally {
         setLoading(false);
-      });
-  }, []);
-
-  return (
-    <div>
-      {loading ? <p>Loading...</p> : data.map((item) => <p key={item.name}>{item.name}</p>)}
-    </div>
-  );
-};
-
-export default FetchData;
-```
-
----
-
-### **2. Atualizar o Título da Página**
-Alterar o título do documento dinamicamente.
-
-```jsx
-import React, { useState, useEffect } from "react";
-
-const DynamicTitle = () => {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = `Contagem: ${count}`;
-  }, [count]);
-
-  return (
-    <div>
-      <p>Você clicou {count} vezes.</p>
-      <button onClick={() => setCount(count + 1)}>Clique aqui</button>
-    </div>
-  );
-};
-
-export default DynamicTitle;
-```
-
----
-
-### **3. Adicionar e Remover Listeners de Eventos**
-Gerenciar eventos como redimensionamento da janela.
-
-```jsx
-import React, { useState, useEffect } from "react";
-
-const WindowResize = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  return <p>Largura da janela: {width}px</p>;
-};
-
-export default WindowResize;
-```
-
----
-
-### **4. Temporizadores**
-Usar intervalos ou temporizadores e limpá-los corretamente.
-
-```jsx
-import React, { useState, useEffect } from "react";
-
-const Timer = () => {
-  const [seconds, setSeconds] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setSeconds((prev) => prev + 1);
-    }, 1000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, []);
-
-  return <p>Segundos: {seconds}</p>;
-};
-
-export default Timer;
-```
-
----
-
-### **5. Limpeza de Recursos**
-Exemplo com uma simulação de subscrição.
-
-```jsx
-import React, { useEffect } from "react";
-
-const SubscriptionComponent = () => {
-  useEffect(() => {
-    const subscribe = () => console.log("Subscrito");
-    const unsubscribe = () => console.log("Desinscrito");
-
-    subscribe();
-    return () => {
-      unsubscribe();
-    };
-  }, []);
-
-  return <p>Veja o console para subscrição/desinscrição.</p>;
-};
-
-export default SubscriptionComponent;
-```
-
----
-
-### **6. Sincronizar Estados**
-Sincronizar dois estados relacionados.
-
-```jsx
-import React, { useState, useEffect } from "react";
-
-const SyncStates = () => {
-  const [text, setText] = useState("");
-  const [uppercase, setUppercase] = useState("");
-
-  useEffect(() => {
-    setUppercase(text.toUpperCase());
-  }, [text]);
-
-  return (
-    <div>
-      <input
-        type="text"
-        value={text}
-        onChange={(e) => setText(e.target.value)}
-      />
-      <p>Maiúsculas: {uppercase}</p>
-    </div>
-  );
-};
-
-export default SyncStates;
-```
-
----
-
-### **7. Carregar Dados de Cache**
-Carregar dados de cache, como o `localStorage`.
-
-```jsx
-import React, { useState, useEffect } from "react";
-
-const LocalStorageComponent = () => {
-  const [name, setName] = useState("");
-
-  useEffect(() => {
-    const savedName = localStorage.getItem("name");
-    if (savedName) {
-      setName(savedName);
+      }
     }
+
+    carregar();
+    return () => controller.abort();
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem("name", name);
-  }, [name]);
-
+  if (loading) return <p>Carregando…</p>;
+  if (erro) return <p>Erro: {erro}</p>;
   return (
-    <div>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <p>Nome salvo: {name}</p>
-    </div>
+    <ul>
+      {lista.map((p) => <li key={p.name}>{p.name}</li>)}
+    </ul>
   );
-};
-
-export default LocalStorageComponent;
+}
 ```
+
+`AbortController.abort()` cancela a requisição pendente se o componente desmontar antes da resposta.
 
 ---
 
-### **8. Autenticação Simples**
-Simular o controle de autenticação do usuário.
+## Outros casos de uso
+
+### 1. Atualizar título da página
 
 ```jsx
-import React, { useState, useEffect } from "react";
+useEffect(() => {
+  document.title = `Você tem ${count} notificações`;
+}, [count]);
+```
 
-const AuthExample = () => {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
+> Em React 19, você também pode renderizar `<title>{`Contagem: ${count}`}</title>` diretamente no JSX — o React hoista para o `<head>`.
 
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    setIsAuthenticated(!!token);
-  }, []);
+### 2. Listener global (resize)
 
-  return (
-    <div>
-      {isAuthenticated ? (
-        <p>Bem-vindo de volta!</p>
-      ) : (
-        <p>Por favor, faça login.</p>
-      )}
-    </div>
-  );
-};
+```jsx
+useEffect(() => {
+  const onResize = () => setLargura(window.innerWidth);
+  window.addEventListener('resize', onResize);
+  return () => window.removeEventListener('resize', onResize);
+}, []);
+```
 
-export default AuthExample;
+### 3. Timer
+
+```jsx
+useEffect(() => {
+  const id = setInterval(() => setSegundos(s => s + 1), 1000);
+  return () => clearInterval(id);
+}, []);
+```
+
+### 4. Sincronizar `localStorage`
+
+```jsx
+useEffect(() => {
+  localStorage.setItem('nome', nome);
+}, [nome]);
+```
+
+### 5. Integração com biblioteca externa (ex.: mapa)
+
+```jsx
+useEffect(() => {
+  const map = new Mapa(containerRef.current, { center: [0, 0] });
+  return () => map.destroy();
+}, []);
 ```
 
 ---
 
-Esses exemplos mostram como o `useEffect` pode ser usado para lidar com efeitos colaterais em diferentes contextos, desde manipulação de DOM até interação com APIs ou limpeza de recursos. Cada caso demonstra a flexibilidade e importância desse hook no React.
+## `useEffect` vs `useLayoutEffect`
+
+- **`useEffect`** roda **depois** que o navegador pinta a tela (não bloqueia). Use sempre que possível.
+- **`useLayoutEffect`** roda **antes da pintura**, síncrono após o commit. Use apenas quando você precisar medir o DOM e ajustar algo sem flicker.
+
+---
+
+## Conclusão
+
+O `useEffect` é a ferramenta para sincronizar seu componente com o mundo externo. Declare dependências corretamente, limpe recursos no retorno do efeito e evite usá-lo para lógica que pode ser feita no render. Em React 19, muitas situações que antes exigiam `useEffect` (fetch em formulários, status de submissão) são melhor resolvidas por **Actions**, `useActionState` e `use`.

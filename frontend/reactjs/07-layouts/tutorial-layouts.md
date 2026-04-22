@@ -1,6 +1,6 @@
-# Tutorial: Layout com header, menu e conteúdo responsivo
+# Tutorial: Layout com header, menu e conteúdo responsivo (React 19)
 
-Neste tutorial você vai criar um layout reutilizável com cabeçalho, navegação e área de conteúdo usando **CSS Modules** e estilos responsivos.
+Neste tutorial você vai criar um layout reutilizável com cabeçalho, navegação e área de conteúdo usando **CSS Modules** e estilos responsivos, em um projeto Vite 8 + React 19.
 
 ## Passo 1: Criar o projeto
 

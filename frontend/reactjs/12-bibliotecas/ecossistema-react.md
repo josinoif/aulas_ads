@@ -1,67 +1,112 @@
-# Ecossistema React e bibliotecas úteis
+# Ecossistema React e bibliotecas úteis (2026)
 
 ## Introdução
 
-O React é uma biblioteca focada em interface; para roteamento, formulários, UI pronta e gerenciamento de estado avançado, a comunidade e a própria Meta oferecem ou recomendam **bibliotecas** que se integram bem ao React. Conhecer o ecossistema ajuda a escolher ferramentas adequadas ao projeto e a acelerar o desenvolvimento.
+O React é uma biblioteca focada em interface; para roteamento, formulários, UI pronta e gerenciamento de estado avançado, a comunidade oferece **bibliotecas** que se integram bem. Esta é uma visão panorâmica do ecossistema moderno em torno do **React 19**.
 
 ---
 
 ## Roteamento
 
-- **React Router** (react-router-dom): padrão de fato para SPA. Fornece `BrowserRouter`, `Routes`, `Route`, `Link`, `useNavigate`, `useParams`, etc. Essencial para aplicações com múltiplas páginas.
+- **React Router v7** (`react-router-dom`): padrão de fato para SPA. Unificação com Remix trouxe `loader`, `action`, `defer`, `RouterProvider` e modo "Data Router". Fornece `BrowserRouter`, `Routes`, `Route`, `Link`, `NavLink`, `useNavigate`, `useParams`, `Outlet`.
+- **TanStack Router**: alternativa com tipagem de rotas forte (TypeScript-first).
 
 ---
 
 ## UI e componentes prontos
 
-- **Material-UI (MUI)**: conjunto de componentes que seguem o Material Design. Inclui botões, inputs, tabelas, modais, temas. Muito usado em dashboards e aplicações empresariais.
-- **Chakra UI**: componentes acessíveis e customizáveis, com boa documentação e tema configurável. Bom para protótipos e projetos que priorizam acessibilidade.
-- **Ant Design**: biblioteca rica em componentes (tabelas, formulários, gráficos). Comum em aplicações internas e admin.
-- **React Bootstrap**: componentes Bootstrap adaptados para React (botões, grid, cards, modais).
+| Biblioteca | Destaque |
+|------------|----------|
+| **Material-UI (MUI)** | Ecossistema maduro, Material Design, dashboards |
+| **Chakra UI** | Acessibilidade, temas fáceis, boa DX |
+| **Ant Design** | Componentes ricos para apps internos/admin |
+| **shadcn/ui** | Radix + Tailwind, componentes copiados para seu projeto |
+| **Radix UI** | Primitivos não estilizados (ótimo para design systems) |
+| **Mantine** | Grande conjunto, inclui hooks utilitários |
+| **React Bootstrap** | Bootstrap em React |
 
-Escolha conforme o visual desejado e a curva de aprendizado; todas reduzem o tempo para montar layouts e formulários consistentes.
+Escolha conforme o visual desejado, a integração com seu design system e o trade-off entre customização e produtividade.
 
 ---
 
 ## Formulários
 
-- **React Hook Form**: foca em performance e poucas re-renderizações. Trabalha com validação (própria ou com Yup/Zod). Muito usado em formulários grandes ou com muitos campos.
-- **Formik**: alternativa clássica para formulários controlados, validação e mensagens de erro. API simples e amplamente conhecida.
+- **React Hook Form**: foca em performance com renderizações mínimas; integra com **Zod**/**Yup** para validação via `zodResolver`.
+- **Formik**: alternativa clássica com API declarativa.
+- **No React 19**: para formulários simples, **`useActionState` + `<form action>`** dispensa lib em muitos casos.
 
 ---
 
 ## Estado global avançado
 
-- **Redux / Redux Toolkit**: para estado global complexo, com histórico de ações e DevTools. Redux Toolkit simplifica a configuração.
-- **Zustand**: store leve e simples; boa opção quando Context não basta mas você não quer a estrutura do Redux.
-- **Jotai**: estado atômico; cada pedaço de estado é um “atom” que pode ser lido e atualizado de qualquer componente.
+- **Zustand**: store leve, API minimalista; excelente substituto para Context em casos médios.
+- **Jotai**: estado atômico (cada peça é um `atom`), útil para apps com muitos estados independentes.
+- **Redux Toolkit**: Redux moderno, com `createSlice` e `RTK Query` (cache de API).
+- **Valtio**: estado proxy-based, leitura "natural".
 
-Use Context para temas e auth; considere Zustand ou Redux quando houver muito estado compartilhado ou lógica complexa de atualização.
+> Regra prática: comece com `useState`/`useReducer`, promova para Context quando compartilhar, passe para Zustand/Redux Toolkit quando Context virar gargalo.
 
 ---
 
-## Requisições HTTP e dados
+## Dados de servidor (cache de API)
 
-- **Axios**: cliente HTTP com interceptors, cancelamento e suporte a FormData. Muito usado junto com React.
-- **TanStack Query (React Query)**: cache de requisições, refetch, estados de loading/erro/sucesso e invalidação. Ideal para dados que vêm de API e são exibidos em várias telas.
+- **TanStack Query (React Query)**: *o padrão* para fetch com cache, revalidação, retry, invalidação e suspense. Use em listagens/detalhes de API.
+- **SWR** (Vercel): simples, inspirado em "stale-while-revalidate"; boa opção mais leve.
+- **RTK Query** (Redux Toolkit): se você já usa Redux, vale aproveitar.
+
+---
+
+## HTTP
+
+- **Axios**: cliente com interceptors, cancelamento, suporte a FormData, bem conhecido.
+- **ky** / **ofetch**: wrappers modernos sobre `fetch` com melhor DX.
+- **`fetch`** nativo é suficiente para muitos casos.
 
 ---
 
 ## Testes
 
-- **React Testing Library**: testa componentes do ponto de vista do usuário (render, interação, queries por papel ou texto). Recomendado pela documentação do React.
-- **Jest**: runner de testes e assertions; geralmente usado junto com React Testing Library.
+- **Vitest**: runner rápido, compatível com Jest, integra com Vite.
+- **React Testing Library**: testes do ponto de vista do usuário (render, interação).
+- **Playwright** / **Cypress**: testes E2E no navegador.
 
 ---
 
-## Outras ferramentas
+## Tipagem e qualidade
 
-- **Vite**: ferramenta recomendada para criar e rodar projetos React; build e recarga muito rápidos. Use `npm create vite@latest meu-app -- --template react`.
-- **ESLint + eslint-plugin-react**: lint e boas práticas para código React.
-- **React DevTools**: extensão do navegador para inspecionar árvore de componentes, props e estado.
+- **TypeScript**: quase padrão em projetos novos.
+- **Zod**: validação com inferência de tipos.
+- **ESLint** + `eslint-plugin-react-hooks`: lint de hooks e boas práticas.
+- **Prettier**: formatação automática.
+
+---
+
+## Performance e otimização
+
+- **React Compiler** (opt-in no React 19): memorização automática. Quando ativo, reduz muito o uso manual de `useMemo`/`useCallback`.
+- **React DevTools**: inspeção da árvore, props, estado.
+- **React Scan**: visualiza re-renders em tempo real.
+
+---
+
+## Frameworks full-stack sobre React
+
+- **Next.js**: SSR, SSG, Server Components, Server Actions. É praticamente o "Rails" do React.
+- **Remix** (agora integrado ao React Router v7): loaders/actions no servidor, foco em web standards.
+- **RedwoodJS**, **Waku**: alternativas emergentes.
+
+Se o projeto precisa de SEO, SSR e Server Components, **Next.js** é o caminho mais trilhado.
+
+---
+
+## Ferramentas de build
+
+- **Vite 8**: recomendação para SPAs em React 19; build rápido com Rolldown (Rust) em beta.
+- **Turbopack** (dentro do Next.js): substituirá gradualmente o Webpack.
+- **esbuild** / **swc**: transpilers que o Vite e Next usam por baixo.
 
 ---
 
 ## Conclusão
 
-O ecossistema React oferece soluções consolidadas para rotas, UI, formulários, estado e requisições. Comece com o que o curso já cobre (React Router, Context, axios) e adicione bibliotecas conforme a necessidade: UI kit para acelerar o layout, React Hook Form para formulários complexos, React Query para cache de API. Consulte a pasta [recursos](../recursos/) para glossário e referências.
+O ecossistema React em 2026 é maduro e ofertas bem consolidadas cobrem cada necessidade: **React Router v7** para rotas, **TanStack Query** para dados de API, **Zustand/Redux Toolkit** para estado global avançado, **shadcn/ui + Tailwind** ou **MUI/Chakra** para UI, **React Hook Form + Zod** para formulários complexos, **Vitest + RTL** para testes. Consulte a pasta [recursos](../recursos/) para glossário e referências.

@@ -2,7 +2,18 @@
 
 ## Introdução
 
-O **layout** é a estrutura visual que se repete em várias páginas: cabeçalho, menu, sidebar, área de conteúdo principal e rodapé. Em React, layouts são implementados como componentes que recebem o conteúdo variável (por props, `children` ou, com React Router, `Outlet`) e aplicam CSS (ou componentes de UI) para posicionar e estilizar os blocos.
+O **layout** é a estrutura visual que se repete em várias páginas: cabeçalho, menu, sidebar, área de conteúdo principal e rodapé. Em React, layouts são implementados como componentes que recebem o conteúdo variável (por props, `children` ou, com React Router v7, `Outlet`) e aplicam CSS (ou componentes de UI) para posicionar e estilizar os blocos.
+
+## Diagrama
+
+```mermaid
+flowchart TB
+    Wrapper[Wrapper - flex column] --> Header
+    Wrapper --> Menu
+    Wrapper --> Main[Main - flex:1]
+    Main --> ChildrenOutlet["children / Outlet"]
+    Wrapper --> Footer[Footer - margin-top auto]
+```
 
 ---
 
@@ -23,9 +34,25 @@ O **layout** é a estrutura visual que se repete em várias páginas: cabeçalho
 
 ---
 
-## Integração com React Router
+## Integração com React Router v7
 
-Com React Router, o layout é tipicamente uma rota pai que renderiza `Outlet`. As rotas filhas são as “páginas”; o layout envolve todas elas, então o cabeçalho e o menu permanecem e só o conteúdo dentro do `Outlet` muda.
+Com React Router, o layout é tipicamente uma rota pai que renderiza `Outlet`. As rotas filhas são as "páginas"; o layout envolve todas elas, então o cabeçalho e o menu permanecem e só o conteúdo dentro do `Outlet` muda.
+
+## Dica: Document Metadata (React 19)
+
+Em React 19 você pode colocar `<title>`, `<meta>` e `<link>` diretamente dentro do seu layout ou páginas — o React hoista para o `<head>`. Útil para dar título dinâmico por página:
+
+```jsx
+function Sobre() {
+  return (
+    <>
+      <title>Sobre — Minha App</title>
+      <meta name="description" content="Página sobre o projeto" />
+      <h2>Sobre</h2>
+    </>
+  );
+}
+```
 
 ---
 

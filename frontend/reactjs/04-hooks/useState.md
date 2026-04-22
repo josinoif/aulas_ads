@@ -1,37 +1,108 @@
-### Introdução ao `useState`
+# `useState`
 
-O `useState` é um dos hooks fundamentais do React, criado para permitir o uso de estados em componentes funcionais. Antes de sua introdução na versão 16.8, o gerenciamento de estados era exclusivo dos componentes de classe, usando o método `this.setState`. Isso criava uma barreira para quem preferia componentes funcionais, que eram mais simples e fáceis de entender, mas não ofereciam suporte nativo ao estado local.
+## Introdução
 
-Com o `useState`, tornou-se possível gerenciar estados diretamente em componentes funcionais de forma simples e declarativa. Esse hook revolucionou a forma como os desenvolvedores lidam com o estado no React, promovendo a adoção em massa dos componentes funcionais.
+O `useState` é um dos hooks fundamentais do React: ele permite declarar **estado local** em um componente funcional. Antes da sua introdução (React 16.8), estado era privilégio dos componentes de classe, que usavam `this.setState`.
 
----
+```jsx
+import { useState } from 'react';
 
-### **Vantagens e Desvantagens de Usar o `useState`**
+function Contador() {
+  const [count, setCount] = useState(0);
 
-#### **Vantagens:**
-1. **Sintaxe Simples**: O `useState` possui uma API intuitiva e declarativa, tornando o código mais legível e fácil de escrever.
-2. **Gerenciamento Local de Estados**: Permite adicionar e manipular estados locais sem a necessidade de classes ou bibliotecas externas.
-3. **Independência**: Cada chamada ao `useState` cria um estado isolado, o que facilita a modularização do código.
-4. **Desempenho**: É eficiente para estados simples e locais, com atualizações rápidas que afetam apenas o componente relevante.
+  return (
+    <button onClick={() => setCount(c => c + 1)}>
+      Cliques: {count}
+    </button>
+  );
+}
+```
 
-#### **Desvantagens:**
-1. **Estados Complexos**: Para estados com múltiplos campos relacionados, o `useState` pode se tornar verboso e mais difícil de gerenciar do que o `useReducer` ou bibliotecas como Redux.
-2. **Re-renderizações**: Toda vez que o estado é atualizado, o componente inteiro é re-renderizado, o que pode afetar a performance em aplicações complexas.
-3. **Escopo Local**: O `useState` é limitado ao componente onde foi declarado, dificultando o compartilhamento do estado entre componentes sem a ajuda de contextos ou bibliotecas externas.
-
----
-
-### **Casos de Uso Comuns do `useState`**
-
-1. **Inputs de Formulário**: Controlar os valores de campos de entrada, como caixas de texto, botões de seleção e menus suspensos.
-2. **Exibição Condicional**: Alternar a exibição de componentes, como abrir e fechar modais ou mostrar/ocultar elementos.
-3. **Contadores**: Criar contadores simples, como cliques em botões ou notificações.
-4. **Estados Temporários**: Gerenciar estados transitórios, como carregar dados ou exibir mensagens de erro.
-5. **Interatividade**: Implementar funcionalidades interativas, como alternar entre temas, adicionar itens a uma lista ou alterar configurações do usuário.
-6. **Controle de Tarefas**: Gerenciar pequenos estados de controle, como progresso em etapas ou botões ativados/desativados.
+`useState(valorInicial)` devolve um array com **dois elementos**: o valor atual e uma função para atualizá-lo.
 
 ---
 
-### **Conclusão**
+## Como funciona
 
-O `useState` é a base do gerenciamento de estado em componentes funcionais no React. Ele resolve a necessidade de adicionar e atualizar estados locais de maneira intuitiva e declarativa, tornando os componentes funcionais ainda mais poderosos e populares. Apesar de suas limitações para estados complexos ou globais, o `useState` é uma escolha ideal para cenários simples e moderados, sendo uma das ferramentas mais usadas pelos desenvolvedores React.
+```mermaid
+sequenceDiagram
+    participant UI as UI
+    participant Comp as Componente
+    participant React as React
+
+    UI->>Comp: evento (click)
+    Comp->>React: setCount(c => c + 1)
+    React->>Comp: agenda re-render
+    React->>Comp: chama Componente()<br/>useState retorna novo valor
+    Comp->>UI: novo JSX
+```
+
+Observações importantes:
+
+- O **valor retornado é imutável dentro daquele render**. `setCount(5)` não altera `count` imediatamente; apenas agenda uma re-renderização com o novo valor.
+- Passe uma **função** para o setter quando o novo valor depender do anterior: `setCount(c => c + 1)`. Isso evita bugs em atualizações em série.
+- Se o valor inicial for caro de calcular, passe uma função: `useState(() => calcularPesado())`. Assim ele só roda na primeira render.
+
+---
+
+## Vantagens
+
+1. **Sintaxe simples e declarativa** — o estado fica junto do componente.
+2. **Isolado por componente**: cada componente tem seu próprio estado.
+3. **Combina com outros hooks** (`useEffect`, `useContext`, custom hooks).
+4. **Estado imutável**: você substitui, não muta — facilita depuração e compatibilidade com `React.memo`/Compiler.
+
+## Desvantagens / limites
+
+1. **Estados complexos**: com muitos campos relacionados, considere `useReducer`.
+2. **Re-renderizações**: toda atualização re-renderiza o componente. Para objetos grandes, divida em pedaços ou memorize com seletores.
+3. **Escopo local**: para compartilhar entre componentes, use `useContext`, Zustand, Redux etc.
+
+---
+
+## Casos de uso
+
+- **Inputs de formulário** (controlled components).
+- **Flags booleanas**: modal aberto, accordion expandido, carregando.
+- **Contadores e indicadores simples.**
+- **Estado temporário** de UI: mensagens de erro, confirmações.
+
+### Exemplo com objeto
+
+Para objetos, lembre-se de **substituir** (não mutar):
+
+```jsx
+const [form, setForm] = useState({ nome: '', email: '' });
+
+const onChange = (e) => {
+  const { name, value } = e.target;
+  setForm(prev => ({ ...prev, [name]: value })); // espalhe o anterior
+};
+```
+
+### Lazy initializer
+
+```jsx
+const [itens, setItens] = useState(() => {
+  const salvo = localStorage.getItem('itens');
+  return salvo ? JSON.parse(salvo) : [];
+});
+```
+
+A função só roda na primeira render, evitando ler `localStorage` em toda re-renderização.
+
+---
+
+## `useState` vs `useReducer`
+
+| Use `useState` quando... | Use `useReducer` quando... |
+|--------------------------|-----------------------------|
+| Estado é simples (número, booleano, string) | Estado tem vários campos relacionados |
+| Poucas formas de atualizar | Muitas ações diferentes |
+| Lógica de atualização trivial | Lógica centralizada, útil para testes |
+
+---
+
+## Conclusão
+
+O `useState` é a ferramenta primária para estado local em componentes funcionais. É simples, previsível e compõe bem com os demais hooks. Para estado com muitas ações ou lógica centralizada, avalie o `useReducer`; para estado compartilhado, passe para Context ou uma lib de estado global.

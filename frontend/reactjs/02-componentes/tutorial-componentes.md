@@ -1,6 +1,6 @@
-# Tutorial: Criando e reutilizando componentes
+# Tutorial: Criando e reutilizando componentes (React 19)
 
-Neste tutorial você vai criar três componentes (Cabecalho, Card e Rodape), usar props e composição, e aplicar **CSS Modules** para estilização seguindo boas práticas.
+Neste tutorial você vai criar três componentes (`Cabecalho`, `Card` e `Rodape`), usar props e composição, e aplicar **CSS Modules** para estilização seguindo boas práticas do React 19.
 
 ## Passo 1: Configurar o projeto
 
@@ -178,13 +178,39 @@ export default App;
 - **Card** é usado duas vezes com títulos e conteúdos diferentes (passados como `children`).
 - **Rodape** não recebe props.
 
-## Passo 7: Executar a aplicação
+## Passo 7: Bônus — `ref` como prop (React 19)
+
+Se quiser ver a novidade do React 19 em ação, adicione um campo de busca focado automaticamente. Crie `src/components/BuscaFoco.jsx`:
+
+```jsx
+import { useEffect, useRef } from 'react';
+
+function CampoBusca({ ref, placeholder }) {
+  return <input ref={ref} placeholder={placeholder} />;
+}
+
+export default function BuscaFoco() {
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  return <CampoBusca ref={inputRef} placeholder="Buscar..." />;
+}
+```
+
+Repare: **não é necessário `forwardRef`**. No React 19 a `ref` chega como uma prop normal do componente `CampoBusca`.
+
+Você pode incluir `<BuscaFoco />` dentro de um `Card` para testar.
+
+## Passo 8: Executar a aplicação
 
 ```bash
 npm run dev
 ```
 
-Você deve ver o cabeçalho, dois cards com conteúdo distinto e o rodapé.
+Você deve ver o cabeçalho, dois cards com conteúdo distinto e o rodapé. Se incluiu o `BuscaFoco`, o campo receberá foco automaticamente ao carregar.
 
 ## Explicação dos principais elementos
 

@@ -25,6 +25,20 @@
 5. Ao acessar uma rota protegida, o componente verifica se está autenticado; se não, redireciona para login.
 6. No logout, o frontend remove o token e o estado de usuário.
 
+```mermaid
+flowchart TB
+    A[App] --> Check{Existe token?}
+    Check -- Não --> Login[/Login/]
+    Login --> Submit["useActionState: enviar credenciais"]
+    Submit --> API
+    API --> Valid{Credenciais ok?}
+    Valid -- Sim --> SaveToken[Salva token<br/>localStorage + Context]
+    SaveToken --> Nav[navigate ex /dashboard]
+    Valid -- Não --> Err[Exibe erro no form]
+    Check -- Sim --> Prot["RotaProtegida verifica Context"]
+    Prot --> Page[Renderiza página]
+```
+
 ---
 
 ## Boas práticas
@@ -35,6 +49,12 @@
 
 ---
 
+## Padrões modernos (React 19)
+
+- Use **`useActionState`** para o formulário de login — ele dá `pending` e `state` automáticos, sem `useState`+`useEffect`.
+- Use **`useFormStatus`** em um botão reutilizável ("Entrar") que sabe quando está em submissão.
+- Proteja rotas com `<Navigate>` do **React Router v7**, lendo o Context via `useContext` (ou `use`).
+
 ## Conclusão
 
-Autenticação em React envolve login (envio de credenciais e armazenamento do token), envio do token nas requisições e proteção de rotas verificando se o usuário está logado. No [tutorial-autenticacao.md](tutorial-autenticacao.md) você implementará um fluxo simples com Context de autenticação e rota protegida.
+Autenticação em React envolve login (envio de credenciais e armazenamento do token), envio do token nas requisições e proteção de rotas verificando se o usuário está logado. No [tutorial-autenticacao.md](tutorial-autenticacao.md) você implementará um fluxo simples com Context de autenticação, `useActionState` no formulário de login e rota protegida.

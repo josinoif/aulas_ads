@@ -1,43 +1,32 @@
-# Criação de Listagem em ReactJS
+# Tutorial: Listagem consumindo API REST
 
-Para criar uma tela de listagem em React, que lê dados de uma API e exibe todos os itens devolvidos em uma tela siga as instruções abaixo:
+Neste tutorial você vai criar uma tela que lê dados de uma API e exibe todos os itens em uma tabela, com estados de **loading**, **erro** e **sucesso**. Continuamos no mesmo projeto do [tutorial anterior](tutorial-formulario-crud.md), usando [CRUDCrud](https://crudcrud.com) como backend.
 
+## Passo 1: Pré-requisitos
 
-##  Passo 1: Configurar o Projeto
+Certifique-se de já ter no projeto:
 
-1. Crie um novo projeto React com Vite (React 19):
+- `VITE_API_URL` em `.env` apontando para seu endpoint CRUDCrud.
+- `axios` instalado (`npm install axios`).
 
-```bash
-npm create vite@latest my-form -- --template react
-cd my-form
-npm install
-```
-
-2. Instale o Axios para fazer requisições HTTP:
-
-```bash 
-npm install axios
-```
-
-##  Passo 2: Estilos da tabela com CSS Module
+## Passo 2: Estilos com CSS Module
 
 Crie o arquivo `src/ItemList.module.css`:
 
 ```css
+.section {
+  margin-top: 32px;
+}
+
 .table {
   width: 100%;
   border-collapse: collapse;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 
-.table,
 .th,
 .td {
   border: 1px solid #ddd;
-}
-
-.th,
-.td {
   padding: 8px;
   text-align: left;
 }
@@ -45,99 +34,131 @@ Crie o arquivo `src/ItemList.module.css`:
 .th {
   background-color: #f2f2f2;
 }
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.refreshBtn {
+  margin-bottom: 12px;
+}
+
+.status {
+  font-style: italic;
+}
+
+.error {
+  color: #b00020;
+}
 ```
 
-##  Passo 3: Criar o componente List
+## Passo 3: Criar o componente de listagem
 
-Crie o componente `src/ItemList.jsx` que busca os dados da API e exibe em uma tabela:
+Crie `src/ItemList.jsx`:
 
 ```jsx
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import styles from './ItemList.module.css';
+
+const API_URL = import.meta.env.VITE_API_URL;
 
 function ItemList() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const url = 'https://crudcrud.com/api/YOUR_UNIQUE_ENDPOINT/users';
-
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(url);
-        setItems(response.data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
+  const carregar = useCallback(async ({ signal } = {}) => {
+    setLoading(true);
+    setError(null);
+    try {
+      const { data } = await axios.get(`${API_URL}/users`, { signal });
+      setItems(data);
+    } catch (err) {
+      if (axios.isCancel?.(err) || err.name === 'CanceledError') return;
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
   }, []);
 
-  if (loading) return <p>Carregando...</p>;
-  if (error) return <p>Erro ao carregar dados: {error}</p>;
+  useEffect(() => {
+    const controller = new AbortController();
+    carregar({ signal: controller.signal });
+    return () => controller.abort();
+  }, [carregar]);
+
+  const remover = async (id) => {
+    if (!confirm('Remover este usuário?')) return;
+    try {
+      await axios.delete(`${API_URL}/users/${id}`);
+      setItems((atual) => atual.filter((u) => u._id !== id));
+    } catch (err) {
+      alert(`Erro ao remover: ${err.message}`);
+    }
+  };
 
   return (
-    <div>
+    <section className={styles.section}>
       <h2>Lista de Usuários</h2>
-      <table className={styles.table}>
-        <thead>
-          <tr>
-            <th className={styles.th}>ID</th>
-            <th className={styles.th}>Nome</th>
-            <th className={styles.th}>Email</th>
-          </tr>
-        </thead>
-        <tbody>
-          {items.map((item) => (
-            <tr key={item._id}>
-              <td className={styles.td}>{item._id}</td>
-              <td className={styles.td}>{item.name}</td>
-              <td className={styles.td}>{item.email}</td>
+      <button className={styles.refreshBtn} onClick={() => carregar()}>
+        Recarregar
+      </button>
+
+      {loading && <p className={styles.status}>Carregando…</p>}
+      {error && <p className={styles.error}>Erro ao carregar: {error}</p>}
+
+      {!loading && !error && (
+        <table className={styles.table}>
+          <thead>
+            <tr>
+              <th className={styles.th}>ID</th>
+              <th className={styles.th}>Nome</th>
+              <th className={styles.th}>Email</th>
+              <th className={styles.th}>Ações</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+          </thead>
+          <tbody>
+            {items.length === 0 && (
+              <tr>
+                <td colSpan={4} className={styles.td}>
+                  Nenhum usuário cadastrado ainda.
+                </td>
+              </tr>
+            )}
+            {items.map((u) => (
+              <tr key={u._id}>
+                <td className={styles.td}>{u._id}</td>
+                <td className={styles.td}>{u.name}</td>
+                <td className={styles.td}>{u.email}</td>
+                <td className={styles.td}>
+                  <div className={styles.actions}>
+                    <button onClick={() => remover(u._id)}>Remover</button>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+    </section>
   );
 }
 
 export default ItemList;
 ```
 
-## Passo 4: Explicação dos Principais Elementos
+Pontos importantes:
 
-- **useEffect**: Utilizado para fazer a chamada à API quando o componente é montado. Faz a requisição GET para buscar todos os itens.
-- **axios.get**: Faz a requisição para a URL da API.
-- **loading, error**: Estados para gerenciar o carregamento e possíveis erros.
-- **items.map**: Itera sobre os itens recebidos e os exibe em linhas da tabela.
-- **CSS Module**: os estilos da tabela ficam em `ItemList.module.css`, escopados ao componente, evitando afetar outras tabelas da aplicação.
+- **`AbortController`**: cancela a requisição se o componente desmontar antes da resposta, evitando warnings e atualização em componente desmontado.
+- **`useCallback` + `useEffect`**: estabiliza `carregar` e permite reaproveitá-la no botão "Recarregar".
+- **Estados explícitos**: `loading`, `error`, `items` cobrem as três fases da requisição.
+- **`axios.isCancel` / `CanceledError`**: axios usa `CanceledError` ao abortar; checamos ambos por compatibilidade.
 
-## Passo 5: Substitua o YOUR_UNIQUE_ENDPOINT
+## Passo 4: Usar a listagem no App
 
-Substitua `"YOUR_UNIQUE_ENDPOINT"` pelo seu endpoint único fornecido pela CRUDCrud.
-
-## Passo 6: Adicionar o Componente List ao App (com CSS Module)
-
-Se ainda não tiver, crie `src/App.module.css`:
-
-```css
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 24px;
-}
-
-.title {
-  margin-bottom: 24px;
-}
-```
-
-No arquivo `src/App.jsx`, importe os estilos e os componentes:
+Edite `src/App.jsx` para incluir a listagem abaixo do formulário:
 
 ```jsx
 import styles from './App.module.css';
@@ -147,7 +168,7 @@ import ItemList from './ItemList';
 function App() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Cadastro de Usuários</h1>
+      <h1 className={styles.title}>Cadastro de Usuários (React 19)</h1>
       <CrudForm />
       <ItemList />
     </div>
@@ -157,10 +178,37 @@ function App() {
 export default App;
 ```
 
-## Passo 7: Execute a Aplicação
+## Passo 5: Executar a aplicação
 
 ```bash
 npm run dev
 ```
 
-Agora você terá uma tela de listagem que exibe todos os itens cadastrados em uma tabela HTML. O componente ItemList faz uma requisição à API, exibe os itens em uma tabela e lida com estados de carregamento e erro.
+Cadastre um usuário pelo formulário, clique em "Recarregar" na listagem e veja o usuário aparecer na tabela. Experimente o botão "Remover".
+
+## Explicação dos principais elementos
+
+- **`useEffect` com cleanup**: o `AbortController` garante que a requisição é cancelada se o componente desmontar.
+- **`axios.get` / `axios.delete`**: sintaxe enxuta e tratamento de JSON automático.
+- **`items.map` + `key`**: cada linha da tabela tem um `key` estável (`_id` do CRUDCrud).
+
+## Dica: migrar para TanStack Query
+
+Em apps reais, substitua este padrão por **TanStack Query**:
+
+```jsx
+import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
+
+function useUsuarios() {
+  return useQuery({
+    queryKey: ['usuarios'],
+    queryFn: async () => (await axios.get(`${API_URL}/users`)).data,
+  });
+}
+```
+
+O hook devolve `data`, `isLoading`, `error` e gerencia cache, refetch e invalidação automaticamente. Em listagens/detalhes que aparecem em várias telas, o ganho é grande.
+
+## Próximos passos
+
+No módulo [09 - Autenticação](../09-autenticacao/) você fará login com `useActionState` e protegerá rotas.

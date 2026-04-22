@@ -1,10 +1,10 @@
-# Criação de Formulário em ReactJS
+# Tutorial: Formulário CRUD com Actions (React 19)
 
-Para criar uma tela de formulário em React que envia dados para uma aplicação CRUD, como a CRUDCrud (um serviço simples de armazenamento de dados via API REST), siga os passos abaixo:
+Neste tutorial você vai criar uma tela de cadastro que envia dados para uma API REST usando o padrão moderno do React 19: **`useActionState`** + **`<form action>`** + **`useFormStatus`**. Usamos o serviço gratuito [CRUDCrud](https://crudcrud.com) (que gera um endpoint REST temporário) como backend.
 
-##  Passo 1: Configurar o Projeto
+## Passo 1: Configurar o projeto
 
-1. Crie um novo projeto React com Vite (React 19):
+1. Crie um novo projeto React 19 com Vite:
 
 ```bash
 npm create vite@latest my-form -- --template react
@@ -12,15 +12,27 @@ cd my-form
 npm install
 ```
 
-2. Instale o Axios para fazer requisições HTTP:
+2. Instale o Axios para as requisições HTTP:
 
-```bash 
+```bash
 npm install axios
 ```
 
-##  Passo 2: Criar o Formulário
+## Passo 2: Obter um endpoint no CRUDCrud
 
-1. Crie o arquivo `src/CrudForm.module.css` (estilos do formulário com CSS Module):
+Acesse [crudcrud.com](https://crudcrud.com) e copie o **endpoint único** (formato: `https://crudcrud.com/api/XXXX`).
+
+Crie `.env` na raiz com a URL base:
+
+```
+VITE_API_URL=https://crudcrud.com/api/COLE_SEU_ENDPOINT_AQUI
+```
+
+> As variáveis de ambiente no Vite precisam começar com `VITE_` para serem expostas ao cliente.
+
+## Passo 3: Estilos com CSS Module
+
+Crie `src/CrudForm.module.css`:
 
 ```css
 .formGroup {
@@ -30,88 +42,134 @@ npm install axios
 .label {
   display: block;
   margin-bottom: 4px;
+  font-weight: 600;
 }
 
 .input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .button {
   padding: 8px 16px;
   cursor: pointer;
+  background: #0a7f2e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.success {
+  color: #0a7f2e;
+  margin-top: 8px;
+}
+
+.error {
+  color: #b00020;
+  margin-top: 8px;
 }
 ```
 
-2. Crie o componente `src/CrudForm.jsx`:
+## Passo 4: Botão reutilizável com `useFormStatus`
+
+Crie `src/BotaoEnviar.jsx`:
 
 ```jsx
-import { useState } from 'react';
-import axios from 'axios';
+import { useFormStatus } from 'react-dom';
 import styles from './CrudForm.module.css';
 
+function BotaoEnviar({ children = 'Enviar' }) {
+  const { pending } = useFormStatus();
+  return (
+    <button type="submit" disabled={pending} className={styles.button}>
+      {pending ? 'Enviando…' : children}
+    </button>
+  );
+}
+
+export default BotaoEnviar;
+```
+
+## Passo 5: Componente do formulário com `useActionState`
+
+Crie `src/CrudForm.jsx`:
+
+```jsx
+import { useActionState } from 'react';
+import axios from 'axios';
+import styles from './CrudForm.module.css';
+import BotaoEnviar from './BotaoEnviar';
+
+const API_URL = import.meta.env.VITE_API_URL;
+
+async function cadastrarUsuario(prevState, formData) {
+  const nome = formData.get('name')?.toString().trim();
+  const email = formData.get('email')?.toString().trim();
+
+  if (!nome || !email) {
+    return { status: 'error', mensagem: 'Preencha nome e email.' };
+  }
+
+  try {
+    const res = await axios.post(`${API_URL}/users`, { name: nome, email });
+    if (res.status === 201) {
+      return { status: 'success', mensagem: `Usuário "${nome}" criado!` };
+    }
+    return { status: 'error', mensagem: `Erro (${res.status}) ao criar usuário.` };
+  } catch (err) {
+    return {
+      status: 'error',
+      mensagem: err?.message ?? 'Erro ao se conectar à API.',
+    };
+  }
+}
+
 function CrudForm() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+  const [state, formAction] = useActionState(cadastrarUsuario, {
+    status: 'idle',
+    mensagem: '',
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    const url = 'https://crudcrud.com/api/YOUR_UNIQUE_ENDPOINT/users';
-
-    try {
-      const response = await axios.post(url, formData);
-
-      if (response.status === 201) {
-        alert('Usuário criado com sucesso!');
-        setFormData({ name: '', email: '' });
-      } else {
-        alert('Erro ao criar usuário.');
-      }
-    } catch (error) {
-      console.error('Erro:', error);
-      alert('Erro ao se conectar à API.');
-    }
-  };
-
   return (
-    <form onSubmit={handleSubmit}>
+    <form action={formAction}>
       <div className={styles.formGroup}>
-        <label htmlFor="name" className={styles.label}>Nome:</label>
+        <label htmlFor="name" className={styles.label}>Nome</label>
         <input
-          type="text"
           id="name"
           name="name"
-          value={formData.name}
-          onChange={handleChange}
-          className={styles.input}
+          type="text"
           required
+          className={styles.input}
         />
       </div>
+
       <div className={styles.formGroup}>
-        <label htmlFor="email" className={styles.label}>Email:</label>
+        <label htmlFor="email" className={styles.label}>Email</label>
         <input
-          type="email"
           id="email"
           name="email"
-          value={formData.email}
-          onChange={handleChange}
-          className={styles.input}
+          type="email"
           required
+          className={styles.input}
         />
       </div>
-      <button type="submit" className={styles.button}>Cadastrar</button>
+
+      <BotaoEnviar>Cadastrar</BotaoEnviar>
+
+      {state.status === 'success' && (
+        <p className={styles.success}>{state.mensagem}</p>
+      )}
+      {state.status === 'error' && (
+        <p className={styles.error}>{state.mensagem}</p>
+      )}
     </form>
   );
 }
@@ -119,15 +177,14 @@ function CrudForm() {
 export default CrudForm;
 ```
 
-## Passo 3: Explicação dos Principais Elementos
+Pontos-chave:
 
-- axios.post: Utiliza o `axios` para fazer uma requisição POST para a URL fornecida com o `formData` como corpo da requisição.
-- response.status: Verifica o status da resposta para confirmar se o usuário foi criado com sucesso. O status `201` é o código padrão para uma criação bem-sucedida.
+- **`<form action={formAction}>`** dispensa `onSubmit` e `preventDefault`.
+- **`formData.get('name')`** lê os campos diretamente — não precisa de estado para cada input.
+- **`useActionState`** gera o `formAction` e o `state` devolvido pela função.
+- **`useFormStatus`** (dentro do `BotaoEnviar`) sabe automaticamente que o form está submetendo.
 
-## Passo 4:  Substitua o YOUR_UNIQUE_ENDPOINT
-Substitua `"YOUR_UNIQUE_ENDPOINT"` pelo seu endpoint único fornecido pela CRUDCrud.
-
-## Passo 5: Adicionar o Componente Form ao App (com CSS Module)
+## Passo 6: Usar o formulário no App
 
 Crie `src/App.module.css`:
 
@@ -136,6 +193,7 @@ Crie `src/App.module.css`:
   max-width: 500px;
   margin: 0 auto;
   padding: 24px;
+  font-family: system-ui, sans-serif;
 }
 
 .title {
@@ -143,7 +201,7 @@ Crie `src/App.module.css`:
 }
 ```
 
-No arquivo `src/App.jsx`, importe os estilos e o componente:
+Substitua `src/App.jsx`:
 
 ```jsx
 import styles from './App.module.css';
@@ -152,7 +210,7 @@ import CrudForm from './CrudForm';
 function App() {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Cadastro de Usuários</h1>
+      <h1 className={styles.title}>Cadastro de Usuários (React 19)</h1>
       <CrudForm />
     </div>
   );
@@ -161,10 +219,21 @@ function App() {
 export default App;
 ```
 
-## Passo 6: Execute a Aplicação
+## Passo 7: Executar a aplicação
 
 ```bash
 npm run dev
 ```
 
-Agora, o formulário em React utiliza axios para enviar os dados para a API CRUDCrud. A funcionalidade e o fluxo permanecem os mesmos, mas com `axios` para gerenciar as requisições HTTP.
+Preencha o formulário e envie. O botão fica "Enviando…" durante a requisição; ao completar, aparece a mensagem de sucesso. Se o endpoint estiver vazio ou inválido, aparece a mensagem de erro.
+
+## Explicação dos principais elementos
+
+- **`useActionState(action, initial)`**: cria `formAction` e gerencia o estado retornado pela `action`.
+- **`<form action={formAction}>`**: no React 19, a prop `action` aceita uma função que recebe `FormData`.
+- **`useFormStatus`**: componente filho (`BotaoEnviar`) lê o status de pending sem precisar receber prop.
+- **Variáveis de ambiente do Vite**: `import.meta.env.VITE_API_URL` é injetado em tempo de build.
+
+## Próximos passos
+
+No próximo tutorial, [tutorial-listagem-api.md](tutorial-listagem-api.md), você vai criar a listagem que consome os dados gravados por este formulário.

@@ -1,10 +1,8 @@
-# Tutorial: Tema e estado compartilhado com Context
+# Tutorial: Tema e estado compartilhado com Context (React 19)
 
-Neste tutorial você vai criar um tema (claro/escuro) e um estado de “usuário logado” usando a Context API e o hook `useContext`, para praticar gerenciamento de estado global.
+Neste tutorial você vai criar um tema (claro/escuro) e um estado de "usuário logado" usando a Context API e o hook `useContext`, com a **nova sintaxe `<Context value={...}>` do React 19**.
 
 ## Passo 1: Configurar o projeto
-
-Crie um projeto React com Vite (se ainda não tiver):
 
 ```bash
 npm create vite@latest tutorial-estado -- --template react
@@ -17,33 +15,41 @@ npm install
 Crie o arquivo `src/contexts/ThemeContext.jsx`:
 
 ```jsx
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export const ThemeContext = createContext();
+const ThemeContext = createContext(null);
 
 export function ThemeProvider({ children }) {
   const [tema, setTema] = useState('claro');
 
   const alternarTema = () => {
-    setTema(t => (t === 'claro' ? 'escuro' : 'claro'));
+    setTema((t) => (t === 'claro' ? 'escuro' : 'claro'));
   };
 
   return (
-    <ThemeContext.Provider value={{ tema, alternarTema }}>
+    <ThemeContext value={{ tema, alternarTema }}>
       {children}
-    </ThemeContext.Provider>
+    </ThemeContext>
   );
 }
+
+export function useTheme() {
+  const ctx = useContext(ThemeContext);
+  if (!ctx) throw new Error('useTheme deve ser usado dentro de <ThemeProvider>');
+  return ctx;
+}
 ```
+
+> Atenção: `<ThemeContext value={...}>` usa a nova sintaxe do React 19. Não precisa de `.Provider`.
 
 ## Passo 3: Criar o contexto de autenticação
 
 Crie o arquivo `src/contexts/AuthContext.jsx`:
 
 ```jsx
-import { createContext, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 
-export const AuthContext = createContext();
+const AuthContext = createContext(null);
 
 export function AuthProvider({ children }) {
   const [usuario, setUsuario] = useState(null);
@@ -52,10 +58,16 @@ export function AuthProvider({ children }) {
   const logout = () => setUsuario(null);
 
   return (
-    <AuthContext.Provider value={{ usuario, login, logout }}>
+    <AuthContext value={{ usuario, login, logout }}>
       {children}
-    </AuthContext.Provider>
+    </AuthContext>
   );
+}
+
+export function useAuth() {
+  const ctx = useContext(AuthContext);
+  if (!ctx) throw new Error('useAuth deve ser usado dentro de <AuthProvider>');
+  return ctx;
 }
 ```
 
@@ -80,16 +92,15 @@ Crie o arquivo `src/components/Painel.module.css`:
 Crie o arquivo `src/components/Painel.jsx`:
 
 ```jsx
-import { useContext } from 'react';
-import { ThemeContext } from '../contexts/ThemeContext';
-import { AuthContext } from '../contexts/AuthContext';
+import { useTheme } from '../contexts/ThemeContext';
+import { useAuth } from '../contexts/AuthContext';
 import styles from './Painel.module.css';
 
 function Painel() {
-  const { tema, alternarTema } = useContext(ThemeContext);
-  const { usuario, login, logout } = useContext(AuthContext);
+  const { tema, alternarTema } = useTheme();
+  const { usuario, login, logout } = useAuth();
 
-  /* Cores que dependem do tema: use inline (valor dinâmico). Layout fixo fica no CSS Module. */
+  /* Cores dinâmicas via style inline; layout fixo no CSS Module. */
   const temaEstilos = {
     backgroundColor: tema === 'claro' ? '#f5f5f5' : '#333',
     color: tema === 'claro' ? '#333' : '#fff',
@@ -123,7 +134,7 @@ export default Painel;
 
 ## Passo 5: Envolver a aplicação com os Providers
 
-Crie `src/App.module.css` com uma classe para o container:
+Crie `src/App.module.css`:
 
 ```css
 .container {
@@ -146,7 +157,7 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <div className={styles.container}>
-          <h1>Estado global com Context</h1>
+          <h1>Estado global com Context (React 19)</h1>
           <Painel />
         </div>
       </AuthProvider>
@@ -163,17 +174,32 @@ export default App;
 npm run dev
 ```
 
-Teste: alterne o tema (o fundo e a cor do texto devem mudar) e faça login/logout (a mensagem e os botões devem atualizar).
+Teste: alterne o tema (fundo e texto devem mudar) e faça login/logout (mensagens e botões devem atualizar).
 
 ## Explicação dos principais elementos
 
-- **createContext**: cria o “canal” de dados; o valor padrão é usado quando não há Provider acima.
-- **Provider**: define o valor atual do contexto; todos os filhos podem consumi-lo com `useContext`.
-- **useContext(ThemeContext)**: retorna o objeto `value` do Provider mais próximo (`tema` e `alternarTema`).
-- **Dois Providers**: Theme e Auth são independentes; um componente pode usar os dois contextos sem conflito.
-- **Estado no Provider**: o estado (`tema`, `usuario`) fica no Provider; ao atualizar, todos os consumidores daquele contexto re-renderizam.
-- **Estilos**: layout fixo (padding, border-radius) no CSS Module; cores que dependem de `tema` em `style={}` (valor dinâmico), seguindo a boa prática de reservar inline para dados que vêm de estado ou props.
+- **`createContext(null)`**: cria o "canal" de dados. Usamos `null` como default e validamos no custom hook.
+- **`<ThemeContext value={...}>`**: nova sintaxe do React 19 (equivalente ao antigo `<ThemeContext.Provider value={...}>`).
+- **`useTheme`/`useAuth`**: custom hooks que encapsulam o consumo e lançam erro se usados fora do Provider.
+- **Dois Providers independentes**: um componente pode consumir ambos sem conflito.
+- **Estilos**: layout fixo no CSS Module; cores que dependem de `tema` em `style={}` (valor dinâmico).
+
+## Bônus: usando `use` em vez de `useContext`
+
+Com o novo hook `use` do React 19, você pode ler o mesmo contexto **dentro de um condicional**. Substitua `useContext(AuthContext)` por `use(AuthContext)` para experimentar:
+
+```jsx
+import { use } from 'react';
+// ...
+function Painel({ mostrarUsuario }) {
+  // Pode aparecer dentro do if — useContext não permitiria!
+  if (mostrarUsuario) {
+    const { usuario } = use(AuthContext);
+    // ...
+  }
+}
+```
 
 ## Próximos passos
 
-No módulo [06 - Rotas](../06-rotas/) você verá como usar o React Router para criar rotas no frontend e, depois, como proteger rotas com base no estado de autenticação.
+No módulo [06 - Rotas](../06-rotas/) você verá como usar o **React Router v7** para criar rotas no frontend e, depois, como proteger rotas com base no estado de autenticação.

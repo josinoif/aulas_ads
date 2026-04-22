@@ -1,141 +1,124 @@
-### Introdução ao `useMemo`
+# `useMemo`
 
-O `useMemo` é um hook do React projetado para otimizar o desempenho de componentes funcionais, memorizando valores computados e garantindo que cálculos caros sejam reexecutados apenas quando suas dependências mudarem. Em aplicações React, funções de renderização são chamadas frequentemente, e isso pode ser custoso quando há operações intensivas, como cálculos matemáticos, filtragem de listas ou processamento de grandes conjuntos de dados.
+## Introdução
 
-Antes do `useMemo`, o React não fornecia uma forma nativa de evitar a recomputação de valores entre renderizações, o que frequentemente resultava em código menos eficiente. O `useMemo` resolve esse problema ao armazenar em cache os resultados de cálculos, garantindo que eles só sejam recalculados quando necessário.
+`useMemo` memoriza o **resultado de um cálculo** entre renderizações, recalculando apenas quando as dependências mudam. Use quando você tem uma operação cara no render (filtragem/ordenação de listas grandes, transformações pesadas) ou quando precisa estabilizar a identidade de um objeto/array passado como prop.
 
----
+```jsx
+import { useMemo, useState } from 'react';
 
-### **Vantagens e Desvantagens de Usar o `useMemo`**
+function Lista({ itens }) {
+  const [filtro, setFiltro] = useState('');
 
-#### **Vantagens:**
-1. **Evita Recomputação Desnecessária**: Reduz o custo computacional ao reutilizar valores memorizados.
-2. **Melhora o Desempenho**: Ideal para operações intensivas, como cálculos complexos ou manipulação de grandes listas.
-3. **Integração Natural**: Funciona perfeitamente em componentes funcionais e pode ser combinado com outros hooks, como `useCallback`.
-4. **Facilidade de Implementação**: A API é simples e intuitiva, tornando sua aplicação direta.
+  const filtrados = useMemo(() => {
+    return itens.filter((i) =>
+      i.nome.toLowerCase().includes(filtro.toLowerCase())
+    );
+  }, [itens, filtro]);
 
-#### **Desvantagens:**
-1. **Sobrecarga de Memorização**: Em alguns casos, o custo de memorização pode ser maior do que o custo de recomputação, especialmente para operações simples.
-2. **Complexidade Desnecessária**: Pode adicionar complexidade em cenários onde o impacto de reprocessar dados é mínimo.
-3. **Dependências Incorretas**: Um uso inadequado de dependências pode levar a bugs ou comportamento inesperado.
+  return (
+    <>
+      <input value={filtro} onChange={(e) => setFiltro(e.target.value)} />
+      <ul>{filtrados.map((i) => <li key={i.id}>{i.nome}</li>)}</ul>
+    </>
+  );
+}
+```
 
----
-
-### **Casos de Uso Comuns do `useMemo`**
-
-1. **Filtragem de Listas**: Otimizar a exibição de listas filtradas.
-   ```jsx
-   import React, { useState, useMemo } from "react";
-
-   const FilteredList = () => {
-     const [filter, setFilter] = useState("");
-     const [items] = useState(["apple", "banana", "cherry", "date", "elderberry"]);
-
-     const filteredItems = useMemo(() => {
-       return items.filter((item) => item.toLowerCase().includes(filter.toLowerCase()));
-     }, [filter, items]);
-
-     return (
-       <div>
-         <input
-           type="text"
-           placeholder="Filter items"
-           value={filter}
-           onChange={(e) => setFilter(e.target.value)}
-         />
-         <ul>
-           {filteredItems.map((item, index) => (
-             <li key={index}>{item}</li>
-           ))}
-         </ul>
-       </div>
-     );
-   };
-
-   export default FilteredList;
-   ```
-
-2. **Cálculos Intensivos**: Prevenir cálculos repetidos em operações pesadas.
-   ```jsx
-   import React, { useState, useMemo } from "react";
-
-   const ExpensiveCalculation = ({ num }) => {
-     console.log("Calculating...");
-     return num ** 2; // Simulação de operação cara
-   };
-
-   const CalculationComponent = () => {
-     const [number, setNumber] = useState(0);
-
-     const squared = useMemo(() => ExpensiveCalculation({ num: number }), [number]);
-
-     return (
-       <div>
-         <input
-           type="number"
-           value={number}
-           onChange={(e) => setNumber(Number(e.target.value))}
-         />
-         <p>Result: {squared}</p>
-       </div>
-     );
-   };
-
-   export default CalculationComponent;
-   ```
-
-3. **Otimização de Renderização**: Garantir que objetos ou listas criados em tempo de renderização não sejam recriados desnecessariamente.
-   ```jsx
-   import React, { useState, useMemo } from "react";
-
-   const RenderOptimization = () => {
-     const [count, setCount] = useState(0);
-
-     const memoizedObject = useMemo(() => {
-       return { value: count };
-     }, [count]);
-
-     return (
-       <div>
-         <button onClick={() => setCount((prev) => prev + 1)}>Increment</button>
-         <ChildComponent object={memoizedObject} />
-       </div>
-     );
-   };
-
-   const ChildComponent = React.memo(({ object }) => {
-     console.log("Child re-rendered");
-     return <p>Value: {object.value}</p>;
-   });
-
-   export default RenderOptimization;
-   ```
-
-4. **Formatação de Dados**: Transformar ou formatar dados antes de exibir.
-   ```jsx
-   import React, { useState, useMemo } from "react";
-
-   const FormattedList = () => {
-     const [data] = useState([1000, 2000, 3000]);
-
-     const formattedData = useMemo(() => {
-       return data.map((num) => `$${num.toFixed(2)}`);
-     }, [data]);
-
-     return (
-       <ul>
-         {formattedData.map((item, index) => (
-           <li key={index}>{item}</li>
-         ))}
-       </ul>
-     );
-   };
-
-   export default FormattedList;
-   ```
+Assinatura: `const valor = useMemo(() => calcula(), [dep1, dep2])`.
 
 ---
 
-### **Conclusão**
+## Fluxo de decisão
 
-O `useMemo` é uma ferramenta poderosa para otimizar a performance de aplicações React, garantindo que cálculos e transformações de dados sejam feitos de maneira eficiente. Ele é especialmente útil em cenários com operações custosas ou renderizações frequentes. No entanto, seu uso deve ser avaliado caso a caso, já que memorização excessiva pode adicionar complexidade desnecessária. Bem utilizado, o `useMemo` é indispensável para manter o desempenho em aplicações React modernas.
+```mermaid
+flowchart TB
+    Start[Render do componente] --> Cached{Dependências<br/>são as mesmas?}
+    Cached -- sim --> Reuse[Reutiliza valor memorizado]
+    Cached -- não --> Compute[Executa a função<br/>e guarda o resultado]
+    Reuse --> End[Segue render]
+    Compute --> End
+```
+
+---
+
+## Vantagens
+
+1. **Evita recomputação** de cálculos caros.
+2. **Estabiliza referências**: um objeto memorizado não é recriado a cada render, o que evita re-render de filhos com `React.memo`.
+3. **Composição fácil** com `useCallback` e hooks customizados.
+
+## Desvantagens
+
+1. **Custo de memorização**: guardar o resultado também consome memória/CPU. Para cálculos triviais, não memorize.
+2. **Depende de dependências corretas**: esquecer uma dependência gera bugs; incluir demais invalida o cache.
+3. **Complexidade**: memorizar tudo tornou-se um mau hábito; meça antes de otimizar.
+
+---
+
+## React Compiler: o jogo mudou
+
+O **React Compiler** (estável no React 19, opt-in via `babel-plugin-react-compiler`) memoriza automaticamente cálculos e valores em seus componentes. Quando ativo, **grande parte dos `useMemo` manuais se tornam desnecessários** — o compilador insere a memorização equivalente em tempo de build.
+
+Recomendação prática:
+
+- Em projetos com Compiler ativo: **não** use `useMemo` proativamente. Use apenas quando um profiler indicar um gargalo específico que o Compiler não resolveu.
+- Em projetos sem Compiler: use `useMemo` em cálculos demonstradamente caros ou para estabilizar referências passadas a `React.memo`.
+
+---
+
+## Casos de uso
+
+### 1. Filtragem/ordenação de listas grandes
+
+```jsx
+const ordenados = useMemo(
+  () => [...itens].sort((a, b) => a.nome.localeCompare(b.nome)),
+  [itens]
+);
+```
+
+### 2. Cálculos matemáticos pesados
+
+```jsx
+const primos = useMemo(() => calcularPrimos(n), [n]);
+```
+
+### 3. Estabilizar objeto/array para `React.memo` ou dependência de hook
+
+```jsx
+const opcoes = useMemo(() => ({ locale: 'pt-BR', currency: 'BRL' }), []);
+
+useEffect(() => {
+  formatarMoeda(valor, opcoes);
+}, [valor, opcoes]);
+```
+
+Sem o `useMemo`, `opcoes` seria um objeto novo a cada render e o efeito rodaria infinitamente.
+
+### 4. Derivar valor do estado
+
+Prefira **calcular direto no render** para valores leves:
+
+```jsx
+// ❌ Desnecessário para algo trivial
+const dobro = useMemo(() => valor * 2, [valor]);
+
+// ✅ Simples e suficiente
+const dobro = valor * 2;
+```
+
+---
+
+## `useMemo` vs `useCallback`
+
+- `useMemo(fn, deps)` retorna o **valor** que `fn()` produz.
+- `useCallback(fn, deps)` retorna a **própria função** `fn` memorizada (equivale a `useMemo(() => fn, deps)`).
+
+Use `useCallback` quando precisa passar uma função estável para um filho memorizado ou como dependência de outro hook.
+
+---
+
+## Conclusão
+
+`useMemo` é útil para estabilizar referências e evitar cálculos caros. Com o React Compiler, a maior parte desses usos é automatizada — reserve o hook para otimizações medidas. Sempre declare dependências corretamente e evite memorizar o que não precisa.

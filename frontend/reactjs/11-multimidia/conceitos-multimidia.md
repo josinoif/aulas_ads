@@ -4,6 +4,18 @@
 
 **Multimídia** no frontend inclui áudio, vídeo e imagens. Em React, você exibe e controla esses elementos usando as tags HTML nativas (`<img>`, `<audio>`, `<video>`) e, quando precisa de controle programático, a **ref** para acessar o elemento DOM e chamar métodos como `play()`, `pause()`, ou alterar `currentTime` e `volume`.
 
+> Lembrete do React 19: em componentes funcionais, a `ref` chega como uma **prop normal** — não é mais necessário `forwardRef`.
+
+```mermaid
+flowchart LR
+    Render[Render do componente] --> Tag["&lt;video ref={videoRef}&gt;"]
+    Tag --> DOM[Elemento &lt;video&gt; no DOM]
+    useRef[useRef] --> videoRef[videoRef.current]
+    videoRef --> DOM
+    DOM -- eventos --> Handlers["onTimeUpdate, onEnded..."]
+    Handlers --> State[Estado do player]
+```
+
 ---
 
 ## Imagens

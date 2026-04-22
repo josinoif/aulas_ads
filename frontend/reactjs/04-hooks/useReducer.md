@@ -1,153 +1,174 @@
-### Introdução ao `useReducer`
+# `useReducer`
 
-O `useReducer` é um hook avançado do React projetado para gerenciar estados complexos em componentes funcionais. Inspirado no padrão de reducers usado pelo Redux, ele oferece uma abordagem alternativa ao `useState`, especialmente útil quando o estado depende de múltiplas ações ou quando as atualizações de estado envolvem lógica mais elaborada.
+## Introdução
 
-Antes da introdução do `useReducer`, o gerenciamento de estados complexos em componentes funcionais muitas vezes resultava em múltiplos `useState` ou em lógica distribuída, dificultando a manutenção e legibilidade do código. O `useReducer` resolve esse problema ao centralizar a lógica de atualização em uma única função redutora, melhorando a organização e previsibilidade.
+`useReducer` é um hook para gerenciar **estados complexos** ou com **muitas ações** em componentes funcionais. A ideia vem do padrão *reducer* popularizado pelo Redux: uma função pura `(state, action) => novoState` concentra toda a lógica de atualização.
 
----
+```jsx
+import { useReducer } from 'react';
 
-### **Vantagens e Desvantagens de Usar o `useReducer`**
+const initial = { count: 0 };
 
-#### **Vantagens:**
-1. **Gerenciamento de Estados Complexos**: Ideal para cenários onde o estado tem múltiplos campos ou depende de várias ações.
-2. **Centralização da Lógica**: A lógica de atualização é isolada em uma função redutora, tornando o código mais previsível e fácil de testar.
-3. **Semelhança com Redux**: Para quem já está familiarizado com Redux, a estrutura do `useReducer` é muito intuitiva.
-4. **Clareza em Mudanças de Estado**: Cada ação é explicitamente descrita, facilitando o rastreamento de alterações.
+function reducer(state, action) {
+  switch (action.type) {
+    case 'incrementar':
+      return { count: state.count + 1 };
+    case 'decrementar':
+      return { count: state.count - 1 };
+    case 'reset':
+      return initial;
+    default:
+      throw new Error(`Ação desconhecida: ${action.type}`);
+  }
+}
 
-#### **Desvantagens:**
-1. **Complexidade Inicial**: Pode parecer mais verboso ou complexo em casos simples, quando comparado ao `useState`.
-2. **Menor Flexibilidade para Estados Simples**: Para estados menores e menos dinâmicos, o `useState` é mais direto.
-3. **Sobrecarga em Pequenos Componentes**: Em componentes que não têm muitas ações ou estados complexos, o `useReducer` pode ser uma solução excessiva.
+function Contador() {
+  const [state, dispatch] = useReducer(reducer, initial);
 
----
-
-### **Casos de Uso Comuns do `useReducer`**
-
-1. **Formulários com Múltiplos Campos**: Gerenciar o estado de um formulário com validações ou várias interações.
-   ```jsx
-   const formReducer = (state, action) => {
-     switch (action.type) {
-       case "UPDATE_FIELD":
-         return { ...state, [action.field]: action.value };
-       case "RESET_FORM":
-         return action.initialState;
-       default:
-         return state;
-     }
-   };
-
-   const FormComponent = () => {
-     const initialState = { name: "", email: "" };
-     const [formState, dispatch] = useReducer(formReducer, initialState);
-
-     return (
-       <form>
-         <input
-           type="text"
-           value={formState.name}
-           onChange={(e) =>
-             dispatch({ type: "UPDATE_FIELD", field: "name", value: e.target.value })
-           }
-         />
-         <input
-           type="email"
-           value={formState.email}
-           onChange={(e) =>
-             dispatch({ type: "UPDATE_FIELD", field: "email", value: e.target.value })
-           }
-         />
-         <button type="button" onClick={() => dispatch({ type: "RESET_FORM", initialState })}>
-           Reset
-         </button>
-       </form>
-     );
-   };
-   ```
-
-2. **Gerenciamento de Carrinho de Compras**: Adicionar, remover e atualizar itens em um carrinho.
-   ```jsx
-   const cartReducer = (state, action) => {
-     switch (action.type) {
-       case "ADD_ITEM":
-         return [...state, action.item];
-       case "REMOVE_ITEM":
-         return state.filter((item) => item.id !== action.id);
-       default:
-         return state;
-     }
-   };
-
-   const CartComponent = () => {
-     const [cart, dispatch] = useReducer(cartReducer, []);
-
-     return (
-       <div>
-         {cart.map((item) => (
-           <div key={item.id}>
-             {item.name} - ${item.price}
-             <button onClick={() => dispatch({ type: "REMOVE_ITEM", id: item.id })}>
-               Remove
-             </button>
-           </div>
-         ))}
-         <button
-           onClick={() =>
-             dispatch({ type: "ADD_ITEM", item: { id: 1, name: "Item A", price: 10 } })
-           }
-         >
-           Add Item A
-         </button>
-       </div>
-     );
-   };
-   ```
-
-3. **Estados Condicionais Complexos**: Como alternância de estados entre "carregando", "sucesso" e "erro".
-   ```jsx
-   const fetchReducer = (state, action) => {
-     switch (action.type) {
-       case "FETCH_INIT":
-         return { ...state, loading: true, error: null };
-       case "FETCH_SUCCESS":
-         return { ...state, loading: false, data: action.payload };
-       case "FETCH_ERROR":
-         return { ...state, loading: false, error: action.error };
-       default:
-         return state;
-     }
-   };
-
-   const DataFetcher = () => {
-     const [state, dispatch] = useReducer(fetchReducer, {
-       loading: false,
-       data: null,
-       error: null,
-     });
-
-     const fetchData = async () => {
-       dispatch({ type: "FETCH_INIT" });
-       try {
-         const response = await fetch("https://api.example.com/data");
-         const data = await response.json();
-         dispatch({ type: "FETCH_SUCCESS", payload: data });
-       } catch (error) {
-         dispatch({ type: "FETCH_ERROR", error: error.message });
-       }
-     };
-
-     return (
-       <div>
-         {state.loading && <p>Loading...</p>}
-         {state.error && <p>Error: {state.error}</p>}
-         {state.data && <p>Data: {JSON.stringify(state.data)}</p>}
-         <button onClick={fetchData}>Fetch Data</button>
-       </div>
-     );
-   };
-   ```
+  return (
+    <div>
+      <p>{state.count}</p>
+      <button onClick={() => dispatch({ type: 'incrementar' })}>+</button>
+      <button onClick={() => dispatch({ type: 'decrementar' })}>-</button>
+      <button onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+    </div>
+  );
+}
+```
 
 ---
 
-### **Conclusão**
+## Fluxo
 
-O `useReducer` é uma ferramenta poderosa para lidar com estados complexos e múltiplas ações em componentes funcionais. Ele é especialmente útil em cenários onde a lógica de atualização de estado é centralizada e bem definida, tornando o código mais organizado e previsível. Embora possa ser excessivo para estados simples, sua capacidade de lidar com situações complexas o torna indispensável em muitos casos de uso no desenvolvimento React.
+```mermaid
+flowchart LR
+    UI[Evento de UI] --> Dispatch["dispatch(action)"]
+    Dispatch --> Reducer["reducer(state, action)"]
+    Reducer --> NewState[novo estado]
+    NewState --> ReRender[React re-renderiza]
+    ReRender --> UI
+```
+
+O **reducer deve ser puro**: mesma entrada produz mesma saída, sem efeitos colaterais.
+
+---
+
+## Quando usar
+
+Prefira `useReducer` (em vez de `useState`) quando:
+
+1. O estado tem **muitos campos relacionados** (ex.: formulário grande).
+2. As atualizações seguem **várias regras** ou dependem do estado anterior de forma complexa.
+3. Você quer **testar** a lógica de atualização isoladamente (a função `reducer` é testável sem React).
+4. Faz sentido expor o `dispatch` via Context para que componentes distantes disparem ações, sem "prop drilling" de vários setters.
+
+### Combinando com Context
+
+```jsx
+const DispatchCtx = createContext(null);
+
+function Provider({ children }) {
+  const [state, dispatch] = useReducer(reducer, initial);
+  return (
+    <StateCtx value={state}>
+      <DispatchCtx value={dispatch}>
+        {children}
+      </DispatchCtx>
+    </StateCtx>
+  );
+}
+```
+
+> No React 19 você usa `<StateCtx value={...}>` diretamente, sem `.Provider`.
+
+---
+
+## Vantagens e desvantagens
+
+**Vantagens:**
+
+- Lógica **centralizada** e explícita.
+- **Testabilidade**: a função `reducer` é pura.
+- **Semelhança com Redux** (se você já conhece, a curva é curta).
+- **Dispatch estável**: a referência nunca muda, ótimo para passar como prop.
+
+**Desvantagens:**
+
+- **Mais verboso** para estados simples.
+- Pode ser overkill em componentes pequenos.
+- Requer disciplina para manter a função pura.
+
+---
+
+## Casos de uso comuns
+
+### 1. Formulário com muitos campos
+
+```jsx
+const initial = { nome: '', email: '', aceitou: false };
+
+function formReducer(state, action) {
+  switch (action.type) {
+    case 'campo':
+      return { ...state, [action.campo]: action.valor };
+    case 'reset':
+      return initial;
+    default:
+      return state;
+  }
+}
+
+function Form() {
+  const [form, dispatch] = useReducer(formReducer, initial);
+
+  const onChange = (e) =>
+    dispatch({
+      type: 'campo',
+      campo: e.target.name,
+      valor: e.target.type === 'checkbox' ? e.target.checked : e.target.value,
+    });
+
+  return (
+    <form>
+      <input name="nome" value={form.nome} onChange={onChange} />
+      <input name="email" value={form.email} onChange={onChange} />
+      <label>
+        <input name="aceitou" type="checkbox" checked={form.aceitou} onChange={onChange} />
+        Aceito os termos
+      </label>
+      <button type="button" onClick={() => dispatch({ type: 'reset' })}>Reset</button>
+    </form>
+  );
+}
+```
+
+### 2. Estados de requisição (loading/success/error)
+
+```jsx
+const initial = { loading: false, data: null, error: null };
+
+function fetchReducer(state, action) {
+  switch (action.type) {
+    case 'start':   return { ...state, loading: true, error: null };
+    case 'success': return { loading: false, data: action.payload, error: null };
+    case 'error':   return { loading: false, data: null, error: action.error };
+    default:        return state;
+  }
+}
+```
+
+### 3. Carrinho de compras, listas com múltiplas operações, máquinas de estado simples.
+
+---
+
+## `useReducer` vs `useActionState` (React 19)
+
+Se o seu reducer existe **apenas para gerenciar o estado resultante de uma submissão de formulário**, avalie o **`useActionState`** (veja [useActionState.md](useActionState.md)). Ele já integra *pending state*, funciona com `<form action={...}>` e reduz código.
+
+Para lógica de estado geral (não ligada a formulários), `useReducer` continua sendo a escolha certa.
+
+---
+
+## Conclusão
+
+`useReducer` brilha em estados complexos com muitas ações ou lógica centralizada. Mantenha o reducer puro, use `dispatch` via Context quando precisar disparar ações em vários lugares, e combine com `useActionState` nos formulários do React 19.
