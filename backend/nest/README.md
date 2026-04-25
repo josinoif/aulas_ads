@@ -22,13 +22,14 @@ Material de estudo para desenvolvimento backend com **NestJS 10**, pensado para 
 | 7 | `7.autenticacao.md` | Autenticação JWT (evolui o projeto do cap. 5) |
 | 8 | `8.autorizacao.md` | Autorização por papéis (roles) |
 | 9 | `9.documentacao_api.md` | Documentação da API com Swagger |
+| 10 | `10.testes_software.md` | Testes no NestJS: unidade, integração, e2e, cobertura e TDD |
 | — | `exercicio-1.md` | Exercício: e-commerce (entidades, CRUD, pagamento) |
 
 ## Dicas para estudo em casa
 
 1. **Siga a ordem**: os tutoriais 5–8 partem de um mesmo projeto (CRUD de contatos + auth). Comece pelo 5 e vá evoluindo.
 2. **Ambiente**: use MySQL em Docker (passo a passo no cap. 5) ou ajuste para outro banco suportado pelo TypeORM.
-3. **Testes**: use Postman, Insomnia ou `curl` para testar os endpoints; o cap. 9 mostra como testar direto no Swagger.
+3. **Testes**: para validações manuais, use Postman/Insomnia/`curl` (cap. 9 ajuda no Swagger) e, para automação, siga o cap. 10.
 4. **Referência**: em caso de dúvida, consulte a [documentação oficial do NestJS](https://docs.nestjs.com/).
 
 ## Compatibilidade
