@@ -20,8 +20,8 @@ Detalhe canônico das rotas: [`MAPA-LINHAS-P-A.md`](MAPA-LINHAS-P-A.md).
 
 | Shell em… | Compose | Seed |
 |-----------|---------|------|
-| `backend/nest/` | `docker compose -f docker-compose.postgres.yml up -d` | `seed/seed-catalog.sql` ou `seed/seed.sql` |
-| `backend/nest/loja-api/` | `docker compose -f ../docker-compose.postgres.yml up -d` | `../seed/...` |
+| `backend/nest/` | `docker compose -f docker-compose.postgres.yml up -d` ([arquivo](docker-compose.postgres.yml)) | [`seed/seed-catalog.sql`](seed/seed-catalog.sql) ou [`seed/seed.sql`](seed/seed.sql) |
+| `backend/nest/loja-api/` | `docker compose -f ../docker-compose.postgres.yml up -d` | `../seed/...` ([pasta](seed/)) |
 
 ---
 
@@ -74,9 +74,9 @@ flowchart LR
 | Sintoma | O que fazer |
 |---------|-------------|
 | `Cannot connect to the Docker daemon` | Inicie o Docker Desktop / serviço (`sudo systemctl start docker` no Linux). |
-| `port is already allocated` (5432) | Pare o Postgres local ou altere a porta no `docker-compose.postgres.yml`. |
+| `port is already allocated` (5432) | Pare o Postgres local ou altere a porta no [`docker-compose.postgres.yml`](docker-compose.postgres.yml). |
 | API sobe, queries falham | `docker compose -f docker-compose.postgres.yml ps` — espere `healthy` no `loja-postgres`. |
-| `relation "users" does not exist` ao aplicar seed | Suba a API uma vez (`synchronize: true`) **antes** do `seed.sql`. |
+| `relation "users" does not exist` ao aplicar seed | Suba a API uma vez (`synchronize: true`) **antes** do [`seed.sql`](seed/seed.sql). |
 
 Teste rápido:
 
@@ -112,6 +112,8 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 
 ## PostgreSQL e seed
 
+Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
+
 ```bash
 docker compose -f docker-compose.postgres.yml up -d
 # após cap. 5 (só products):
@@ -121,7 +123,7 @@ docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh   # confirma ana/cli → secret123
 ```
 
-**Testes e2e (cap. 10):** com Docker no ar, `bash scripts/e2e-prepare.sh` sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
+**Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
 
 ```bash
 # cap. 10 — a partir de backend/nest/

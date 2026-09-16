@@ -16,5 +16,21 @@ services:
       timeout: 5s
       retries: 10
 
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: loja-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@loja.local
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "5050:80"
+    volumes:
+      - loja_pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+
 volumes:
   loja_pg_data:
+  loja_pgadmin_data:

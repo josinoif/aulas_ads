@@ -18,6 +18,8 @@ Produtos: **Caneca Nest** (stock 10), **Camiseta ADS** (stock 25).
 
 ## Como aplicar
 
+Compose: [`docker-compose.postgres.yml`](../docker-compose.postgres.yml). Verificação: [`verify-seed.sh`](verify-seed.sh).
+
 ```bash
 # a partir de backend/nest/
 docker compose -f docker-compose.postgres.yml up -d
@@ -30,7 +32,7 @@ docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh
 ```
 
-> **`seed.sql` apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1). Use de propósito no cap. 6+.
+> **[`seed.sql`](seed.sql) apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1). Use de propósito no cap. 6+.
 
 A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as tabelas.
 

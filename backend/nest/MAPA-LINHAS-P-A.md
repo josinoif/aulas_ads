@@ -246,7 +246,7 @@ Mesmas rotas P do cap. 2, agora com **TypeORM** + entidade `Product` + **Postgre
 | `PUT` | `/products/:id` | - | `200` / `404` |
 | `DELETE` | `/products/:id` | - | `204` / `404` |
 
-Docker PostgreSQL + `TypeOrmModule` conforme tutorial (`docker-compose.postgres.yml` nesta pasta).
+Docker PostgreSQL + `TypeOrmModule` conforme tutorial ([`docker-compose.postgres.yml`](docker-compose.postgres.yml) nesta pasta).
 
 ### A (opcional) — categorias
 
@@ -268,7 +268,7 @@ Docker PostgreSQL + `TypeOrmModule` conforme tutorial (`docker-compose.postgres.
 
 ## Cap. 5.1 — Pedidos (núcleo P do checkout)
 
-Pode ser seção final do cap. 5 ou arquivo `5.1.pedidos.md`. **Obrigatório na linha P** para o checkout existir antes de auth.
+Pode ser seção final do cap. 5 ou arquivo [`5.1.pedidos.md`](5.1.pedidos.md). **Obrigatório na linha P** para o checkout existir antes de auth.
 
 **Decisão canônica:** no 5.1 as rotas de pedido existem e funcionam **sem** JWT (`userId` pode ser `null` — usuário ainda não existe). No cap. 6, `userId` passa a vir do token e as mutações/listagens exigem JWT. Assim o 5.1 não bloqueia quem ainda não viu auth, e o 6 só **endurece** o mesmo contrato.
 
@@ -432,7 +432,7 @@ Arquivos sugeridos: `*.a.spec.ts` ou pasta `test/desafios/`.
 
 ## Capstone — Exercício e-commerce completo
 
-Quem só fez **P** já tem loja utilizável. O capstone **não reinicia** o projeto: amplia A (e o UML do `exercicio-1.md`).
+Quem só fez **P** já tem loja utilizável. O capstone **não reinicia** o projeto: amplia A (e o UML do [`exercicio-1.md`](exercicio-1.md)).
 
 ### Sugestão de pacotes A (aluno escolhe ≥ 1 “pacote completo” + opcionais)
 
@@ -476,20 +476,20 @@ Ao marcar pagamento `PAID` → pedido `PAID`. Não alterar método após criar.
 
 | Ordem | Arquivo | Foco P |
 |-------|---------|--------|
-| 0 | `0.typescript-para-nestjs.md` | Leitura TS |
-| 1 | `1.introducao_nestjs.md` | `/health` |
-| 2 | `2.controllers.md` | CRUD `/products` memória |
-| 2.1 | `2.1.dtos-e-validacao.md` | DTOs produto |
-| 3 | `3.services.md` | `ProductsService` + module |
-| 4 | `4.introducao_nestjs_persistencia.md` | Conceitos |
-| 5 | `5.crud_nest_bd.md` | Produtos + PostgreSQL |
-| 5.1 | `5.1.pedidos.md` | `/orders` |
-| 6 | `6.autenticacao.md` | JWT + endurecer mutações |
-| 7 | `7.autorizacao.md` | Roles |
-| 8 | `8.documentacao_api.md` | Swagger `/api` |
-| 9 | `9.upload_arquivos.md` | Imagem do produto |
-| 10 | `10.testes_software.md` | Suíte P |
-| — | `exercicio-1.md` | Capstone A |
+| 0 | [`0.typescript-para-nestjs.md`](0.typescript-para-nestjs.md) | Leitura TS |
+| 1 | [`1.introducao_nestjs.md`](1.introducao_nestjs.md) | `/health` |
+| 2 | [`2.controllers.md`](2.controllers.md) | CRUD `/products` memória |
+| 2.1 | [`2.1.dtos-e-validacao.md`](2.1.dtos-e-validacao.md) | DTOs produto |
+| 3 | [`3.services.md`](3.services.md) | `ProductsService` + module |
+| 4 | [`4.introducao_nestjs_persistencia.md`](4.introducao_nestjs_persistencia.md) | Conceitos |
+| 5 | [`5.crud_nest_bd.md`](5.crud_nest_bd.md) | Produtos + PostgreSQL |
+| 5.1 | [`5.1.pedidos.md`](5.1.pedidos.md) | `/orders` |
+| 6 | [`6.autenticacao.md`](6.autenticacao.md) | JWT + endurecer mutações |
+| 7 | [`7.autorizacao.md`](7.autorizacao.md) | Roles |
+| 8 | [`8.documentacao_api.md`](8.documentacao_api.md) | Swagger `/api` |
+| 9 | [`9.upload_arquivos.md`](9.upload_arquivos.md) | Imagem do produto |
+| 10 | [`10.testes_software.md`](10.testes_software.md) | Suíte P |
+| — | [`exercicio-1.md`](exercicio-1.md) | Capstone A |
 
 A **numeração dos arquivos** segue a ordem de estudo.
 
@@ -504,10 +504,9 @@ Folha de curls: [`CURLS-P.md`](CURLS-P.md).
 
 ## Checklist rápido “P completo”
 
-Ao final da trilha obrigatória, estes curls (ajuste token) devem funcionar:
+Ao final da trilha obrigatória, estes curls (ajuste token) devem funcionar. Ver também [`CURLS-P.md`](CURLS-P.md) e [`seed/`](seed/) (ana=ADMIN, cli=CLIENT, senha `secret123`).
 
 ```bash
-# ver também CURLS-P.md e seed/ (ana=ADMIN, cli=CLIENT, senha secret123)
 curl -s localhost:3000/health
 curl -s localhost:3000/products
 curl -s -X POST localhost:3000/auth/login -H 'Content-Type: application/json' \

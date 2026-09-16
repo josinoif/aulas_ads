@@ -5,7 +5,7 @@ Seed: [`seed/README.md`](seed/README.md) — **Ana** (ADMIN) e **Cli** (CLIENT),
 
 Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LINHAS-P-A.md) prevalece.
 
-**Cwd dos comandos `docker exec` / `seed/`:** assuma shell em **`backend/nest/`**. Se estiver em `loja-api/`, use `../seed/...` e `docker compose -f ../docker-compose.postgres.yml`.
+**Cwd dos comandos `docker exec` / [`seed/`](seed/):** assuma shell em **`backend/nest/`**. Se estiver em `loja-api/`, use `../seed/...` e `docker compose -f ../docker-compose.postgres.yml` ([`docker-compose.postgres.yml`](docker-compose.postgres.yml)).
 
 | Passos desta folha | Implemente antes de rodar |
 |--------------------|---------------------------|
@@ -19,6 +19,8 @@ Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LI
 | 9 | Cap. 9 (upload) |
 
 Travou? Compare com o [gabarito de verificação P](SOLUCAO-P.md).
+
+Arquivos usados abaixo: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`fixtures/caneca.jpg`](fixtures/caneca.jpg).
 
 ```bash
 # 0) Postgres + API — rode o compose a partir de backend/nest/
@@ -122,7 +124,7 @@ curl -s -X POST http://localhost:3000/orders \
 # abra http://localhost:3000/api — Authorize com o token da Ana
 # (rotas de imagem entram no Swagger no cap. 9)
 
-# 9) Upload (Ana) — fixture do material: backend/nest/fixtures/caneca.jpg
+# 9) Upload (Ana) — fixture do material: fixtures/caneca.jpg
 test -f ./fixtures/caneca.jpg || cp ../fixtures/caneca.jpg ./fixtures/
 curl -s -X POST http://localhost:3000/products/1/image \
   -H "Authorization: Bearer $TOKEN_ANA" \

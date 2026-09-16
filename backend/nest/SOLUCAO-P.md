@@ -25,11 +25,11 @@ flowchart LR
 | **4** | Só leitura conceitual — **nenhum curl novo**; entenda entidade × DTO e Postgres antes do cap. 5 |
 | **5** | Produto sobrevive restart; Postgres via Docker |
 | **5.1** | `POST /orders` debita `stock`; cancel devolve estoque; estoque insuficiente → **400** |
-| **6** | `seed.sql` + login Ana/Cli; `POST /products` sem token → **401**; **qualquer** Bearer (Ana **ou** Cli) → **201** (ADMIN-only = cap. 7) |
+| **6** | [`seed.sql`](seed/seed.sql) + login Ana/Cli; `POST /products` sem token → **401**; **qualquer** Bearer (Ana **ou** Cli) → **201** (ADMIN-only = cap. 7) |
 | **7** | Cli em `POST /products` → **403**; Ana → **201**; Cli em `POST /orders` → **201** |
 | **8** | `GET /api` abre Swagger; Authorize com JWT |
 | **9** | Ana upload imagem → **200**; Cli upload → **403**; MIME inválido → **400** |
-| **10** | `npm test` + `npm run test:e2e` (após `bash scripts/e2e-prepare.sh`) |
+| **10** | `npm test` + `npm run test:e2e` (após [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh)) |
 
 ---
 
@@ -69,6 +69,8 @@ loja-api/src/
 ---
 
 ## Seeds
+
+Arquivos: [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
 
 ```bash
 # backend/nest/
