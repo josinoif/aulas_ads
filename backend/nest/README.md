@@ -62,10 +62,12 @@ flowchart LR
 
 ## Pré-requisitos
 
-- Node.js 18+ (LTS 20 recomendado; trilha testada com Nest 10), npm, Docker  
+- **Node.js 20 LTS** (mínimo 18; evite Node 18 em máquinas novas — está em fim de suporte). Nest 10 desta trilha **não** exige Node 22+  
+- npm, Docker Desktop (ou Docker Engine + Compose)  
 - HTTP/REST básico; JS básico → cap. 0 para TypeScript/Nest  
 - Comandos `nest g` → rode **`npx nest g …` dentro de `loja-api/`** (usa o CLI local do projeto)  
 - Variáveis de ambiente: copie [`.env.example`](.env.example) para `loja-api/.env`  
+- **Windows:** os scripts `.sh` (`seed/verify-seed.sh`, `scripts/e2e-prepare.sh`) pedem **Git Bash** ou **WSL**. Os curls dos capítulos funcionam no Git Bash; no PowerShell adapte as aspas/`export`  
 
 ---
 
@@ -116,11 +118,27 @@ Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/s
 
 ```bash
 docker compose -f docker-compose.postgres.yml up -d
-# após cap. 5 (só products):
+# após cap. 5 (só products) — Git Bash / macOS / Linux:
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed-catalog.sql
 # após auth + pedidos (seed completo):
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh   # confirma ana/cli → secret123
+```
+
+**PowerShell (Windows nativo)** — o `<` do bash **não** funciona; use pipe:
+
+```powershell
+Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja -d loja
+Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
+# verify-seed.sh ainda precisa de Git Bash ou WSL
+```
+
+Para extrair o JWT no PowerShell (em vez de `TOKEN=$(… | python3)`):
+
+```powershell
+$ana = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
+  -ContentType 'application/json' -Body '{"username":"ana","password":"secret123"}'
+$TOKEN_ANA = $ana.access_token
 ```
 
 **Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
@@ -152,6 +170,23 @@ Personagens: **Ana** administra; **Cli** compra.
 
 ---
 
-## Compatibilidade
+## Compatibilidade e versões pinadas
 
-NestJS 10 + PostgreSQL 16.
+Esta trilha usa **NestJS 10** + **PostgreSQL 16** de propósito: o npm “latest” do Nest já está na linha **12**, incompatível com os exemplos deste material.
+
+| Peça | Versão da trilha | Onde aparece |
+|------|------------------|--------------|
+| Nest CLI / scaffold | `@nestjs/cli@10` | cap. 1 |
+| `@nestjs/typeorm` | `10` | caps. 4–5 |
+| `typeorm` | `0.3` (não use 1.x) | caps. 4–5 |
+| `pg` | `8` | caps. 4–5 |
+| `@nestjs/config` | `3` | caps. 5–6 |
+| `class-validator` / `class-transformer` | `0.14` / `0.5` | cap. 2.1 |
+| `@nestjs/mapped-types` | `2` | desafio A do 2.1 |
+| `@nestjs/jwt` / `@nestjs/passport` | `10` / `10` | cap. 6 |
+| `passport` / `passport-jwt` / `bcryptjs` | `0.7` / `4` / `2` | cap. 6 |
+| `@nestjs/swagger` | `8` | cap. 8 |
+| Postgres (Docker) | `postgres:16-alpine` | Compose |
+| pgAdmin (Docker) | `dpage/pgadmin4:8` | Compose |
+
+**Regra de ouro:** copie o comando `npm install …@versão` do capítulo. Se omitir o `@versão`, o npm pode instalar Nest 11/12 e o lab quebra.

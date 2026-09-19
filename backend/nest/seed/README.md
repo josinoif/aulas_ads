@@ -32,7 +32,14 @@ docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh
 ```
 
-> **[`seed.sql`](seed.sql) apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1). Use de propósito no cap. 6+.
+**PowerShell:**
+
+```powershell
+Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja -d loja
+Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
+```
+
+> **[`seed.sql`](seed.sql) / [`seed-catalog.sql`](seed-catalog.sql)** usam `TRUNCATE … RESTART IDENTITY` (não `DELETE`). Assim as sequences voltam a 1 e os curls com `productId: 1` / `id=1` continuam válidos após reseed. O seed completo **apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1) — use de propósito no cap. 6+.
 
 A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as tabelas.
 
