@@ -15,6 +15,9 @@ Detalhe canônico das rotas: [`MAPA-LINHAS-P-A.md`](MAPA-LINHAS-P-A.md).
 **Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@10 new loja-api` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`).  
 **Banco:** PostgreSQL 16 — [`docker-compose.postgres.yml`](docker-compose.postgres.yml).  
 **Seed oficial:** [`seed/`](seed/) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.  
+**Versões pinadas:** [`VERSIONS.md`](VERSIONS.md).  
+**Travou?** [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md).  
+**Consulta decorators/pipes:** [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md) (cheat sheet da linha P — não é aula).  
 **Folha de curls P:** [`CURLS-P.md`](CURLS-P.md).  
 **Gabarito de verificação P:** [`SOLUCAO-P.md`](SOLUCAO-P.md) — checklist HTTP e árvore de arquivos (sem código pronto).
 
@@ -37,8 +40,9 @@ flowchart LR
     C3 --> C4[4 persistência]
     C4 --> C5[5 Postgres]
     C5 --> C51[5.1 pedidos]
-    C51 --> C6[6 JWT]
-    C6 --> C7[7 roles]
+    C51 --> C6a[6a JWT login]
+    C6a --> C6b[6b Bearer]
+    C6b --> C7[7 roles]
     C7 --> C8[8 Swagger]
     C8 --> C9[9 upload]
     C9 --> C10[10 testes]
@@ -49,14 +53,19 @@ flowchart LR
 
 ## Como cada capítulo está organizado
 
-1. **Objetivo** — o que você deve conseguir ao terminar  
-2. **Pré-requisito / próximo passo**  
-3. **Contexto** — problema da `loja-api` (Ana / Cli)  
-4. **Conceito** em pontos estratégicos  
-5. **Linha P** — implementação + curls  
-6. **Desafio (Linha A)** — opcional  
-7. **Checkpoint** + frase *o que a loja ganhou hoje*  
-8. Rodapé: contrato do mapa
+1. **Neste episódio** (quando houver) — foco de aula/vídeo + “pause e rode”  
+2. **Objetivo** — o que você deve conseguir ao terminar  
+3. **Pré-requisito / próximo passo**  
+4. **Contexto** — problema da `loja-api` (Ana / Cli)  
+5. **Conceito** em pontos estratégicos  
+6. **Linha P** — implementação + curls  
+7. **Desafio (Linha A)** — opcional  
+8. **Checkpoint** (+ chave curta nos caps. principais / [`SOLUCAO-P`](SOLUCAO-P.md))  
+9. Rodapé: contrato do mapa + link para [`REFERENCIA-NEST`](REFERENCIA-NEST.md) quando o cap. introduz symbols novos  
+
+Atalhos: [`VERSIONS.md`](VERSIONS.md) · [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md) · [`CURLS-P.md`](CURLS-P.md).
+
+**Travou?** FAQ → CURLS-P → SOLUCAO-P → capítulo do sintoma.
 
 ---
 
@@ -67,7 +76,11 @@ flowchart LR
 - HTTP/REST básico; JS básico → cap. 0 para TypeScript/Nest  
 - Comandos `nest g` → rode **`npx nest g …` dentro de `loja-api/`** (usa o CLI local do projeto)  
 - Variáveis de ambiente: copie [`.env.example`](.env.example) para `loja-api/.env`  
-- **Windows:** os scripts `.sh` (`seed/verify-seed.sh`, `scripts/e2e-prepare.sh`) pedem **Git Bash** ou **WSL**. Os curls dos capítulos funcionam no Git Bash; no PowerShell adapte as aspas/`export`  
+- **Windows:** prefira **Git Bash** para os curls dos capítulos, **ou** use PowerShell com `curl.exe` e os scripts `.ps1`:
+  - Seed: `Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja`
+  - Verificar hash: `.\seed\verify-seed.ps1`
+  - E2E prepare: `.\scripts\e2e-prepare.ps1`  
+  Detalhes: [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`VERSIONS.md`](VERSIONS.md)  
 
 ---
 
@@ -101,8 +114,8 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 | 4 | [`4.introducao_nestjs_persistencia.md`](4.introducao_nestjs_persistencia.md) | Por que o Postgres | Conceitos TypeORM | ½–1 encontro |
 | 5 | [`5.crud_nest_bd.md`](5.crud_nest_bd.md) | Caneca sobrevive ao restart | Produtos no PG | 1 encontro |
 | 5.1 | [`5.1.pedidos.md`](5.1.pedidos.md) | Cli compra | `/orders` | 1 encontro |
-| 6 | [`6.autenticacao.md`](6.autenticacao.md) | Identidade Ana/Cli | JWT (Partes A+B) | 1 lab longo ou 2 |
-| 7 | [`7.autorizacao.md`](7.autorizacao.md) | Mesmo token ≠ todas as portas | Roles | 1 encontro |
+| 6 | [`6.autenticacao.md`](6.autenticacao.md) | Identidade Ana/Cli | JWT **6a** (login) + **6b** (guards) | **2 vídeos** / 2 encontros |
+| 7 | [`7.autorizacao.md`](7.autorizacao.md) | Mesmo token ≠ todas as portas | Roles (não é “parte B” do 6) | 1 encontro |
 | 8 | [`8.documentacao_api.md`](8.documentacao_api.md) | Cardápio vivo `/api` | Swagger | ½–1 encontro |
 | 9 | [`9.upload_arquivos.md`](9.upload_arquivos.md) | Foto na Caneca Nest | Upload | 1 encontro |
 | 10 | [`10.testes_software.md`](10.testes_software.md) | Rede de segurança | Suíte P | 1 encontro |
@@ -114,7 +127,9 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 
 ## PostgreSQL e seed
 
-Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
+Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`seed/verify-seed.ps1`](seed/verify-seed.ps1).
+
+Seeds usam **`DELETE` + `ALTER SEQUENCE … RESTART WITH 1`** (não `TRUNCATE`) — assim `productId: 1` continua válido após reseed. Detalhe: [`seed/README.md`](seed/README.md).
 
 ```bash
 docker compose -f docker-compose.postgres.yml up -d
@@ -130,7 +145,7 @@ bash seed/verify-seed.sh   # confirma ana/cli → secret123
 ```powershell
 Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja -d loja
 Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
-# verify-seed.sh ainda precisa de Git Bash ou WSL
+.\seed\verify-seed.ps1              # equivalente ao verify-seed.sh
 ```
 
 Para extrair o JWT no PowerShell (em vez de `TOKEN=$(… | python3)`):
@@ -141,11 +156,12 @@ $ana = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
 $TOKEN_ANA = $ana.access_token
 ```
 
-**Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
+**Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) (Bash) ou [`scripts/e2e-prepare.ps1`](scripts/e2e-prepare.ps1) (PowerShell) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
 
 ```bash
 # cap. 10 — a partir de backend/nest/
-bash scripts/e2e-prepare.sh
+bash scripts/e2e-prepare.sh          # Git Bash / macOS / Linux
+# .\scripts\e2e-prepare.ps1          # PowerShell
 cd loja-api && npm run test:e2e
 ```
 
@@ -172,14 +188,16 @@ Personagens: **Ana** administra; **Cli** compra.
 
 ## Compatibilidade e versões pinadas
 
+Detalhe completo: [`VERSIONS.md`](VERSIONS.md). Travou em versão/ambiente? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md).
+
 Esta trilha usa **NestJS 10** + **PostgreSQL 16** de propósito: o npm “latest” do Nest já está na linha **12**, incompatível com os exemplos deste material.
 
 | Peça | Versão da trilha | Onde aparece |
 |------|------------------|--------------|
 | Nest CLI / scaffold | `@nestjs/cli@10` | cap. 1 |
-| `@nestjs/typeorm` | `10` | caps. 4–5 |
-| `typeorm` | `0.3` (não use 1.x) | caps. 4–5 |
-| `pg` | `8` | caps. 4–5 |
+| `@nestjs/typeorm` | `10` | cap. 5 (prévia no 4) |
+| `typeorm` | `0.3` (não use 1.x) | cap. 5 (prévia no 4) |
+| `pg` | `8` | cap. 5 (prévia no 4) |
 | `@nestjs/config` | `3` | caps. 5–6 |
 | `class-validator` / `class-transformer` | `0.14` / `0.5` | cap. 2.1 |
 | `@nestjs/mapped-types` | `2` | desafio A do 2.1 |

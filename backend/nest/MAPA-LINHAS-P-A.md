@@ -37,7 +37,7 @@ flowchart TB
 | `Product` | `id`, `name`, `price`, `stock` (+ `imageFilename` no Cap. 9) | Cap. 2 (memória) → 5 (DB) |
 | `User` | `id`, `username`, `email`, `password`, `role` | Cap. 6 (`role` efetivo no 7) |
 | `Order` | `id`, `userId`, `status`, `createdAt` | Cap. 5.1 |
-| `OrderItem` | `id`, `orderId`, `productId`, `quantity`, `unitPrice` | Cap. 5.1 |
+| `OrderItem` | `id`, `productId`, `quantity`, `unitPrice` (+ FK `order` via `@ManyToOne`; coluna `orderId` implícita no Postgres) | Cap. 5.1 |
 
 ```mermaid
 erDiagram
@@ -69,7 +69,8 @@ erDiagram
     }
 ```
 
-> No cap. 5.1, `Order.userId` é **nullable** (`null` enquanto ainda não há JWT). A partir do cap. 6, pedidos autenticados gravam o `sub` do token.
+> No cap. 5.1, `Order.userId` é **nullable** (`null` enquanto ainda não há JWT). A partir do cap. 6, pedidos autenticados gravam o `sub` do token.  
+> No diagrama, `OrderItem.orderId` é a FK que o TypeORM cria a partir de `@ManyToOne(() => Order)` — no código da linha P você costuma declarar só a relação `order`, não a coluna solta.
 
 `status` do pedido em P: `OPEN` \| `PAID` \| `CANCELLED` (em P, criação sempre `OPEN`; transição `PAID`/`CANCELLED` pode ser simplificada até o cap. A de pagamento).
 
@@ -302,7 +303,8 @@ Regras P ao criar:
 
 ## Cap. 6 — Autenticação JWT
 
-Ordem de estudo após 5/5.1 (upload/Swagger ficam depois na jornada).
+Ordem de estudo após 5/5.1 (upload/Swagger ficam depois na jornada).  
+**Split de aula/vídeo:** **6a** = register/login/seed/`access_token` · **6b** = `JwtAuthGuard` + `userId` do token. Cap. **7** = roles (não é “parte B” do 6).
 
 ### P
 

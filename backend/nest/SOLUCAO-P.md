@@ -25,11 +25,11 @@ flowchart LR
 | **4** | Só leitura conceitual — **nenhum curl novo**; entenda entidade × DTO e Postgres antes do cap. 5 |
 | **5** | Produto sobrevive restart; Postgres via Docker |
 | **5.1** | `POST /orders` debita `stock`; cancel devolve estoque; estoque insuficiente → **400** |
-| **6** | [`seed.sql`](seed/seed.sql) + login Ana/Cli; `POST /products` sem token → **401**; **qualquer** Bearer (Ana **ou** Cli) → **201** (ADMIN-only = cap. 7) |
+| **6** | **6a:** seed + login → `access_token` · **6b:** `POST /products` sem token → **401**; **qualquer** Bearer (Ana **ou** Cli) → **201** (ADMIN-only = cap. 7) |
 | **7** | Cli em `POST /products` → **403**; Ana → **201**; Cli em `POST /orders` → **201** |
 | **8** | `GET /api` abre Swagger; Authorize com JWT |
 | **9** | Ana upload imagem → **200**; Cli upload → **403**; MIME inválido → **400** |
-| **10** | `npm test` + `npm run test:e2e` (após [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh)) |
+| **10** | `npm test` + `npm run test:e2e` (após `bash scripts/e2e-prepare.sh` ou `.\scripts\e2e-prepare.ps1`) |
 
 ---
 
@@ -70,15 +70,37 @@ loja-api/src/
 
 ## Seeds
 
-Arquivos: [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
+Arquivos: [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`seed/verify-seed.ps1`](seed/verify-seed.ps1).
 
 ```bash
 # backend/nest/
-bash seed/verify-seed.sh          # sempre após seed.sql
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
+bash seed/verify-seed.sh
+# PowerShell: Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja
+#            .\seed\verify-seed.ps1
 ```
 
-Login de lab: `ana` / `cli` → senha `secret123`.
+Login de lab: `ana` / `cli` → senha `secret123`. Seeds: `DELETE` + `ALTER SEQUENCE … RESTART WITH 1` → ids voltam a 1.
+
+---
+
+## Chaves rápidas dos checkpoints (professor / autoestudo)
+
+| Cap. | Ideia-chave |
+|------|-------------|
+| 1 | Nest organiza API; `/health` prova que o processo sobe |
+| 2.1 | Tipagem TS ≠ validação HTTP; pipe + DTO **classe** |
+| 5 | Mesma URL, outro miolo (RAM → Postgres); `ParseIntPipe` no `:id` (intro no cap. 3) |
+| 5.1 | Transação: pedido + estoque juntos ou nada |
+| 6 | Autenticação = quem é; JWT no Bearer; **6a** (token) antes de **6b** (guards) |
+| 7 | 401 sem identidade; 403 sem papel |
+| 10 | Unitário isola; e2e repete o `ValidationPipe` do `main.ts` |
+
+Nos checkpoints dos capítulos duros (5.1, 6, 7, 10): use esta tabela como **chave** (1 frase por pergunta). Sem código pronto.
+
+Travou? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md). Versões? [`VERSIONS.md`](VERSIONS.md).  
+Esqueceu um decorator? [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md).  
+**Windows:** para a folha CURLS completa, prefira **Git Bash** (ou a seção PowerShell do [CURLS-P](CURLS-P.md)).
 
 ---
 
@@ -87,4 +109,5 @@ Login de lab: `ana` / `cli` → senha `secret123`.
 - Repositório com código-fonte completo da solução (você constrói no `loja-api`).
 - Pacotes da linha A (capstone em [exercicio-1.md](exercicio-1.md)).
 
-Professores podem publicar um branch `solucao-p` no repositório da turma espelhando esta árvore.
+Professores podem publicar um branch `solucao-p` no repositório da turma espelhando esta árvore.  
+Prepare e2e: [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) / [`scripts/e2e-prepare.ps1`](scripts/e2e-prepare.ps1).

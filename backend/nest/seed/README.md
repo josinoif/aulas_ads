@@ -39,7 +39,10 @@ Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja 
 Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
 ```
 
-> **[`seed.sql`](seed.sql) / [`seed-catalog.sql`](seed-catalog.sql)** usam `TRUNCATE … RESTART IDENTITY` (não `DELETE`). Assim as sequences voltam a 1 e os curls com `productId: 1` / `id=1` continuam válidos após reseed. O seed completo **apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1) — use de propósito no cap. 6+.
+> **[`seed.sql`](seed.sql) / [`seed-catalog.sql`](seed-catalog.sql)** usam **`DELETE`** + **`ALTER SEQUENCE … RESTART WITH 1`**.  
+> Só `DELETE` apaga linhas, mas **não** zera o contador `SERIAL` — sem o `ALTER SEQUENCE`, o próximo `INSERT` vira id `3+` e os curls com `productId: 1` falham.  
+> O seed completo **apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1) — use de propósito no cap. 6+.  
+> **`seed-catalog` só no cap. 5:** depois de pedidos, não reaplicar só o catalog (pode deixar itens órfãos). Use `seed.sql`.
 
 A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as tabelas.
 
@@ -48,6 +51,9 @@ A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as 
 ```bash
 bash seed/verify-seed.sh
 # OK: seed.sql verificado (ana/cli → secret123)
+
+# PowerShell:
+# .\seed\verify-seed.ps1
 ```
 
 ## Personagens
@@ -55,4 +61,5 @@ bash seed/verify-seed.sh
 - **Ana** — administra catálogo (criar/editar produto, upload).  
 - **Cli** — compra (pedidos).
 
-Usados nos curls de [`CURLS-P.md`](../CURLS-P.md) e nos caps. de auth/roles/testes.
+Usados nos curls de [`CURLS-P.md`](../CURLS-P.md) e nos caps. de auth/roles/testes.  
+Travou no seed? [`FAQ-TRAVOU.md`](../FAQ-TRAVOU.md).

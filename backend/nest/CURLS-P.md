@@ -1,7 +1,8 @@
 # Folha de curls — linha P (`loja-api`)
 
 Base: `http://localhost:3000`  
-Seed: [`seed/README.md`](seed/README.md) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.
+Seed: [`seed/README.md`](seed/README.md) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.  
+Seeds usam **`DELETE` + `ALTER SEQUENCE … RESTART WITH 1`** (ids voltam a 1 após reseed).
 
 Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LINHAS-P-A.md) prevalece.
 
@@ -18,9 +19,44 @@ Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LI
 | 8 | Cap. 8 (Swagger `/api`) |
 | 9 | Cap. 9 (upload) |
 
-Travou? Compare com o [gabarito de verificação P](SOLUCAO-P.md).
+Travou? Compare com o [gabarito de verificação P](SOLUCAO-P.md) ou o [FAQ](FAQ-TRAVOU.md).
 
-Arquivos usados abaixo: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`fixtures/caneca.jpg`](fixtures/caneca.jpg).
+Arquivos usados abaixo: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh) / [`verify-seed.ps1`](seed/verify-seed.ps1), [`fixtures/caneca.jpg`](fixtures/caneca.jpg).
+
+### Windows / PowerShell (tokens e seed)
+
+> **Não cole o bloco bash grande desta folha no PowerShell.** `TOKEN=$(…)`, `/dev/null`, `test -f` e `< seed.sql` quebram.  
+> **Caminho recomendado no Windows:** use **Git Bash** para os passos 5.1–9 abaixo **ou** os exemplos PowerShell desta seção (seed/token/status).  
+> Status HTTP: `curl.exe … -o NUL -w "%{http_code}\n"` (não `/dev/null`).
+
+```powershell
+# Seed completo (shell em backend/nest/)
+Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja
+.\seed\verify-seed.ps1
+# Se ExecutionPolicy bloquear: powershell -ExecutionPolicy Bypass -File .\seed\verify-seed.ps1
+
+# Tokens
+$ana = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
+  -ContentType 'application/json' -Body '{"username":"ana","password":"secret123"}'
+$cli = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
+  -ContentType 'application/json' -Body '{"username":"cli","password":"secret123"}'
+$TOKEN_ANA = $ana.access_token
+$TOKEN_CLI = $cli.access_token
+
+# Health + status sem body
+curl.exe -s http://localhost:3000/health
+curl.exe -s -o NUL -w "%{http_code}`n" -X POST http://localhost:3000/products `
+  -H "Authorization: Bearer $TOKEN_CLI" -H "Content-Type: application/json" `
+  -d '{"name":"X","price":1,"stock":1}'
+# esperado após cap. 7: 403
+
+# Pedido (após seed; cap. 6+ com token do Cli)
+curl.exe -s -X POST http://localhost:3000/orders `
+  -H "Authorization: Bearer $TOKEN_CLI" -H "Content-Type: application/json" `
+  -d '{"items":[{"productId":1,"quantity":1}]}'
+```
+
+> A partir daqui, o bloco **bash** é o canônico da folha. No Windows: **Git Bash** (mais fácil) ou traduza com `curl.exe` + tokens acima.
 
 ```bash
 # 0) Postgres + API — rode o compose a partir de backend/nest/
