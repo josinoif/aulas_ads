@@ -18,7 +18,7 @@ fi
 
 cd "$ROOT"
 
-docker compose -f docker-compose.postgres.yml up -d
+docker compose -f docker-compose.postgres.yml up -d || docker start loja-postgres
 echo "Aguardando Postgres..."
 for _ in $(seq 1 30); do
   if docker exec loja-postgres pg_isready -U loja -d loja >/dev/null 2>&1; then

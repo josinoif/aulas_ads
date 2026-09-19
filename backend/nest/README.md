@@ -1,6 +1,6 @@
 # Tutorial NestJS — Backend (`loja-api`)
 
-Material de estudo para construir uma API de **e-commerce** com **NestJS 10** e **PostgreSQL**.
+Material de estudo para construir uma API de **e-commerce** com **NestJS 12** e **PostgreSQL**.
 
 > **Shell:** os comandos deste tutorial são **Bash**. Funcionam no **Linux** e no **Windows via Git Bash** (padrão Windows desta trilha). Não use PowerShell para os curls/seed/scripts.
 
@@ -14,7 +14,7 @@ Material de estudo para construir uma API de **e-commerce** com **NestJS 10** e 
 Detalhe canônico das rotas: [`MAPA-LINHAS-P-A.md`](MAPA-LINHAS-P-A.md).  
 **Em conflito entre tutorial e mapa, o mapa prevalece.**
 
-**Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@10 new loja-api` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`).  
+**Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@12 new loja-api --package-manager npm --skip-git` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`). No prompt: **CJS (CommonJS) [with jest]** — não ESM/Vitest.  
 **Banco:** PostgreSQL 16 — [`docker-compose.postgres.yml`](docker-compose.postgres.yml).  
 **Seed oficial:** [`seed/`](seed/) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.  
 **Versões pinadas:** [`VERSIONS.md`](VERSIONS.md).  
@@ -73,7 +73,7 @@ Atalhos: [`VERSIONS.md`](VERSIONS.md) · [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`R
 
 ## Pré-requisitos
 
-- **Node.js 20 LTS** (mínimo 18; evite Node 18 em máquinas novas — está em fim de suporte). Nest 10 desta trilha **não** exige Node 22+  
+- **Node.js 20.19+** ou **22.12+** (Nest 12; **não** use 21.x)  
 - npm, Docker Desktop (ou Docker Engine + Compose)  
 - HTTP/REST básico; JS básico → cap. 0 para TypeScript/Nest  
 - Comandos `nest g` → rode **`npx nest g …` dentro de `loja-api/`** (usa o CLI local do projeto)  
@@ -183,21 +183,23 @@ Personagens: **Ana** administra; **Cli** compra.
 
 Detalhe completo: [`VERSIONS.md`](VERSIONS.md). Travou em versão/ambiente? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md).
 
-Esta trilha usa **NestJS 10** + **PostgreSQL 16** de propósito: o npm “latest” do Nest já está na linha **12**, incompatível com os exemplos deste material.
+Esta trilha usa **NestJS 12** + **PostgreSQL 16** + **TypeScript 6** (scaffold CJS + Jest). Pins completos: [`VERSIONS.md`](VERSIONS.md).
 
 | Peça | Versão da trilha | Onde aparece |
 |------|------------------|--------------|
-| Nest CLI / scaffold | `@nestjs/cli@10` | cap. 1 |
-| `@nestjs/typeorm` | `10` | cap. 5 (prévia no 4) |
-| `typeorm` | `0.3` (não use 1.x) | cap. 5 (prévia no 4) |
-| `pg` | `8` | cap. 5 (prévia no 4) |
-| `@nestjs/config` | `3` | caps. 5–6 |
-| `class-validator` / `class-transformer` | `0.14` / `0.5` | cap. 2.1 |
-| `@nestjs/mapped-types` | `2` | desafio A do 2.1 |
-| `@nestjs/jwt` / `@nestjs/passport` | `10` / `10` | cap. 6 |
-| `passport` / `passport-jwt` / `bcryptjs` | `0.7` / `4` / `2` | cap. 6 |
-| `@nestjs/swagger` | `8` | cap. 8 |
+| Nest CLI / scaffold | `@nestjs/cli@12` (CJS + Jest) | cap. 1 |
+| `@nestjs/common` / `core` / `platform-express` | `12.0.3` | cap. 1 |
+| `@nestjs/typeorm` | `12.0.1` | cap. 5 (prévia no 4) |
+| `typeorm` | `0.3.31` (**não** use 1.x) | cap. 5 (prévia no 4) |
+| `pg` | `8.13.3` | cap. 5 (prévia no 4) |
+| `@nestjs/config` | `12.0.0` | caps. 5–6 |
+| `class-validator` / `class-transformer` | `0.14.1` / `0.5.1` | cap. 2.1 |
+| `@nestjs/mapped-types` | `12.0.0` | desafio A do 2.1 |
+| `@nestjs/jwt` / `@nestjs/passport` | `12.0.2` / `12.0.0` | cap. 6 |
+| `passport` / `passport-jwt` / `bcryptjs` | `0.7.0` / `4.0.1` / `2.4.3` | cap. 6 |
+| `@nestjs/swagger` | `12.0.1` | cap. 8 |
+| `@types/multer` | `2.0.0` (dev) | cap. 9 |
 | Postgres (Docker) | `postgres:16-alpine` | Compose |
 | pgAdmin (Docker) | `dpage/pgadmin4:8` | Compose |
 
-**Regra de ouro:** copie o comando `npm install …@versão` do capítulo. Se omitir o `@versão`, o npm pode instalar Nest 11/12 e o lab quebra.
+**Regra de ouro:** copie o comando `npm install …@versão` do capítulo. Se omitir o `@versão`, o npm pode puxar majors incompatíveis (ex.: `typeorm@1` ou misturar Nest 10/11 com 12).

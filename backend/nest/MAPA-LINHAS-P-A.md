@@ -21,7 +21,7 @@ flowchart TB
     Extra -.->|nunca importa em P| API
 ```
 
-**Projeto:** `loja-api` (NestJS 10 + TypeScript).  
+**Projeto:** `loja-api` (NestJS 12 + TypeScript 6).  
 **Banco:** **PostgreSQL 16** (Docker). Driver: `pg`.  
 **Base URL:** `http://localhost:3000`  
 **Auth (a partir do cap. 6):** `Authorization: Bearer <access_token>`

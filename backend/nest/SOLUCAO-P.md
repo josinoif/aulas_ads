@@ -2,6 +2,8 @@
 
 Não substitui implementar capítulo a capítulo. Use quando estiver travado: compare **comportamento HTTP** e **arquivos tocados** com o esperado abaixo.
 
+**Stack da trilha:** NestJS 12 + TypeORM + PostgreSQL 16 ([VERSIONS.md](VERSIONS.md)).
+
 Contrato canônico: [MAPA-LINHAS-P-A.md](MAPA-LINHAS-P-A.md). Curls: [CURLS-P.md](CURLS-P.md).
 
 ```mermaid
@@ -29,7 +31,7 @@ flowchart LR
 | **7** | Cli em `POST /products` → **403**; Ana → **201**; Cli em `POST /orders` → **201** |
 | **8** | `GET /api` abre Swagger; Authorize com JWT |
 | **9** | Ana upload imagem → **200**; Cli upload → **403**; MIME inválido → **400** |
-| **10** | `npm test` + `npm run test:e2e` (após `bash scripts/e2e-prepare.sh`) |
+| **10** | `npm test` + `npm run test:e2e` (scripts com `node --experimental-vm-modules …/jest/bin/jest.js`; após `bash scripts/e2e-prepare.sh`) |
 
 ---
 

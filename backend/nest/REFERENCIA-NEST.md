@@ -3,7 +3,7 @@
 > **Consulta, não capítulo.** Não leia de ponta a ponta — use a tabela abaixo ou Ctrl+F no mini-índice.  
 > **Primeira vez no assunto?** Volte ao capítulo da coluna Cap. — esta folha não substitui o tutorial.  
 > **Folha = nomes.** Sintoma (erro, NaN, “não valida”)? → [FAQ-TRAVOU.md](FAQ-TRAVOU.md).  
-> **Escopo:** Nest 10 + TypeORM da trilha. Cap. `—` / *extra* = fora da linha P (docs).  
+> **Escopo:** Nest 12 + TypeORM da trilha. Cap. `—` / *extra* = fora da linha P (docs).  
 > **Versões:** [VERSIONS.md](VERSIONS.md).
 
 Agrupado por **objetivo / ordem da trilha** (não é o ciclo de vida interno do Nest: guards rodam antes de pipes).
@@ -136,6 +136,7 @@ Pacotes: `@nestjs/jwt`, `@nestjs/passport`, `passport-jwt`, `bcryptjs` · Docs: 
 | Símbolo | Quando usar | Mini exemplo | Cap. |
 |---------|-------------|--------------|------|
 | `JwtModule.registerAsync` | Secret + expires do `.env` | `AuthModule` | 6 |
+| `PassportModule.register({ defaultStrategy: 'jwt' })` | Estratégia padrão JWT (**obrigatório** na P) | `AuthModule` — não use `PassportModule` solto | 6 |
 | `PassportStrategy(Strategy)` | Extrair/validar Bearer | `JwtStrategy` | 6 |
 | `ExtractJwt.fromAuthHeaderAsBearerToken()` | De onde vem o token | `jwt.strategy.ts` | 6 |
 | `validate(payload)` | Vira `request.user` | `{ userId, username, role }` | 6 |
@@ -151,7 +152,7 @@ Não aceite `role` no body do register (linha P).
 
 ## 7. Swagger / OpenAPI
 
-Pacote: `@nestjs/swagger@8` · Docs: [OpenAPI](https://docs.nestjs.com/openapi/introduction)
+Pacote: `@nestjs/swagger@12` · Docs: [OpenAPI](https://docs.nestjs.com/openapi/introduction)
 
 | Símbolo | Quando usar | Mini exemplo | Cap. |
 |---------|-------------|--------------|------|
@@ -170,7 +171,7 @@ Pacote: `@nestjs/swagger@8` · Docs: [OpenAPI](https://docs.nestjs.com/openapi/i
 
 ## 8. Upload (Multer)
 
-Pacotes: `@nestjs/platform-express` (traz Multer), `@types/multer` · Docs: [File upload](https://docs.nestjs.com/techniques/file-upload)
+Pacotes: `@nestjs/platform-express` (Nest 12 traz Multer 2.x), `@types/multer@2.0.0` · Docs: [File upload](https://docs.nestjs.com/techniques/file-upload)
 
 | Símbolo | Quando usar | Mini exemplo | Cap. |
 |---------|-------------|--------------|------|
@@ -195,6 +196,6 @@ Pacotes: `@nestjs/platform-express` (traz Multer), `@types/multer` · Docs: [Fil
 ```text
 Consulta rápida Nest (não é aula) · Ctrl+F no índice · pause e volte ao cap. da coluna Cap.
 Arquivo: backend/nest/REFERENCIA-NEST.md · Travou? FAQ-TRAVOU.md · VERSIONS.md · CURLS-P.md
-NestJS 10 + TypeORM + Postgres 16 — não use npm latest (Nest 12)
+NestJS 12 + TypeORM + Postgres 16 · scaffold CJS + Jest · pins em VERSIONS.md
 Shell: Bash (Linux ou Git Bash no Windows) — FAQ-TRAVOU / README
 ```
