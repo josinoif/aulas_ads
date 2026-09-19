@@ -196,5 +196,5 @@ Pacotes: `@nestjs/platform-express` (traz Multer), `@types/multer` · Docs: [Fil
 Consulta rápida Nest (não é aula) · Ctrl+F no índice · pause e volte ao cap. da coluna Cap.
 Arquivo: backend/nest/REFERENCIA-NEST.md · Travou? FAQ-TRAVOU.md · VERSIONS.md · CURLS-P.md
 NestJS 10 + TypeORM + Postgres 16 — não use npm latest (Nest 12)
-Windows/PowerShell: ver FAQ-TRAVOU / README
+Shell: Bash (Linux ou Git Bash no Windows) — FAQ-TRAVOU / README
 ```

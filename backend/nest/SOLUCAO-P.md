@@ -29,7 +29,7 @@ flowchart LR
 | **7** | Cli em `POST /products` → **403**; Ana → **201**; Cli em `POST /orders` → **201** |
 | **8** | `GET /api` abre Swagger; Authorize com JWT |
 | **9** | Ana upload imagem → **200**; Cli upload → **403**; MIME inválido → **400** |
-| **10** | `npm test` + `npm run test:e2e` (após `bash scripts/e2e-prepare.sh` ou `.\scripts\e2e-prepare.ps1`) |
+| **10** | `npm test` + `npm run test:e2e` (após `bash scripts/e2e-prepare.sh`) |
 
 ---
 
@@ -70,14 +70,12 @@ loja-api/src/
 
 ## Seeds
 
-Arquivos: [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`seed/verify-seed.ps1`](seed/verify-seed.ps1).
+Arquivos: [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
 
 ```bash
-# backend/nest/
+# backend/nest/ (Bash — Linux ou Git Bash no Windows)
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh
-# PowerShell: Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja
-#            .\seed\verify-seed.ps1
 ```
 
 Login de lab: `ana` / `cli` → senha `secret123`. Seeds: `DELETE` + `ALTER SEQUENCE … RESTART WITH 1` → ids voltam a 1.
@@ -100,7 +98,7 @@ Nos checkpoints dos capítulos duros (5.1, 6, 7, 10): use esta tabela como **cha
 
 Travou? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md). Versões? [`VERSIONS.md`](VERSIONS.md).  
 Esqueceu um decorator? [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md).  
-**Windows:** para a folha CURLS completa, prefira **Git Bash** (ou a seção PowerShell do [CURLS-P](CURLS-P.md)).
+**Shell:** Bash (Linux ou Git Bash no Windows) — [CURLS-P](CURLS-P.md).
 
 ---
 
@@ -110,4 +108,4 @@ Esqueceu um decorator? [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md).
 - Pacotes da linha A (capstone em [exercicio-1.md](exercicio-1.md)).
 
 Professores podem publicar um branch `solucao-p` no repositório da turma espelhando esta árvore.  
-Prepare e2e: [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) / [`scripts/e2e-prepare.ps1`](scripts/e2e-prepare.ps1).
+Prepare e2e: [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh).

@@ -4,6 +4,8 @@ Base: `http://localhost:3000`
 Seed: [`seed/README.md`](seed/README.md) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.  
 Seeds usam **`DELETE` + `ALTER SEQUENCE … RESTART WITH 1`** (ids voltam a 1 após reseed).
 
+> **Shell:** **Bash** (Linux ou **Git Bash** no Windows). Não cole estes blocos no PowerShell.
+
 Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LINHAS-P-A.md) prevalece.
 
 **Cwd dos comandos `docker exec` / [`seed/`](seed/):** assuma shell em **`backend/nest/`**. Se estiver em `loja-api/`, use `../seed/...` e `docker compose -f ../docker-compose.postgres.yml` ([`docker-compose.postgres.yml`](docker-compose.postgres.yml)).
@@ -21,42 +23,7 @@ Ordem alinhada à [trilha](README.md). Em conflito de contrato, o [mapa](MAPA-LI
 
 Travou? Compare com o [gabarito de verificação P](SOLUCAO-P.md) ou o [FAQ](FAQ-TRAVOU.md).
 
-Arquivos usados abaixo: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh) / [`verify-seed.ps1`](seed/verify-seed.ps1), [`fixtures/caneca.jpg`](fixtures/caneca.jpg).
-
-### Windows / PowerShell (tokens e seed)
-
-> **Não cole o bloco bash grande desta folha no PowerShell.** `TOKEN=$(…)`, `/dev/null`, `test -f` e `< seed.sql` quebram.  
-> **Caminho recomendado no Windows:** use **Git Bash** para os passos 5.1–9 abaixo **ou** os exemplos PowerShell desta seção (seed/token/status).  
-> Status HTTP: `curl.exe … -o NUL -w "%{http_code}\n"` (não `/dev/null`).
-
-```powershell
-# Seed completo (shell em backend/nest/)
-Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja
-.\seed\verify-seed.ps1
-# Se ExecutionPolicy bloquear: powershell -ExecutionPolicy Bypass -File .\seed\verify-seed.ps1
-
-# Tokens
-$ana = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
-  -ContentType 'application/json' -Body '{"username":"ana","password":"secret123"}'
-$cli = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
-  -ContentType 'application/json' -Body '{"username":"cli","password":"secret123"}'
-$TOKEN_ANA = $ana.access_token
-$TOKEN_CLI = $cli.access_token
-
-# Health + status sem body
-curl.exe -s http://localhost:3000/health
-curl.exe -s -o NUL -w "%{http_code}`n" -X POST http://localhost:3000/products `
-  -H "Authorization: Bearer $TOKEN_CLI" -H "Content-Type: application/json" `
-  -d '{"name":"X","price":1,"stock":1}'
-# esperado após cap. 7: 403
-
-# Pedido (após seed; cap. 6+ com token do Cli)
-curl.exe -s -X POST http://localhost:3000/orders `
-  -H "Authorization: Bearer $TOKEN_CLI" -H "Content-Type: application/json" `
-  -d '{"items":[{"productId":1,"quantity":1}]}'
-```
-
-> A partir daqui, o bloco **bash** é o canônico da folha. No Windows: **Git Bash** (mais fácil) ou traduza com `curl.exe` + tokens acima.
+Arquivos usados abaixo: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`fixtures/caneca.jpg`](fixtures/caneca.jpg).
 
 ```bash
 # 0) Postgres + API — rode o compose a partir de backend/nest/
@@ -104,16 +71,16 @@ curl -s -X POST http://localhost:3000/auth/login \
   -d '{"username":"cli","password":"secret123"}'
 
 # 6) Auth — extrair token (escolha uma opção)
-# Opção A — python3:
+# Opção A — python (padrão Windows/Git Bash). No Linux, python3 também funciona:
 TOKEN_ANA=$(curl -s -X POST http://localhost:3000/auth/login \
   -H 'Content-Type: application/json' \
   -d '{"username":"ana","password":"secret123"}' \
-  | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+  | python -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
 
 TOKEN_CLI=$(curl -s -X POST http://localhost:3000/auth/login \
   -H 'Content-Type: application/json' \
   -d '{"username":"cli","password":"secret123"}' \
-  | python3 -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+  | python -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
 
 # Opção B — jq (se tiver instalado):
 # TOKEN_ANA=$(curl -s ... | jq -r .access_token)
@@ -160,7 +127,8 @@ curl -s -X POST http://localhost:3000/orders \
 # abra http://localhost:3000/api — Authorize com o token da Ana
 # (rotas de imagem entram no Swagger no cap. 9)
 
-# 9) Upload (Ana) — fixture do material: fixtures/caneca.jpg
+# 9) Upload (Ana) — cwd em loja-api/; fixture do material: ../fixtures/caneca.jpg
+mkdir -p fixtures
 test -f ./fixtures/caneca.jpg || cp ../fixtures/caneca.jpg ./fixtures/
 curl -s -X POST http://localhost:3000/products/1/image \
   -H "Authorization: Bearer $TOKEN_ANA" \

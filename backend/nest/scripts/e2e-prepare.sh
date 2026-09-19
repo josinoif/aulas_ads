@@ -63,7 +63,14 @@ ensure_schema() {
   done
   kill "$app_pid" 2>/dev/null || true
   wait "$app_pid" 2>/dev/null || true
-  echo "Schema sincronizado."
+
+  has_users="$(docker exec loja-postgres psql -U loja -d loja -tAc "SELECT to_regclass('public.users')" 2>/dev/null | tr -d '[:space:]')"
+  if [[ -z "$has_users" ]]; then
+    echo "ERRO: após o sync, tabela users ainda não existe." >&2
+    echo "Confira loja-api/.env, TypeORM synchronize e se User está no AppModule." >&2
+    exit 1
+  fi
+  echo "Schema sincronizado (users OK)."
 }
 
 ensure_schema

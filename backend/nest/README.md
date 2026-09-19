@@ -2,6 +2,8 @@
 
 Material de estudo para construir uma API de **e-commerce** com **NestJS 10** e **PostgreSQL**.
 
+> **Shell:** os comandos deste tutorial são **Bash**. Funcionam no **Linux** e no **Windows via Git Bash** (padrão Windows desta trilha). Não use PowerShell para os curls/seed/scripts.
+
 ## Linhas P e A
 
 | Linha | Nome | Regra |
@@ -76,11 +78,9 @@ Atalhos: [`VERSIONS.md`](VERSIONS.md) · [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`R
 - HTTP/REST básico; JS básico → cap. 0 para TypeScript/Nest  
 - Comandos `nest g` → rode **`npx nest g …` dentro de `loja-api/`** (usa o CLI local do projeto)  
 - Variáveis de ambiente: copie [`.env.example`](.env.example) para `loja-api/.env`  
-- **Windows:** prefira **Git Bash** para os curls dos capítulos, **ou** use PowerShell com `curl.exe` e os scripts `.ps1`:
-  - Seed: `Get-Content .\seed\seed.sql | docker exec -i loja-postgres psql -U loja -d loja`
-  - Verificar hash: `.\seed\verify-seed.ps1`
-  - E2E prepare: `.\scripts\e2e-prepare.ps1`  
-  Detalhes: [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`VERSIONS.md`](VERSIONS.md)  
+- **Shell Bash** (Linux ou **Git Bash** no Windows) — curls, seed (`< seed.sql`) e scripts `.sh`  
+  - Windows: instale [Git for Windows](https://git-scm.com/download/win) → **Menu Iniciar → Git Bash** (não use o terminal PowerShell do Cursor/VS Code)  
+  Travou? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`VERSIONS.md`](VERSIONS.md)  
 
 ---
 
@@ -127,41 +127,34 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 
 ## PostgreSQL e seed
 
-Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh), [`seed/verify-seed.ps1`](seed/verify-seed.ps1).
+Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
 
 Seeds usam **`DELETE` + `ALTER SEQUENCE … RESTART WITH 1`** (não `TRUNCATE`) — assim `productId: 1` continua válido após reseed. Detalhe: [`seed/README.md`](seed/README.md).
 
 ```bash
 docker compose -f docker-compose.postgres.yml up -d
-# após cap. 5 (só products) — Git Bash / macOS / Linux:
+# após cap. 5 (só products):
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed-catalog.sql
 # após auth + pedidos (seed completo):
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh   # confirma ana/cli → secret123
 ```
 
-**PowerShell (Windows nativo)** — o `<` do bash **não** funciona; use pipe:
+Extrair JWT (Bash — use `python`; no Linux, `python3` também serve):
 
-```powershell
-Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja -d loja
-Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
-.\seed\verify-seed.ps1              # equivalente ao verify-seed.sh
+```bash
+TOKEN_ANA=$(curl -s -X POST http://localhost:3000/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{"username":"ana","password":"secret123"}' \
+  | python -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+# alternativas: jq (-r .access_token) ou copiar o token manualmente — [CURLS-P](CURLS-P.md)
 ```
 
-Para extrair o JWT no PowerShell (em vez de `TOKEN=$(… | python3)`):
-
-```powershell
-$ana = Invoke-RestMethod -Method POST http://localhost:3000/auth/login `
-  -ContentType 'application/json' -Body '{"username":"ana","password":"secret123"}'
-$TOKEN_ANA = $ana.access_token
-```
-
-**Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) (Bash) ou [`scripts/e2e-prepare.ps1`](scripts/e2e-prepare.ps1) (PowerShell) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
+**Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
 
 ```bash
 # cap. 10 — a partir de backend/nest/
-bash scripts/e2e-prepare.sh          # Git Bash / macOS / Linux
-# .\scripts\e2e-prepare.ps1          # PowerShell
+bash scripts/e2e-prepare.sh
 cd loja-api && npm run test:e2e
 ```
 

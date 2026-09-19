@@ -14,14 +14,14 @@ Produtos: **Caneca Nest** (stock 10), **Camiseta ADS** (stock 25).
 | Arquivo | Quando |
 |---------|--------|
 | [`seed-catalog.sql`](seed-catalog.sql) | Após cap. **5** (só tabela `products`) |
-| [`seed.sql`](seed.sql) | Após caps. **5.1 + 6** (tabelas `orders` / `order_items` / `users`) |
+| [`seed.sql`](seed.sql) | **Cap. 6+** (tabelas `orders` / `order_items` / `users` já criadas pelo TypeORM) |
 
 ## Como aplicar
 
 Compose: [`docker-compose.postgres.yml`](../docker-compose.postgres.yml). Verificação: [`verify-seed.sh`](verify-seed.sh).
 
 ```bash
-# a partir de backend/nest/
+# a partir de backend/nest/ (Bash — Linux ou Git Bash no Windows)
 docker compose -f docker-compose.postgres.yml up -d
 
 # só catálogo (cap. 5):
@@ -32,17 +32,10 @@ docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh
 ```
 
-**PowerShell:**
-
-```powershell
-Get-Content .\seed\seed-catalog.sql | docker exec -i loja-postgres psql -U loja -d loja
-Get-Content .\seed\seed.sql         | docker exec -i loja-postgres psql -U loja -d loja
-```
-
 > **[`seed.sql`](seed.sql) / [`seed-catalog.sql`](seed-catalog.sql)** usam **`DELETE`** + **`ALTER SEQUENCE … RESTART WITH 1`**.  
 > Só `DELETE` apaga linhas, mas **não** zera o contador `SERIAL` — sem o `ALTER SEQUENCE`, o próximo `INSERT` vira id `3+` e os curls com `productId: 1` falham.  
 > O seed completo **apaga** produtos, usuários e pedidos existentes (inclui pedidos de teste do cap. 5.1) — use de propósito no cap. 6+.  
-> **`seed-catalog` só no cap. 5:** depois de pedidos, não reaplicar só o catalog (pode deixar itens órfãos). Use `seed.sql`.
+> **`seed-catalog` só no cap. 5:** depois de pedidos, não reaplicar só o catalog (pode deixar itens órfãos). No **cap. 6+**, use `seed.sql`.
 
 A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as tabelas.
 
@@ -51,9 +44,6 @@ A API precisa ter subido ao menos uma vez com `synchronize: true` para criar as 
 ```bash
 bash seed/verify-seed.sh
 # OK: seed.sql verificado (ana/cli → secret123)
-
-# PowerShell:
-# .\seed\verify-seed.ps1
 ```
 
 ## Personagens
