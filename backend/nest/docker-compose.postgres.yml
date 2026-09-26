@@ -17,7 +17,8 @@ services:
       retries: 10
 
   pgadmin:
-    image: dpage/pgadmin4:latest
+    # Pin major 8 — evite :latest (UI e env vars mudam entre aulas)
+    image: dpage/pgadmin4:8
     container_name: loja-pgadmin
     environment:
       PGADMIN_DEFAULT_EMAIL: admin@loja.local

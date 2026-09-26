@@ -1,6 +1,8 @@
 # Tutorial NestJS — Backend (`loja-api`)
 
-Material de estudo para construir uma API de **e-commerce** com **NestJS 10** e **PostgreSQL**.
+Material de estudo para construir uma API de **e-commerce** com **NestJS 12** e **PostgreSQL**.
+
+> **Shell:** os comandos deste tutorial são **Bash**. Funcionam no **Linux** e no **Windows via Git Bash** (padrão Windows desta trilha). Não use PowerShell para os curls/seed/scripts.
 
 ## Linhas P e A
 
@@ -12,9 +14,12 @@ Material de estudo para construir uma API de **e-commerce** com **NestJS 10** e 
 Detalhe canônico das rotas: [`MAPA-LINHAS-P-A.md`](MAPA-LINHAS-P-A.md).  
 **Em conflito entre tutorial e mapa, o mapa prevalece.**
 
-**Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@10 new loja-api` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`).  
+**Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@12 new loja-api --package-manager npm --skip-git` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`). No prompt: **CJS (CommonJS) [with jest]** — não ESM/Vitest.  
 **Banco:** PostgreSQL 16 — [`docker-compose.postgres.yml`](docker-compose.postgres.yml).  
 **Seed oficial:** [`seed/`](seed/) — **Ana** (ADMIN) e **Cli** (CLIENT), senha `secret123`.  
+**Versões pinadas:** [`VERSIONS.md`](VERSIONS.md).  
+**Travou?** [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md).  
+**Consulta decorators/pipes:** [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md) (cheat sheet da linha P — não é aula).  
 **Folha de curls P:** [`CURLS-P.md`](CURLS-P.md).  
 **Gabarito de verificação P:** [`SOLUCAO-P.md`](SOLUCAO-P.md) — checklist HTTP e árvore de arquivos (sem código pronto).
 
@@ -37,8 +42,9 @@ flowchart LR
     C3 --> C4[4 persistência]
     C4 --> C5[5 Postgres]
     C5 --> C51[5.1 pedidos]
-    C51 --> C6[6 JWT]
-    C6 --> C7[7 roles]
+    C51 --> C6a[6a JWT login]
+    C6a --> C6b[6b Bearer]
+    C6b --> C7[7 roles]
     C7 --> C8[8 Swagger]
     C8 --> C9[9 upload]
     C9 --> C10[10 testes]
@@ -49,23 +55,32 @@ flowchart LR
 
 ## Como cada capítulo está organizado
 
-1. **Objetivo** — o que você deve conseguir ao terminar  
-2. **Pré-requisito / próximo passo**  
-3. **Contexto** — problema da `loja-api` (Ana / Cli)  
-4. **Conceito** em pontos estratégicos  
-5. **Linha P** — implementação + curls  
-6. **Desafio (Linha A)** — opcional  
-7. **Checkpoint** + frase *o que a loja ganhou hoje*  
-8. Rodapé: contrato do mapa
+1. **Neste episódio** (quando houver) — foco de aula/vídeo + “pause e rode”  
+2. **Objetivo** — o que você deve conseguir ao terminar  
+3. **Pré-requisito / próximo passo**  
+4. **Contexto** — problema da `loja-api` (Ana / Cli)  
+5. **Conceito** em pontos estratégicos  
+6. **Linha P** — implementação + curls  
+7. **Desafio (Linha A)** — opcional  
+8. **Checkpoint** (+ chave curta nos caps. principais / [`SOLUCAO-P`](SOLUCAO-P.md))  
+9. Rodapé: contrato do mapa + link para [`REFERENCIA-NEST`](REFERENCIA-NEST.md) quando o cap. introduz symbols novos  
+
+Atalhos: [`VERSIONS.md`](VERSIONS.md) · [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`REFERENCIA-NEST.md`](REFERENCIA-NEST.md) · [`CURLS-P.md`](CURLS-P.md).
+
+**Travou?** FAQ → CURLS-P → SOLUCAO-P → capítulo do sintoma.
 
 ---
 
 ## Pré-requisitos
 
-- Node.js 18+ (LTS 20 recomendado; trilha testada com Nest 10), npm, Docker  
+- **Node.js 20.19+** ou **22.12+** (Nest 12; **não** use 21.x)  
+- npm, Docker Desktop (ou Docker Engine + Compose)  
 - HTTP/REST básico; JS básico → cap. 0 para TypeScript/Nest  
 - Comandos `nest g` → rode **`npx nest g …` dentro de `loja-api/`** (usa o CLI local do projeto)  
 - Variáveis de ambiente: copie [`.env.example`](.env.example) para `loja-api/.env`  
+- **Shell Bash** (Linux ou **Git Bash** no Windows) — curls, seed (`< seed.sql`) e scripts `.sh`  
+  - Windows: instale [Git for Windows](https://git-scm.com/download/win) → **Menu Iniciar → Git Bash** (não use o terminal PowerShell do Cursor/VS Code)  
+  Travou? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md) · [`VERSIONS.md`](VERSIONS.md)  
 
 ---
 
@@ -99,8 +114,8 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 | 4 | [`4.introducao_nestjs_persistencia.md`](4.introducao_nestjs_persistencia.md) | Por que o Postgres | Conceitos TypeORM | ½–1 encontro |
 | 5 | [`5.crud_nest_bd.md`](5.crud_nest_bd.md) | Caneca sobrevive ao restart | Produtos no PG | 1 encontro |
 | 5.1 | [`5.1.pedidos.md`](5.1.pedidos.md) | Cli compra | `/orders` | 1 encontro |
-| 6 | [`6.autenticacao.md`](6.autenticacao.md) | Identidade Ana/Cli | JWT (Partes A+B) | 1 lab longo ou 2 |
-| 7 | [`7.autorizacao.md`](7.autorizacao.md) | Mesmo token ≠ todas as portas | Roles | 1 encontro |
+| 6 | [`6.autenticacao.md`](6.autenticacao.md) | Identidade Ana/Cli | JWT **6a** (login) + **6b** (guards) | **2 vídeos** / 2 encontros |
+| 7 | [`7.autorizacao.md`](7.autorizacao.md) | Mesmo token ≠ todas as portas | Roles (não é “parte B” do 6) | 1 encontro |
 | 8 | [`8.documentacao_api.md`](8.documentacao_api.md) | Cardápio vivo `/api` | Swagger | ½–1 encontro |
 | 9 | [`9.upload_arquivos.md`](9.upload_arquivos.md) | Foto na Caneca Nest | Upload | 1 encontro |
 | 10 | [`10.testes_software.md`](10.testes_software.md) | Rede de segurança | Suíte P | 1 encontro |
@@ -114,6 +129,8 @@ docker exec -it loja-postgres psql -U loja -d loja -c '\conninfo'
 
 Arquivos: [`docker-compose.postgres.yml`](docker-compose.postgres.yml), [`seed/seed-catalog.sql`](seed/seed-catalog.sql), [`seed/seed.sql`](seed/seed.sql), [`seed/verify-seed.sh`](seed/verify-seed.sh).
 
+Seeds usam **`DELETE` + `ALTER SEQUENCE … RESTART WITH 1`** (não `TRUNCATE`) — assim `productId: 1` continua válido após reseed. Detalhe: [`seed/README.md`](seed/README.md).
+
 ```bash
 docker compose -f docker-compose.postgres.yml up -d
 # após cap. 5 (só products):
@@ -121,6 +138,16 @@ docker exec -i loja-postgres psql -U loja -d loja < seed/seed-catalog.sql
 # após auth + pedidos (seed completo):
 docker exec -i loja-postgres psql -U loja -d loja < seed/seed.sql
 bash seed/verify-seed.sh   # confirma ana/cli → secret123
+```
+
+Extrair JWT (Bash — use `python`; no Linux, `python3` também serve):
+
+```bash
+TOKEN_ANA=$(curl -s -X POST http://localhost:3000/auth/login \
+  -H 'Content-Type: application/json' \
+  -d '{"username":"ana","password":"secret123"}' \
+  | python -c "import sys,json; print(json.load(sys.stdin)['access_token'])")
+# alternativas: jq (-r .access_token) ou copiar o token manualmente — [CURLS-P](CURLS-P.md)
 ```
 
 **Testes e2e (cap. 10):** com Docker no ar, [`scripts/e2e-prepare.sh`](scripts/e2e-prepare.sh) sobe Postgres, sincroniza schema se necessário e aplica o seed. **Pare** `npm run start:dev` antes — o prepare usa a porta `3000`.
@@ -152,6 +179,27 @@ Personagens: **Ana** administra; **Cli** compra.
 
 ---
 
-## Compatibilidade
+## Compatibilidade e versões pinadas
 
-NestJS 10 + PostgreSQL 16.
+Detalhe completo: [`VERSIONS.md`](VERSIONS.md). Travou em versão/ambiente? [`FAQ-TRAVOU.md`](FAQ-TRAVOU.md).
+
+Esta trilha usa **NestJS 12** + **PostgreSQL 16** + **TypeScript 6** (scaffold CJS + Jest). Pins completos: [`VERSIONS.md`](VERSIONS.md).
+
+| Peça | Versão da trilha | Onde aparece |
+|------|------------------|--------------|
+| Nest CLI / scaffold | `@nestjs/cli@12` (CJS + Jest) | cap. 1 |
+| `@nestjs/common` / `core` / `platform-express` | `12.0.3` | cap. 1 |
+| `@nestjs/typeorm` | `12.0.1` | cap. 5 (prévia no 4) |
+| `typeorm` | `0.3.31` (**não** use 1.x) | cap. 5 (prévia no 4) |
+| `pg` | `8.13.3` | cap. 5 (prévia no 4) |
+| `@nestjs/config` | `12.0.0` | caps. 5–6 |
+| `class-validator` / `class-transformer` | `0.14.1` / `0.5.1` | cap. 2.1 |
+| `@nestjs/mapped-types` | `12.0.0` | desafio A do 2.1 |
+| `@nestjs/jwt` / `@nestjs/passport` | `12.0.2` / `12.0.0` | cap. 6 |
+| `passport` / `passport-jwt` / `bcryptjs` | `0.7.0` / `4.0.1` / `2.4.3` | cap. 6 |
+| `@nestjs/swagger` | `12.0.1` | cap. 8 |
+| `@types/multer` | `2.0.0` (dev) | cap. 9 |
+| Postgres (Docker) | `postgres:16-alpine` | Compose |
+| pgAdmin (Docker) | `dpage/pgadmin4:8` | Compose |
+
+**Regra de ouro:** copie o comando `npm install …@versão` do capítulo. Se omitir o `@versão`, o npm pode puxar majors incompatíveis (ex.: `typeorm@1` ou misturar Nest 10/11 com 12).

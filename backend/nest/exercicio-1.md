@@ -4,7 +4,7 @@
 
 ## Objetivo
 
-Ampliar o **`loja-api` da trilha** com um ou mais **pacotes da linha A** do [mapa — Capstone](MAPA-LINHAS-P-A.md), usando NestJS + TypeORM + **PostgreSQL**.
+Ampliar o **`loja-api` da trilha** com um ou mais **pacotes da linha A** do [mapa — Capstone](MAPA-LINHAS-P-A.md), usando NestJS 12 + TypeORM + **PostgreSQL**.
 
 Quem concluiu só a **linha P** já tem loja utilizável. Este exercício **não pede** `nest new` do zero.
 

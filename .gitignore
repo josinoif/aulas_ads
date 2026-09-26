@@ -2,3 +2,6 @@ devops/books
 books
 **/__pycache__/
 *.pyc
+
+# Projeto gerado pelo aluno na trilha Nest (não versionar a solução)
+backend/nest/loja-api/

@@ -18,7 +18,7 @@ fi
 
 cd "$ROOT"
 
-docker compose -f docker-compose.postgres.yml up -d
+docker compose -f docker-compose.postgres.yml up -d || docker start loja-postgres
 echo "Aguardando Postgres..."
 for _ in $(seq 1 30); do
   if docker exec loja-postgres pg_isready -U loja -d loja >/dev/null 2>&1; then
@@ -63,7 +63,14 @@ ensure_schema() {
   done
   kill "$app_pid" 2>/dev/null || true
   wait "$app_pid" 2>/dev/null || true
-  echo "Schema sincronizado."
+
+  has_users="$(docker exec loja-postgres psql -U loja -d loja -tAc "SELECT to_regclass('public.users')" 2>/dev/null | tr -d '[:space:]')"
+  if [[ -z "$has_users" ]]; then
+    echo "ERRO: após o sync, tabela users ainda não existe." >&2
+    echo "Confira loja-api/.env, TypeORM synchronize e se User está no AppModule." >&2
+    exit 1
+  fi
+  echo "Schema sincronizado (users OK)."
 }
 
 ensure_schema
