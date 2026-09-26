@@ -1,0 +1,979 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "loja-api",
+    "description": "API da trilha NestJS — linha P (Loja Virtual). Este documento descreve a API COMPLETA que a trilha constrói do cap. 1 ao cap. 9 — inclusive endpoints que só existem depois de autenticação, autorização e upload. Use-o como mapa do destino: no início do curso, vários destes endpoints ainda não existem no seu código, e as regras de acesso (JWT/roles) só passam a valer a partir do cap. 6/7.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3000",
+      "description": "Ambiente local de desenvolvimento (loja-api)"
+    }
+  ],
+  "tags": [
+    {
+      "name": "health",
+      "description": "Verificação de disponibilidade do processo (cap. 1)"
+    },
+    {
+      "name": "products",
+      "description": "Catálogo de produtos (cap. 2 a 9)"
+    },
+    {
+      "name": "orders",
+      "description": "Pedidos de compra (cap. 5.1, 6, 7)"
+    },
+    {
+      "name": "auth",
+      "description": "Cadastro, login e identidade (cap. 6)"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT",
+        "description": "Token JWT obtido em POST /auth/login (cap. 6). Cole apenas o token — sem a palavra 'Bearer'."
+      }
+    },
+    "schemas": {
+      "Product": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "name": {
+            "type": "string",
+            "example": "Caneca Nest"
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "example": 39.9,
+            "description": "Coluna numeric(10,2) no Postgres — pode retornar como string no JSON (cap. 5)."
+          },
+          "stock": {
+            "type": "integer",
+            "example": 10
+          },
+          "imageFilename": {
+            "type": "string",
+            "nullable": true,
+            "example": null,
+            "description": "Nome do arquivo em uploads/ — só existe a partir do cap. 9. Nunca é a imagem em si."
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "price",
+          "stock"
+        ]
+      },
+      "ProductInput": {
+        "type": "object",
+        "description": "Corpo de POST /products e PUT /products/{id} (cap. 2.1) — CreateProductDto/UpdateProductDto.",
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 2,
+            "example": "Caneca Nest"
+          },
+          "price": {
+            "type": "number",
+            "format": "double",
+            "minimum": 0.01,
+            "example": 39.9,
+            "description": "No máximo 2 casas decimais."
+          },
+          "stock": {
+            "type": "integer",
+            "minimum": 0,
+            "example": 10
+          }
+        },
+        "required": [
+          "name",
+          "price",
+          "stock"
+        ]
+      },
+      "ProductImageUploadResponse": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "imageUrl": {
+            "type": "string",
+            "example": "/products/1/image"
+          }
+        }
+      },
+      "OrderItem": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "productId": {
+            "type": "integer",
+            "example": 1
+          },
+          "quantity": {
+            "type": "integer",
+            "example": 2
+          },
+          "unitPrice": {
+            "type": "number",
+            "format": "double",
+            "example": 39.9,
+            "description": "Preço do produto congelado no momento da compra (snapshot) — não muda se o preço do produto mudar depois."
+          }
+        }
+      },
+      "Order": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 1
+          },
+          "userId": {
+            "type": "integer",
+            "nullable": true,
+            "example": 3,
+            "description": "null até o cap. 6; a partir do cap. 6 vem sempre do token JWT (sub), nunca do body."
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "OPEN",
+              "CANCELLED"
+            ],
+            "example": "OPEN",
+            "description": "PAID é reservado para o desafio opcional e não é emitido pela linha P."
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/OrderItem"
+            }
+          }
+        }
+      },
+      "OrderItemInput": {
+        "type": "object",
+        "properties": {
+          "productId": {
+            "type": "integer",
+            "minimum": 1,
+            "example": 1
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1,
+            "example": 2
+          }
+        },
+        "required": [
+          "productId",
+          "quantity"
+        ]
+      },
+      "CreateOrderDto": {
+        "type": "object",
+        "description": "Corpo de POST /orders (cap. 5.1) — lista de itens, mínimo 1.",
+        "properties": {
+          "items": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/OrderItemInput"
+            }
+          }
+        },
+        "required": [
+          "items"
+        ]
+      },
+      "RegisterDto": {
+        "type": "object",
+        "description": "Corpo de POST /auth/register (cap. 6) — nunca aceita campo role.",
+        "properties": {
+          "username": {
+            "type": "string",
+            "minLength": 2,
+            "example": "cli"
+          },
+          "email": {
+            "type": "string",
+            "format": "email",
+            "example": "cli@example.com"
+          },
+          "password": {
+            "type": "string",
+            "minLength": 6,
+            "example": "secret123"
+          }
+        },
+        "required": [
+          "username",
+          "email",
+          "password"
+        ]
+      },
+      "LoginDto": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "minLength": 2,
+            "example": "ana"
+          },
+          "password": {
+            "type": "string",
+            "minLength": 6,
+            "example": "secret123"
+          }
+        },
+        "required": [
+          "username",
+          "password"
+        ]
+      },
+      "PublicUser": {
+        "type": "object",
+        "description": "Resposta de POST /auth/register — nunca inclui o hash da senha.",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "example": 3
+          },
+          "username": {
+            "type": "string",
+            "example": "cli"
+          },
+          "email": {
+            "type": "string",
+            "example": "cli@example.com"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "CLIENT",
+              "ADMIN"
+            ],
+            "example": "CLIENT",
+            "description": "Sempre CLIENT no register; ADMIN só nasce via seed direto no banco."
+          }
+        }
+      },
+      "LoginResponse": {
+        "type": "object",
+        "properties": {
+          "access_token": {
+            "type": "string",
+            "example": "eyJhbGciOiJIUzI1NiIs..."
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "description": "Formato padrão de erro do Nest.",
+        "properties": {
+          "statusCode": {
+            "type": "integer",
+            "example": 400
+          },
+          "message": {
+            "oneOf": [
+              {
+                "type": "string",
+                "example": "Produto 99 não encontrado"
+              },
+              {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "example": [
+                  "price must be a number"
+                ]
+              }
+            ]
+          },
+          "error": {
+            "type": "string",
+            "example": "Bad Request"
+          }
+        }
+      }
+    },
+    "responses": {
+      "Unauthorized": {
+        "description": "401 — sem token, ou token inválido/expirado.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "Forbidden": {
+        "description": "403 — autenticado, mas papel insuficiente para esta operação.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "NotFound": {
+        "description": "404 — recurso não encontrado (ou não pertence ao usuário logado).",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      },
+      "BadRequest": {
+        "description": "400 — corpo inválido (ValidationPipe) ou regra de negócio violada.",
+        "content": {
+          "application/json": {
+            "schema": {
+              "$ref": "#/components/schemas/ErrorResponse"
+            }
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "health"
+        ],
+        "summary": "Pulso da aplicação",
+        "description": "cap. 1 — confirma que o processo Node está de pé. Não verifica o Postgres.",
+        "responses": {
+          "200": {
+            "description": "Processo vivo",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "example": "ok"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/register": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Cadastrar usuário (sempre como CLIENT)",
+        "description": "cap. 6 — senha vira hash com bcrypt antes de salvar. role nunca vem do body.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Criado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PublicUser"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "409": {
+            "description": "409 — username ou email já cadastrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Autenticar e obter access_token",
+        "description": "cap. 6 — compara a senha com o hash salvo via bcrypt.compare e emite um JWT com sub/username/role.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Login OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/LoginResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "401 — credenciais inválidas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Listar produtos",
+        "description": "cap. 2 — vitrine pública, sem autenticação.",
+        "responses": {
+          "200": {
+            "description": "Lista de produtos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Product"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Criar produto (ADMIN)",
+        "description": "cap. 2 (CRUD) → cap. 6/7 endurece: exige JWT + papel ADMIN.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Criado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Buscar um produto",
+        "description": "cap. 2 — vitrine pública, sem autenticação.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Produto encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Atualizar produto (ADMIN)",
+        "description": "cap. 2 (CRUD) → cap. 6/7 endurece: exige JWT + papel ADMIN. Substituição completa do produto.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProductInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Atualizado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Product"
+                }
+              }
+            }
+          },
+          "400": {
+            "$ref": "#/components/responses/BadRequest"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Remover produto (ADMIN)",
+        "description": "cap. 2 (CRUD) → cap. 6/7 endurece: exige JWT + papel ADMIN.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Removido, sem corpo"
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/products/{id}/image": {
+      "post": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Subir foto do produto (ADMIN)",
+        "description": "cap. 9 — multipart/form-data, campo 'file' (jpeg/png/webp, até 2MB). Salva bytes em uploads/ e só o nome do arquivo no Postgres.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "file": {
+                    "type": "string",
+                    "format": "binary"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Upload concluído",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProductImageUploadResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "400 — arquivo ausente ou tipo MIME inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "403": {
+            "$ref": "#/components/responses/Forbidden"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "products"
+        ],
+        "summary": "Baixar foto do produto",
+        "description": "cap. 9 — rota pública, sem guard. Transmite os bytes direto do disco (stream).",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Bytes da imagem",
+            "content": {
+              "image/jpeg": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "image/png": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              },
+              "image/webp": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "404 — produto sem imagem, ou arquivo ausente no disco",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/orders": {
+      "get": {
+        "tags": [
+          "orders"
+        ],
+        "summary": "Listar pedidos",
+        "description": "cap. 5.1 — cria sem autenticação (userId null). cap. 6/7 exige JWT: CLIENT vê só os próprios, ADMIN vê todos.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lista de pedidos",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Order"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "orders"
+        ],
+        "summary": "Criar pedido",
+        "description": "cap. 5.1 — transação: valida produto e estoque, grava Order + OrderItem com o preço congelado (unitPrice), decrementa estoque; tudo ou nada. cap. 6 endurece: userId passa a vir do token (sub), nunca do body.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateOrderDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Pedido criado, status OPEN",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "400 — validação do DTO ou estoque insuficiente",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "404": {
+            "description": "404 — algum productId do pedido não existe",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/orders/{id}": {
+      "get": {
+        "tags": [
+          "orders"
+        ],
+        "summary": "Buscar um pedido",
+        "description": "cap. 6/7 — dono do pedido ou ADMIN; senão 404 (nunca 403, pra não confirmar que o pedido existe).",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pedido encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    },
+    "/orders/{id}/cancel": {
+      "post": {
+        "tags": [
+          "orders"
+        ],
+        "summary": "Cancelar pedido",
+        "description": "cap. 5.1 — só pedidos OPEN podem ser cancelados; devolve o estoque em transação. cap. 6/7: dono ou ADMIN.",
+        "security": [
+          {
+            "bearerAuth": []
+          }
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pedido cancelado, estoque devolvido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Order"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "400 — pedido não está OPEN",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          },
+          "401": {
+            "$ref": "#/components/responses/Unauthorized"
+          },
+          "404": {
+            "$ref": "#/components/responses/NotFound"
+          }
+        }
+      }
+    }
+  }
+}
