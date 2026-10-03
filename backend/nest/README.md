@@ -9,10 +9,11 @@ Material de estudo para construir uma API de **e-commerce** com **NestJS 12** e 
 | Linha | Nome | Regra |
 |-------|------|--------|
 | **P** | Principal (obrigatória) | Ao fim do capítulo a API sobe e os curls de P passam. O capítulo seguinte **só depende de P**. |
-| **A** | Alternativa (desafio) | Amplia o domínio. **Nunca** é importada pelo código da linha P. |
+| **A** | Avaliação de aprendizado | Amplia o domínio (pacotes / desafios). **Nunca** é importada pelo código da linha P. Spec: [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md). |
 
 Detalhe canônico das rotas: [`MAPA-LINHAS-P-A.md`](MAPA-LINHAS-P-A.md).  
-**Em conflito entre tutorial e mapa, o mapa prevalece.**
+**Em conflito entre tutorial e mapa, o mapa prevalece.**  
+**Avaliação (linha A):** [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md) — escopo, rubrica, regras de IA e apresentação presencial.
 
 **Projeto único:** `loja-api` — crie com `npx -y @nestjs/cli@12 new loja-api --package-manager npm --skip-git` **dentro de** [`backend/nest/`](.) (ao lado do Compose e do `seed/`). No prompt: **CJS (CommonJS) [with jest]** — não ESM/Vitest.  
 **Banco:** PostgreSQL 16 — [`docker-compose.postgres.yml`](docker-compose.postgres.yml).  
@@ -61,7 +62,7 @@ flowchart LR
 4. **Contexto** — problema da `loja-api` (Ana / Cli)  
 5. **Conceito** em pontos estratégicos  
 6. **Linha P** — implementação + curls  
-7. **Desafio (Linha A)** — opcional  
+7. **Desafio (Linha A)** — preparação / extras; a avaliação consolidada está em [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md)  
 8. **Checkpoint** (+ chave curta nos caps. principais / [`SOLUCAO-P`](SOLUCAO-P.md))  
 9. Rodapé: contrato do mapa + link para [`REFERENCIA-NEST`](REFERENCIA-NEST.md) quando o cap. introduz symbols novos  
 

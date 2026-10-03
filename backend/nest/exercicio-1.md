@@ -2,6 +2,9 @@
 
 > *Episódio final: pacotes A sem reinventar a loja.*
 
+> **Avaliação:** esta é a base técnica da **avaliação de aprendizado** da linha A.  
+> Spec oficial (rubrica, regras de IA, apresentação presencial): [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md).
+
 ## Objetivo
 
 Ampliar o **`loja-api` da trilha** com um ou mais **pacotes da linha A** do [mapa — Capstone](MAPA-LINHAS-P-A.md), usando NestJS 12 + TypeORM + **PostgreSQL**.
@@ -10,6 +13,7 @@ Quem concluiu só a **linha P** já tem loja utilizável. Este exercício **não
 
 **Pré-requisito:** linha P (caps. 1–10).  
 **Contrato:** [MAPA-LINHAS-P-A.md](MAPA-LINHAS-P-A.md) — em conflito, o mapa prevalece.  
+**Avaliação:** [AVALIACAO-LINHA-A.md](AVALIACAO-LINHA-A.md).  
 **Seed / curls:** [seed/](seed/), [CURLS-P.md](CURLS-P.md) — **Ana** (ADMIN) e **Cli** (CLIENT).
 
 ------
@@ -97,19 +101,24 @@ CRUD `/categories` + associação produto ([mapa Cap. 5 A](MAPA-LINHAS-P-A.md)).
 
 ## 4. Critérios
 
-| Nível | Entrega |
-|-------|---------|
-| Mínimo | Linha P + README |
-| Médio | P + 1 pacote A |
-| Completo | P + categorias + endereço + pagamento + Swagger |
+Rubrica completa (incluindo **IA** e **apresentação presencial**): [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md).
+
+| Nível (amplitude) | Entrega técnica |
+|-------------------|------------------|
+| Mínimo avaliável | P + 1 pacote A + README + oral |
+| Intermediário | + Swagger A e erro de domínio documentado |
+| Completo | P + categorias + endereço + pagamento + oral sólida |
 
 ------
 
 ## 5. Entrega
 
+Conforme [`AVALIACAO-LINHA-A.md` §4–5](AVALIACAO-LINHA-A.md):
+
 - Repo do `loja-api`  
-- README: Postgres, seed Ana/Cli, curls A  
-- Swagger `/api`
+- README: Postgres, seed Ana/Cli, curls A, seção `## Uso de IA`  
+- Swagger `/api`  
+- **Apresentação presencial** com explicação do código e perguntas de implementação  
 
 ------
 

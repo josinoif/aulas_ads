@@ -6,16 +6,16 @@ Documento de referência da jornada NestJS com **e-commerce em duas velocidades*
 
 | Linha | Nome | Obrigatória? | Regra |
 |-------|------|--------------|--------|
-| **P** | Principal | Sim | Ao fim de cada capítulo a API sobe e os curls de P passam. O capítulo seguinte **só depende de P**. |
-| **A** | Alternativa (desafio) | Não | Amplia o domínio. Pode usar tudo de P. **Nunca** é importada por código da linha P. |
+| **P** | Principal | Sim (estudo) | Ao fim de cada capítulo a API sobe e os curls de P passam. O capítulo seguinte **só depende de P**. |
+| **A** | Avaliação de aprendizado | Sim (avaliação) | Amplia o domínio. Pode usar tudo de P. **Nunca** é importada por código da linha P. Spec consolidada: [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md). |
 
 ```mermaid
 flowchart TB
     subgraph P["Linha P — obrigatória"]
         API[loja-api funcional]
     end
-    subgraph A["Linha A — opcional"]
-        Extra[desafios por capítulo]
+    subgraph A["Linha A — avaliação"]
+        Extra[pacotes / desafios A]
     end
     API --> Prox[capítulo seguinte só depende de P]
     Extra -.->|nunca importa em P| API
@@ -464,13 +464,15 @@ Ao marcar pagamento `PAID` → pedido `PAID`. Não alterar método após criar.
 
 - Fechar CRUD `Category` + associação produto.
 
-### Critério de nota (sugestão)
+### Avaliação (linha A)
 
-| Nível | Entrega |
-|-------|---------|
-| Mínimo | Linha P caps. 1–10 rodando + README |
-| Médio | P + 1 pacote A do capstone |
-| Completo | P + categorias + endereço + pagamento + Swagger atualizado |
+Critérios oficiais (rubrica, IA, apresentação presencial): [`AVALIACAO-LINHA-A.md`](AVALIACAO-LINHA-A.md).
+
+| Nível (amplitude) | Entrega técnica |
+|-------------------|------------------|
+| Mínimo avaliável | Linha P + **1** pacote A completo + README + oral |
+| Intermediário | + Swagger A e erro de domínio documentado |
+| Completo | P + categorias + endereço + pagamento (+ oral sólida) |
 
 ---
 
