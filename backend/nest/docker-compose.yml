@@ -21,7 +21,7 @@ services:
     image: dpage/pgadmin4:8
     container_name: loja-pgadmin
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@loja.local
+      PGADMIN_DEFAULT_EMAIL: admin@loja.com
       PGADMIN_DEFAULT_PASSWORD: admin
       PGADMIN_CONFIG_SERVER_MODE: "False"
     ports:
